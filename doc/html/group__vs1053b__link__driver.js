@@ -1,0 +1,25 @@
+var group__vs1053b__link__driver =
+[
+    [ "DRIVER_VS1053B_LINK_AUDIO_DEINIT", "group__vs1053b__link__driver.html#ga510bff7f1a8940f0e274f0eeebc02841", null ],
+    [ "DRIVER_VS1053B_LINK_AUDIO_INIT", "group__vs1053b__link__driver.html#gaa916979718eba346c98b6ab1f60afdec", null ],
+    [ "DRIVER_VS1053B_LINK_AUDIO_READ", "group__vs1053b__link__driver.html#ga02436082c439b852ba9d6b17fe4a3fff", null ],
+    [ "DRIVER_VS1053B_LINK_AUDIO_WRITE", "group__vs1053b__link__driver.html#gac4a8c3dd62cd1dd109faae84d82ce6fa", null ],
+    [ "DRIVER_VS1053B_LINK_DEBUG_PRINT", "group__vs1053b__link__driver.html#gae18fd9bb3021efd478e5569a283cf381", null ],
+    [ "DRIVER_VS1053B_LINK_DELAY_MS", "group__vs1053b__link__driver.html#ga4047cea47305ca033004efe9adaac5ac", null ],
+    [ "DRIVER_VS1053B_LINK_DREQ_GPIO_DEINIT", "group__vs1053b__link__driver.html#ga418b73583d26f6cf5f28b49a31b949af", null ],
+    [ "DRIVER_VS1053B_LINK_DREQ_GPIO_INIT", "group__vs1053b__link__driver.html#gac0bacb0fe3ada713ca60bcf5fe2c24c8", null ],
+    [ "DRIVER_VS1053B_LINK_DREQ_GPIO_READ", "group__vs1053b__link__driver.html#ga36639b82d4c3e15d7d3ae20e930ca4a4", null ],
+    [ "DRIVER_VS1053B_LINK_INIT", "group__vs1053b__link__driver.html#gaa5e89ca15b2b1520ccf8edba972ed46f", null ],
+    [ "DRIVER_VS1053B_LINK_RECEIVE_CALLBACK", "group__vs1053b__link__driver.html#gaa1ff4492a0cd8f0db6c6d85e691d736d", null ],
+    [ "DRIVER_VS1053B_LINK_RESET_GPIO_DEINIT", "group__vs1053b__link__driver.html#ga2c0550828458bd61299af449fe14be00", null ],
+    [ "DRIVER_VS1053B_LINK_RESET_GPIO_INIT", "group__vs1053b__link__driver.html#gafce4157721ba7b050d732a5fa60f81ee", null ],
+    [ "DRIVER_VS1053B_LINK_RESET_GPIO_WRITE", "group__vs1053b__link__driver.html#ga3d7e3450b303493d9a9fc78456d3e918", null ],
+    [ "DRIVER_VS1053B_LINK_SPI_CMD_DEINIT", "group__vs1053b__link__driver.html#ga9cb7e929a2e2f89962d58a9fb1d6d51b", null ],
+    [ "DRIVER_VS1053B_LINK_SPI_CMD_INIT", "group__vs1053b__link__driver.html#ga588f2fd049fbdff8111194b708f80c2e", null ],
+    [ "DRIVER_VS1053B_LINK_SPI_DAT_DEINIT", "group__vs1053b__link__driver.html#gaae2b9b3df864ee525eac089aac37af8f", null ],
+    [ "DRIVER_VS1053B_LINK_SPI_DAT_INIT", "group__vs1053b__link__driver.html#gaa6f19c2ece5fbd9f32844e4df33e2424", null ],
+    [ "DRIVER_VS1053B_LINK_SPI_DAT_WRITE_CMD", "group__vs1053b__link__driver.html#ga6881fd7ada34ca2767f208310963043c", null ],
+    [ "DRIVER_VS1053B_LINK_SPI_READ_ADDRESS16", "group__vs1053b__link__driver.html#ga8e6092765ac1623458ab056d91b16589", null ],
+    [ "DRIVER_VS1053B_LINK_SPI_WRITE_ADDRESS16", "group__vs1053b__link__driver.html#ga5f4c9509f6cee585bc0c342eb9f6c8ba", null ],
+    [ "DRIVER_VS1053B_LINK_TIMESTAMP_READ", "group__vs1053b__link__driver.html#gad8852a7c063424008f4deb1731930d20", null ]
+];

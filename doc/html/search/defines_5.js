@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['vs1053b_5fcommand_5fread_682',['VS1053B_COMMAND_READ',['../driver__vs1053b_8c.html#ab1dc73a080de7a4599b687f0a0b3e9cd',1,'driver_vs1053b.c']]],
+  ['vs1053b_5fcommand_5fwrite_683',['VS1053B_COMMAND_WRITE',['../driver__vs1053b_8c.html#aec86239f0b39baebd95e7531b0cf4cde',1,'driver_vs1053b.c']]],
+  ['vs1053b_5fpatch_5fflac_5fplugin_5fsize_684',['VS1053B_PATCH_FLAC_PLUGIN_SIZE',['../driver__vs1053b__patch__flac_8h.html#a944a7d3b9b9063655465628c7c361c48',1,'driver_vs1053b_patch_flac.h']]],
+  ['vs1053b_5fpatch_5fwav_5fplugin_5fsize_685',['VS1053B_PATCH_WAV_PLUGIN_SIZE',['../driver__vs1053b__patch__wav_8h.html#a8d0bda751a7a21a0953b7bacbfe3a251',1,'driver_vs1053b_patch_wav.h']]],
+  ['vs1053b_5freg_5faiaddr_686',['VS1053B_REG_AIADDR',['../driver__vs1053b_8c.html#ad64fda6132005096c5e6698f6a9993c5',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5faictrl0_687',['VS1053B_REG_AICTRL0',['../driver__vs1053b_8c.html#ac15bf3121b1d50742f5bddd8d6352704',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5faictrl1_688',['VS1053B_REG_AICTRL1',['../driver__vs1053b_8c.html#ab937fd8e58d389b6547bf1a363603ec4',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5faictrl2_689',['VS1053B_REG_AICTRL2',['../driver__vs1053b_8c.html#a4e0f051e6aefd4fa02e99b3f52fdb0dd',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5faictrl3_690',['VS1053B_REG_AICTRL3',['../driver__vs1053b_8c.html#ad1fb2af986d2b1909e2ead3d5210be5d',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5faudata_691',['VS1053B_REG_AUDATA',['../driver__vs1053b_8c.html#a601fdc417178cc430df2bd4d3070820b',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5fbass_692',['VS1053B_REG_BASS',['../driver__vs1053b_8c.html#aac7b53745d38240478e516f45ef0b339',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5fclockf_693',['VS1053B_REG_CLOCKF',['../driver__vs1053b_8c.html#a172954874b0c1400ab9570b351e69ec0',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5fdecode_5ftime_694',['VS1053B_REG_DECODE_TIME',['../driver__vs1053b_8c.html#a17b2f59272e5b343ad95ee5eea35bb61',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5fhdat0_695',['VS1053B_REG_HDAT0',['../driver__vs1053b_8c.html#a1887191458b40abe4f6e2640c1e52b27',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5fhdat1_696',['VS1053B_REG_HDAT1',['../driver__vs1053b_8c.html#adbc269e0d137aaa49ba132f712971670',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5fmode_697',['VS1053B_REG_MODE',['../driver__vs1053b_8c.html#a1e5899f1ff97db65f759e2e5a6eeb33f',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5fstatus_698',['VS1053B_REG_STATUS',['../driver__vs1053b_8c.html#a2b7c93fd2bac7e624b8c32333679332e',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5fvol_699',['VS1053B_REG_VOL',['../driver__vs1053b_8c.html#a1bf87a1a1fcb25e2e8ed6e070e9842a9',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5fwram_700',['VS1053B_REG_WRAM',['../driver__vs1053b_8c.html#a94d27c91b3e4a841f7df3d3a184fcd46',1,'driver_vs1053b.c']]],
+  ['vs1053b_5freg_5fwramaddr_701',['VS1053B_REG_WRAMADDR',['../driver__vs1053b_8c.html#a1a39f0473b280d7d89fcb2d8b269a946',1,'driver_vs1053b.c']]],
+  ['vs1053b_5fstatus_5fplay_702',['VS1053B_STATUS_PLAY',['../driver__vs1053b_8c.html#ae3b5e848dd174b14f2ac8b9778a2102e',1,'driver_vs1053b.c']]],
+  ['vs1053b_5fstatus_5frecord_703',['VS1053B_STATUS_RECORD',['../driver__vs1053b_8c.html#ac31b1ca36876d273230837fb5aa13c18',1,'driver_vs1053b.c']]],
+  ['vs1053b_5fstatus_5fstop_704',['VS1053B_STATUS_STOP',['../driver__vs1053b_8c.html#a302518e2ef1539d39dffc980dc4d18ec',1,'driver_vs1053b.c']]]
+];
