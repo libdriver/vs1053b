@@ -5361,6 +5361,12 @@ uint8_t vs1053b_process(vs1053b_handle_t *handle)
             return 0;                                                              /* success return 0 */
         }
 
+        if (a_check_busy_pin(handle) != 0)                                         /* check busy */
+        {
+            handle->debug_print("vs1053b: chip is busy.\n");                       /* chip is busy */
+
+            return 1;                                                              /* return error */
+        }
         res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT1, buf, 2);               /* read the hdat1 */
         if (res != 0)                                                              /* check result */
         {
