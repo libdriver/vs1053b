@@ -35,6 +35,141 @@
  */
 
 #include "driver_vs1053b.h"
+#if VS1053B_OGG_VENC08K1Q00 != 0
+    #include "driver_vs1053b_patch_ogg_venc08k1q00.h"
+#endif
+#if VS1053B_OGG_VENC08K1Q01 != 0
+    #include "driver_vs1053b_patch_ogg_venc08k1q01.h"
+#endif
+#if VS1053B_OGG_VENC08K1Q02 != 0
+    #include "driver_vs1053b_patch_ogg_venc08k1q02.h"
+#endif
+#if VS1053B_OGG_VENC08K1Q03 != 0
+    #include "driver_vs1053b_patch_ogg_venc08k1q03.h"
+#endif
+#if VS1053B_OGG_VENC08K1Q04 != 0
+    #include "driver_vs1053b_patch_ogg_venc08k1q04.h"
+#endif
+#if VS1053B_OGG_VENC08K1Q05 != 0
+    #include "driver_vs1053b_patch_ogg_venc08k1q05.h"
+#endif
+#if VS1053B_OGG_VENC08K1Q06 != 0
+    #include "driver_vs1053b_patch_ogg_venc08k1q06.h"
+#endif
+#if VS1053B_OGG_VENC08K1Q07 != 0
+    #include "driver_vs1053b_patch_ogg_venc08k1q07.h"
+#endif
+#if VS1053B_OGG_VENC08K1Q08 != 0
+    #include "driver_vs1053b_patch_ogg_venc08k1q08.h"
+#endif
+#if VS1053B_OGG_VENC08K1Q09 != 0
+    #include "driver_vs1053b_patch_ogg_venc08k1q09.h"
+#endif
+#if VS1053B_OGG_VENC08K1Q10 != 0
+    #include "driver_vs1053b_patch_ogg_venc08k1q10.h"
+#endif
+#if VS1053B_OGG_VENC16K1Q00 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k1q00.h"
+#endif
+#if VS1053B_OGG_VENC16K1Q01 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k1q01.h"
+#endif
+#if VS1053B_OGG_VENC16K1Q02 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k1q02.h"
+#endif
+#if VS1053B_OGG_VENC16K1Q03 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k1q03.h"
+#endif
+#if VS1053B_OGG_VENC16K1Q04 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k1q04.h"
+#endif
+#if VS1053B_OGG_VENC16K1Q05 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k1q05.h"
+#endif
+#if VS1053B_OGG_VENC16K1Q06 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k1q06.h"
+#endif
+#if VS1053B_OGG_VENC16K1Q07 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k1q07.h"
+#endif
+#if VS1053B_OGG_VENC16K1Q08 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k1q08.h"
+#endif
+#if VS1053B_OGG_VENC16K1Q09 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k1q09.h"
+#endif
+#if VS1053B_OGG_VENC16K1Q10 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k1q10.h"
+#endif
+#if VS1053B_OGG_VENC16K2Q00 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k2q00.h"
+#endif
+#if VS1053B_OGG_VENC16K2Q01 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k2q01.h"
+#endif
+#if VS1053B_OGG_VENC16K2Q02 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k2q02.h"
+#endif
+#if VS1053B_OGG_VENC16K2Q03 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k2q03.h"
+#endif
+#if VS1053B_OGG_VENC16K2Q04 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k2q04.h"
+#endif
+#if VS1053B_OGG_VENC16K2Q05 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k2q05.h"
+#endif
+#if VS1053B_OGG_VENC16K2Q06 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k2q06.h"
+#endif
+#if VS1053B_OGG_VENC16K2Q07 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k2q07.h"
+#endif
+#if VS1053B_OGG_VENC16K2Q08 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k2q08.h"
+#endif
+#if VS1053B_OGG_VENC16K2Q09 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k2q09.h"
+#endif
+#if VS1053B_OGG_VENC16K2Q10 != 0
+    #include "driver_vs1053b_patch_ogg_venc16k2q10.h"
+#endif
+#if VS1053B_OGG_VENC44K1Q00 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k1q00.h"
+#endif
+#if VS1053B_OGG_VENC44K1Q01 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k1q01.h"
+#endif
+#if VS1053B_OGG_VENC44K1Q02 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k1q02.h"
+#endif
+#if VS1053B_OGG_VENC44K1Q03 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k1q03.h"
+#endif
+#if VS1053B_OGG_VENC44K1Q04 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k1q04.h"
+#endif
+#if VS1053B_OGG_VENC44K1Q05 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k1q05.h"
+#endif
+#if VS1053B_OGG_VENC44K2Q00 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k2q00.h"
+#endif
+#if VS1053B_OGG_VENC44K2Q01 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k2q01.h"
+#endif
+#if VS1053B_OGG_VENC44K2Q02 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k2q02.h"
+#endif
+#if VS1053B_OGG_VENC44K2Q03 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k2q03.h"
+#endif
+#if VS1053B_OGG_VENC44K2Q04 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k2q04.h"
+#endif
+#if VS1053B_OGG_VENC44K2Q05 != 0
+    #include "driver_vs1053b_patch_ogg_venc44k2q05.h"
+#endif
 #include "driver_vs1053b_patch_flac.h"
 #include "driver_vs1053b_patch_wav.h"
 #include <math.h>
@@ -83,6 +218,11 @@
 #define VS1053B_STATUS_STOP            0x00        /**< stop status */
 #define VS1053B_STATUS_PLAY            0x01        /**< play status */
 #define VS1053B_STATUS_RECORD          0x02        /**< record status */
+
+/**
+ * @brief inner function definition
+ */
+#define MIN(a, b) (((a) < (b)) ? (a) : (b))        /**< min function */
 
 /**
  * @brief      read bytes
@@ -4889,6 +5029,918 @@ uint8_t vs1053b_get_end_fill_byte(vs1053b_handle_t *handle, uint16_t *byte)
 }
 
 /**
+ * @brief     enable or disable iis mclk
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] enable is a bool value
+ * @return    status code
+ *            - 0 success
+ *            - 1 set iis mclk failed
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_iis_mclk(vs1053b_handle_t *handle, vs1053b_bool_t enable)
+{
+    uint8_t res;
+    uint8_t buf[2];
+    uint16_t prev;
+    uint16_t prev2;
+
+    if (handle == NULL)                                                   /* check handle */
+    {
+        return 2;                                                         /* return error */
+    }
+    if (handle->inited != 1)                                              /* check handle initialization */
+    {
+        return 3;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC040;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    res = a_vs1053b_spi_read(handle, VS1053B_REG_WRAM, buf, 2);           /* read the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: read ram failed.\n");               /* read ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    prev2 = ((uint16_t)(buf[0]) << 8) | buf[1];                           /* combine data */
+    
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC040;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+    
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev2 &= ~(1 << 3);                                                   /* clear settings */
+    prev2 |= enable << 3;                                                 /* set bool */
+    buf[0] = (prev2 >> 8) & 0xFF;                                         /* get msb */
+    buf[1] = (prev2 >> 0) & 0xFF;                                         /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAM, buf, 2);          /* write the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram failed.\n");              /* write ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    
+    return 0;                                                             /* success return 0 */
+}
+
+/**
+ * @brief      get iis mclk status
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *enable points to a bool value buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get iis mclk failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_iis_mclk(vs1053b_handle_t *handle, vs1053b_bool_t *enable)
+{
+    uint8_t res;
+    uint8_t buf[2];
+    uint16_t prev;
+
+    if (handle == NULL)                                                   /* check handle */
+    {
+        return 2;                                                         /* return error */
+    }
+    if (handle->inited != 1)                                              /* check handle initialization */
+    {
+        return 3;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC040;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    res = a_vs1053b_spi_read(handle, VS1053B_REG_WRAM, buf, 2);           /* read the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: read ram failed.\n");               /* read ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    prev = ((uint16_t)(buf[0]) << 8) | buf[1];                            /* combine data */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    *enable = (vs1053b_bool_t)((prev >> 3) & 0x01);                       /* get bool */
+    
+    return 0;                                                             /* success return 0 */
+}
+
+/**
+ * @brief     enable or disable iis
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] enable is a bool value
+ * @return    status code
+ *            - 0 success
+ *            - 1 set iis failed
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_iis(vs1053b_handle_t *handle, vs1053b_bool_t enable)
+{
+    uint8_t res;
+    uint8_t buf[2];
+    uint16_t prev;
+    uint16_t prev2;
+
+    if (handle == NULL)                                                   /* check handle */
+    {
+        return 2;                                                         /* return error */
+    }
+    if (handle->inited != 1)                                              /* check handle initialization */
+    {
+        return 3;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC040;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    res = a_vs1053b_spi_read(handle, VS1053B_REG_WRAM, buf, 2);           /* read the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: read ram failed.\n");               /* read ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    prev2 = ((uint16_t)(buf[0]) << 8) | buf[1];                           /* combine data */
+    
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC040;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+    
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev2 &= ~(1 << 2);                                                   /* clear settings */
+    prev2 |= enable << 2;                                                 /* set bool */
+    buf[0] = (prev2 >> 8) & 0xFF;                                         /* get msb */
+    buf[1] = (prev2 >> 0) & 0xFF;                                         /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAM, buf, 2);          /* write the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram failed.\n");              /* write ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    
+    return 0;                                                             /* success return 0 */
+}
+
+/**
+ * @brief      get iis status
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *enable points to a bool value buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get iis failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_iis(vs1053b_handle_t *handle, vs1053b_bool_t *enable)
+{
+    uint8_t res;
+    uint8_t buf[2];
+    uint16_t prev;
+
+    if (handle == NULL)                                                   /* check handle */
+    {
+        return 2;                                                         /* return error */
+    }
+    if (handle->inited != 1)                                              /* check handle initialization */
+    {
+        return 3;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC040;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    res = a_vs1053b_spi_read(handle, VS1053B_REG_WRAM, buf, 2);           /* read the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: read ram failed.\n");               /* read ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    prev = ((uint16_t)(buf[0]) << 8) | buf[1];                            /* combine data */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    *enable = (vs1053b_bool_t)((prev >> 2) & 0x01);                       /* get bool */
+    
+    return 0;                                                             /* success return 0 */
+}
+
+/**
+ * @brief     set iis rate
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] iis_rate is the set iis rate
+ * @return    status code
+ *            - 0 success
+ *            - 1 set iis rate failed
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_iis_rate(vs1053b_handle_t *handle, vs1053b_iis_rate_t iis_rate)
+{
+    uint8_t res;
+    uint8_t buf[2];
+    uint16_t prev;
+    uint16_t prev2;
+
+    if (handle == NULL)                                                   /* check handle */
+    {
+        return 2;                                                         /* return error */
+    }
+    if (handle->inited != 1)                                              /* check handle initialization */
+    {
+        return 3;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC040;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    res = a_vs1053b_spi_read(handle, VS1053B_REG_WRAM, buf, 2);           /* read the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: read ram failed.\n");               /* read ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    prev2 = ((uint16_t)(buf[0]) << 8) | buf[1];                           /* combine data */
+    
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC040;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+    
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev2 &= ~(3 << 0);                                                   /* clear settings */
+    prev2 |= iis_rate << 0;                                               /* set iis rate */
+    buf[0] = (prev2 >> 8) & 0xFF;                                         /* get msb */
+    buf[1] = (prev2 >> 0) & 0xFF;                                         /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAM, buf, 2);          /* write the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram failed.\n");              /* write ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    
+    return 0;                                                             /* success return 0 */
+}
+
+/**
+ * @brief      get iis rate
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *iis_rate points to an iis rate buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get iis rate failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_iis_rate(vs1053b_handle_t *handle, vs1053b_iis_rate_t *iis_rate)
+{
+    uint8_t res;
+    uint8_t buf[2];
+    uint16_t prev;
+
+    if (handle == NULL)                                                   /* check handle */
+    {
+        return 2;                                                         /* return error */
+    }
+    if (handle->inited != 1)                                              /* check handle initialization */
+    {
+        return 3;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC040;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    res = a_vs1053b_spi_read(handle, VS1053B_REG_WRAM, buf, 2);           /* read the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: read ram failed.\n");               /* read ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    prev = ((uint16_t)(buf[0]) << 8) | buf[1];                            /* combine data */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    *iis_rate= (vs1053b_iis_rate_t)((prev >> 0) & 0x03);                  /* get iis rate */
+    
+    return 0;                                                             /* success return 0 */
+}
+
+/**
+ * @brief     set gpio direction
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] mask is the set gpio direction mask
+ * @return    status code
+ *            - 0 success
+ *            - 1 set gpio direction failed
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_gpio_direction(vs1053b_handle_t *handle, uint16_t mask)
+{
+    uint8_t res;
+    uint8_t buf[2];
+    uint16_t prev;
+    uint16_t prev2;
+
+    if (handle == NULL)                                                   /* check handle */
+    {
+        return 2;                                                         /* return error */
+    }
+    if (handle->inited != 1)                                              /* check handle initialization */
+    {
+        return 3;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC017;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    res = a_vs1053b_spi_read(handle, VS1053B_REG_WRAM, buf, 2);           /* read the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: read ram failed.\n");               /* read ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    prev2 = ((uint16_t)(buf[0]) << 8) | buf[1];                           /* combine data */
+    
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC017;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+    
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev2 &= ~(0x3FF);                                                    /* clear settings */
+    prev2 |= mask;                                                        /* set mask */
+    buf[0] = (prev2 >> 8) & 0xFF;                                         /* get msb */
+    buf[1] = (prev2 >> 0) & 0xFF;                                         /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAM, buf, 2);          /* write the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram failed.\n");              /* write ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    
+    return 0;                                                             /* success return 0 */
+}
+
+/**
+ * @brief      get gpio direction
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *mask points to a gpio direction mask buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get gpio direction failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_gpio_direction(vs1053b_handle_t *handle, uint16_t *mask)
+{
+    uint8_t res;
+    uint8_t buf[2];
+    uint16_t prev;
+
+    if (handle == NULL)                                                   /* check handle */
+    {
+        return 2;                                                         /* return error */
+    }
+    if (handle->inited != 1)                                              /* check handle initialization */
+    {
+        return 3;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC017;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    res = a_vs1053b_spi_read(handle, VS1053B_REG_WRAM, buf, 2);           /* read the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: read ram failed.\n");               /* read ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    *mask = ((uint16_t)(buf[0]) << 8) | buf[1];                           /* combine data */
+    
+    return 0;                                                             /* success return 0 */
+}
+
+/**
+ * @brief      get gpio input
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *data points to a data buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get gpio input failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_gpio_input(vs1053b_handle_t *handle, uint16_t *data)
+{
+    uint8_t res;
+    uint8_t buf[2];
+    uint16_t prev;
+
+    if (handle == NULL)                                                   /* check handle */
+    {
+        return 2;                                                         /* return error */
+    }
+    if (handle->inited != 1)                                              /* check handle initialization */
+    {
+        return 3;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC018;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    res = a_vs1053b_spi_read(handle, VS1053B_REG_WRAM, buf, 2);           /* read the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: read ram failed.\n");               /* read ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    *data = ((uint16_t)(buf[0]) << 8) | buf[1];                           /* combine data */
+    
+    return 0;                                                             /* success return 0 */
+}
+
+/**
+ * @brief     set gpio output
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] data is the set data
+ * @return    status code
+ *            - 0 success
+ *            - 1 set gpio output failed
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_gpio_output(vs1053b_handle_t *handle, uint16_t data)
+{
+    uint8_t res;
+    uint8_t buf[2];
+    uint16_t prev;
+    uint16_t prev2;
+
+    if (handle == NULL)                                                   /* check handle */
+    {
+        return 2;                                                         /* return error */
+    }
+    if (handle->inited != 1)                                              /* check handle initialization */
+    {
+        return 3;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC019;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    res = a_vs1053b_spi_read(handle, VS1053B_REG_WRAM, buf, 2);           /* read the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: read ram failed.\n");               /* read ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    prev2 = ((uint16_t)(buf[0]) << 8) | buf[1];                           /* combine data */
+    
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC019;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+    
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev2 &= ~(0x1FF);                                                    /* clear settings */
+    prev2 |= data;                                                        /* set data */
+    buf[0] = (prev2 >> 8) & 0xFF;                                         /* get msb */
+    buf[1] = (prev2 >> 0) & 0xFF;                                         /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAM, buf, 2);          /* write the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram failed.\n");              /* write ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    
+    return 0;                                                             /* success return 0 */
+}
+
+/**
+ * @brief      get gpio output
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *data points to a data buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get gpio output failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_gpio_output(vs1053b_handle_t *handle, uint16_t *data)
+{
+    uint8_t res;
+    uint8_t buf[2];
+    uint16_t prev;
+
+    if (handle == NULL)                                                   /* check handle */
+    {
+        return 2;                                                         /* return error */
+    }
+    if (handle->inited != 1)                                              /* check handle initialization */
+    {
+        return 3;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    prev = 0xC019;                                                        /* set addr */
+    buf[0] = (prev >> 8) & 0xFF;                                          /* get msb */
+    buf[1] = (prev >> 0) & 0xFF;                                          /* get lsb */
+    res = a_vs1053b_spi_write(handle, VS1053B_REG_WRAMADDR, buf, 2);      /* write the ram addr */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: write ram addr failed.\n");         /* write ram addr failed */
+
+        return 1;                                                         /* return error */
+    }
+
+    if (a_check_busy_pin(handle) != 0)                                    /* check busy */
+    {
+        handle->debug_print("vs1053b: chip is busy.\n");                  /* chip is busy */
+
+        return 1;                                                         /* return error */
+    }
+    res = a_vs1053b_spi_read(handle, VS1053B_REG_WRAM, buf, 2);           /* read the ram */
+    if (res != 0)                                                         /* check result */
+    {
+        handle->debug_print("vs1053b: read ram failed.\n");               /* read ram failed */
+
+        return 1;                                                         /* return error */
+    }
+    *data = ((uint16_t)(buf[0]) << 8) | buf[1];                           /* combine data */
+    
+    return 0;                                                             /* success return 0 */
+}
+
+/**
+ * @brief     set record format
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] format is the set record format
+ * @return    status code
+ *            - 0 success
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_record_format(vs1053b_handle_t *handle, vs1053b_record_format_t format)
+{
+    if (handle == NULL)                             /* check handle */
+    {
+        return 2;                                   /* return error */
+    }
+    if (handle->inited != 1)                        /* check handle initialization */
+    {
+        return 3;                                   /* return error */
+    }
+
+    handle->record_type = (uint8_t)(format);        /* set record format */
+
+    return 0;                                       /* success return 0 */
+}
+
+/**
+ * @brief      get record format
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *format points to a record format buffer
+ * @return     status code
+ *             - 0 success
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_record_format(vs1053b_handle_t *handle, vs1053b_record_format_t *format)
+{
+    if (handle == NULL)                                              /* check handle */
+    {
+        return 2;                                                    /* return error */
+    }
+    if (handle->inited != 1)                                         /* check handle initialization */
+    {
+        return 3;                                                    /* return error */
+    }
+
+    *format = (vs1053b_record_format_t)(handle->record_type);        /* get record format */
+
+    return 0;                                                        /* success return 0 */
+}
+
+/**
  * @brief     initialize the chip
  * @param[in] *handle points to a vs1053b handle structure
  * @return    status code
@@ -5179,6 +6231,8 @@ uint8_t vs1053b_init(vs1053b_handle_t *handle)
     handle->cur_pos = 0;                                                            /* current position */
     handle->buf_pos = 0;                                                            /* buffer position */
     handle->size = 0;                                                               /* total size */
+    handle->record_type = 0;                                                        /* init record type */
+    handle->plugin_patch_type = 0;                                                  /* plugin patch type */
     handle->inited = 1;                                                             /* flag finish initialization */
 
     return 0;                                                                       /* success return 0 */
@@ -5352,96 +6406,213 @@ uint8_t vs1053b_process(vs1053b_handle_t *handle)
     }
     else if (handle->status == VS1053B_STATUS_RECORD)                              /* record */
     {
-        uint16_t i;
-        uint16_t dat1;
-
-        a_period(handle);                                                          /* run period callback */
-        if ((handle->pause != 0) || (handle->status == VS1053B_STATUS_STOP))       /* if pause and return */
+        if (handle->record_type != 0)                                              /* ogg */
         {
-            return 0;                                                              /* success return 0 */
-        }
-
-        if (a_check_busy_pin(handle) != 0)                                         /* check busy */
-        {
-            handle->debug_print("vs1053b: chip is busy.\n");                       /* chip is busy */
-
-            return 1;                                                              /* return error */
-        }
-        res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT1, buf, 2);               /* read the hdat1 */
-        if (res != 0)                                                              /* check result */
-        {
-            handle->debug_print("vs1053b: read hdat1 failed.\n");                  /* read hdat1 failed */
-
-            return 1;                                                              /* return error */
-        }
-        dat1 = ((uint16_t)(buf[0]) << 8) | buf[1];                                 /* combine the config */
-        if ((dat1 >= 256) && (dat1 < 896))                                         /* check range */
-        {
-            i = 0;                                                                 /* init 0 */
-            while (i < 512)                                                        /* 512 bytes */
+            uint8_t b[2];
+            uint16_t i;
+            uint16_t j;
+            uint16_t l;
+            uint16_t dat1;
+            
+            a_period(handle);                                                      /* run period callback */
+            if ((handle->pause != 0) || (handle->status == VS1053B_STATUS_STOP))   /* if pause and return */
             {
-                res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT0, buf, 2);       /* read the hdat0 */
-                if (res != 0)                                                      /* check result */
-                {
-                    handle->debug_print("vs1053b: read hdat0 failed.\n");          /* read hdat0 failed */
-
-                    return 1;                                                      /* return error */
-                }
-                handle->buf[i++] = buf[1];                                         /* save low part */
-                handle->buf[i++] = buf[0];                                         /* save high part */
+                return 0;                                                          /* success return 0 */
             }
-            if (handle->receive_callback != NULL)                                  /* check not null */
+
+            if (a_check_busy_pin(handle) != 0)                                     /* check busy */
             {
-                handle->receive_callback(VS1053B_TYPE_RECORD_READ,
-                                         handle->cur_pos);                         /* run callback */
-            }
-            res = handle->audio_write(handle->cur_pos, 512, handle->buf);          /* write buffer */
-            if (res != 0)                                                          /* check result */
-            {
-                handle->debug_print("vs1053b: audio write failed.\n");             /* audio write failed */
+                handle->debug_print("vs1053b: chip is busy.\n");                   /* chip is busy */
 
                 return 1;                                                          /* return error */
             }
-            handle->cur_pos += 512;                                                /* add 512 bytes */
-            if (handle->receive_callback != NULL)                                  /* check not null */
+            res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT1, buf, 2);           /* read the hdat1 */
+            if (res != 0)                                                          /* check result */
             {
-                handle->receive_callback(VS1053B_TYPE_RECORD_WRITE,
-                                         handle->cur_pos);                         /* run callback */
+                handle->debug_print("vs1053b: read hdat1 failed.\n");              /* read hdat1 failed */
+
+                return 1;                                                          /* return error */
             }
-        }
-        else if (dat1 >= 896)
-        {
-            i = 0;                                                                 /* init 0 */
-            while (i < 512)                                                        /* 512 bytes */
+            dat1 = ((uint16_t)(buf[0]) << 8) | buf[1];                             /* combine the config */
+            while (dat1 >= 256)                                                    /* check length */
             {
-                res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT0, buf, 2);       /* read the hdat0 */
+                l = MIN(dat1, 256);                                                /* get min */
+                dat1 -= l;                                                         /* dat1 - length */
+                i = 0;                                                             /* init 0 */
+                for (j = 0; j < l; j++)                                            /* loop all */
+                {
+                    res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT0, buf, 2);   /* read the hdat0 */
+                    if (res != 0)                                                  /* check result */
+                    {
+                        handle->debug_print("vs1053b: read hdat0 failed.\n");      /* read hdat0 failed */
+
+                        return 1;                                                  /* return error */
+                    }
+                    handle->buf[i++] = buf[0];                                     /* save low part */
+                    handle->buf[i++] = buf[1];                                     /* save high part */
+                }
+                if (handle->receive_callback != NULL)                              /* check not null */
+                {
+                    handle->receive_callback(VS1053B_TYPE_RECORD_READ,
+                                             handle->cur_pos);                     /* run callback */
+                }
+                res = handle->audio_write(handle->cur_pos, l * 2, handle->buf);    /* write buffer */
                 if (res != 0)                                                      /* check result */
                 {
-                    handle->debug_print("vs1053b: read hdat0 failed.\n");          /* read hdat0 failed */
+                    handle->debug_print("vs1053b: audio write failed.\n");         /* audio write failed */
 
                     return 1;                                                      /* return error */
                 }
-                handle->buf[i++] = buf[1];                                         /* save low part */
-                handle->buf[i++] = buf[0];                                         /* save high part */
-            }
-            if (handle->receive_callback != NULL)                                  /* check not null */
-            {
-                handle->receive_callback(VS1053B_TYPE_RECORD_READ,
-                                         handle->cur_pos);                         /* run callback */
-            }
-            if (handle->receive_callback != NULL)                                  /* check not null */
-            {
-                handle->receive_callback(VS1053B_TYPE_RECORD_OVER,
-                                         handle->cur_pos);                         /* run callback */
-            }
-            handle->debug_print("vs1053b: buffer is over.\n");                     /* buffer is over */
-        }
-        else
-        {
-                                                                                   /* do nothing */
-        }
+                handle->cur_pos += l * 2;                                          /* add bytes */
+                if (handle->receive_callback != NULL)                              /* check not null */
+                {
+                    handle->receive_callback(VS1053B_TYPE_RECORD_WRITE,
+                                             handle->cur_pos);                     /* run callback */
+                }
+                if (l < 256)                                                       /* check 256 */
+                {
+                    res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT0, b, 2);     /* read the hdat0 */
+                    if (res != 0)                                                  /* check result */
+                    {
+                        handle->debug_print("vs1053b: read hdat0 failed.\n");      /* read hdat0 failed */
 
-        return 0;                                                                  /* success return 0 */
+                        return 1;                                                  /* return error */
+                    }
+                    res = a_vs1053b_spi_read(handle, VS1053B_REG_AICTRL3, buf, 2); /* read the aictrl3 */
+                    if (res != 0)                                                  /* check result */
+                    {
+                        handle->debug_print("vs1053b: read hdat1 failed.\n");      /* read hdat1 failed */
+
+                        return 1;                                                  /* return error */
+                    }
+                    res = a_vs1053b_spi_read(handle, VS1053B_REG_AICTRL3, buf, 2); /* read the aictrl3 */
+                    if (res != 0)                                                  /* check result */
+                    {
+                        handle->debug_print("vs1053b: read hdat1 failed.\n");      /* read hdat1 failed */
+
+                        return 1;                                                  /* return error */
+                    }
+                    dat1 = ((uint16_t)(buf[0]) << 8) | buf[1];                     /* combine the config */
+                    if (!(dat1 & (1 << 2)))
+                    {
+                        res = handle->audio_write(handle->cur_pos, 2, b);          /* write buffer */
+                        if (res != 0)                                              /* check result */
+                        {
+                            handle->debug_print("vs1053b: audio write failed.\n"); /* audio write failed */
+
+                            return 1;                                              /* return error */
+                        }
+                        handle->cur_pos += 2;                                      /* add bytes */
+                    }
+                    else
+                    {
+                        res = handle->audio_write(handle->cur_pos, 1, b);          /* write buffer */
+                        if (res != 0)                                              /* check result */
+                        {
+                            handle->debug_print("vs1053b: audio write failed.\n"); /* audio write failed */
+
+                            return 1;                                              /* return error */
+                        }
+                        handle->cur_pos += 1;                                      /* add bytes */
+                    }
+                }
+            }
+            
+            return 0;                                                              /* success return 0 */
+        }
+        else                                                                       /* wav */
+        {
+            uint16_t i;
+            uint16_t dat1;
+
+            a_period(handle);                                                      /* run period callback */
+            if ((handle->pause != 0) || (handle->status == VS1053B_STATUS_STOP))   /* if pause and return */
+            {
+                return 0;                                                          /* success return 0 */
+            }
+
+            if (a_check_busy_pin(handle) != 0)                                     /* check busy */
+            {
+                handle->debug_print("vs1053b: chip is busy.\n");                   /* chip is busy */
+
+                return 1;                                                          /* return error */
+            }
+            res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT1, buf, 2);           /* read the hdat1 */
+            if (res != 0)                                                          /* check result */
+            {
+                handle->debug_print("vs1053b: read hdat1 failed.\n");              /* read hdat1 failed */
+
+                return 1;                                                          /* return error */
+            }
+            dat1 = ((uint16_t)(buf[0]) << 8) | buf[1];                             /* combine the config */
+            if ((dat1 >= 256) && (dat1 < 896))                                     /* check range */
+            {
+                i = 0;                                                             /* init 0 */
+                while (i < 512)                                                    /* 512 bytes */
+                {
+                    res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT0, buf, 2);   /* read the hdat0 */
+                    if (res != 0)                                                  /* check result */
+                    {
+                        handle->debug_print("vs1053b: read hdat0 failed.\n");      /* read hdat0 failed */
+
+                        return 1;                                                  /* return error */
+                    }
+                    handle->buf[i++] = buf[1];                                     /* save low part */
+                    handle->buf[i++] = buf[0];                                     /* save high part */
+                }
+                if (handle->receive_callback != NULL)                              /* check not null */
+                {
+                    handle->receive_callback(VS1053B_TYPE_RECORD_READ,
+                                             handle->cur_pos);                     /* run callback */
+                }
+                res = handle->audio_write(handle->cur_pos, 512, handle->buf);      /* write buffer */
+                if (res != 0)                                                      /* check result */
+                {
+                    handle->debug_print("vs1053b: audio write failed.\n");         /* audio write failed */
+
+                    return 1;                                                      /* return error */
+                }
+                handle->cur_pos += 512;                                            /* add 512 bytes */
+                if (handle->receive_callback != NULL)                              /* check not null */
+                {
+                    handle->receive_callback(VS1053B_TYPE_RECORD_WRITE,
+                                             handle->cur_pos);                     /* run callback */
+                }
+            }
+            else if (dat1 >= 896)
+            {
+                i = 0;                                                             /* init 0 */
+                while (i < 512)                                                    /* 512 bytes */
+                {
+                    res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT0, buf, 2);   /* read the hdat0 */
+                    if (res != 0)                                                  /* check result */
+                    {
+                        handle->debug_print("vs1053b: read hdat0 failed.\n");      /* read hdat0 failed */
+
+                        return 1;                                                  /* return error */
+                    }
+                    handle->buf[i++] = buf[1];                                     /* save low part */
+                    handle->buf[i++] = buf[0];                                     /* save high part */
+                }
+                if (handle->receive_callback != NULL)                              /* check not null */
+                {
+                    handle->receive_callback(VS1053B_TYPE_RECORD_READ,
+                                             handle->cur_pos);                     /* run callback */
+                }
+                if (handle->receive_callback != NULL)                              /* check not null */
+                {
+                    handle->receive_callback(VS1053B_TYPE_RECORD_OVER,
+                                             handle->cur_pos);                     /* run callback */
+                }
+                handle->debug_print("vs1053b: buffer is over.\n");                 /* buffer is over */
+            }
+            else
+            {
+                                                                                   /* do nothing */
+            }
+
+            return 0;                                                              /* success return 0 */
+        }
     }
     else
     {
@@ -5555,11 +6726,13 @@ uint8_t vs1053b_play(vs1053b_handle_t *handle, char *path)
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
  *            - 4 audio working
+ *            - 5 sample rate doesn't match patch
  * @note      none
  */
 uint8_t vs1053b_record(vs1053b_handle_t *handle, char *path, uint32_t sample_rate)
 {
     uint8_t res;
+    uint8_t buf[2];
     uint32_t sec;
     uint32_t us;
 
@@ -5592,34 +6765,96 @@ uint8_t vs1053b_record(vs1053b_handle_t *handle, char *path, uint32_t sample_rat
 
         return 1;                                                      /* return error */
     }
-    handle->wav.chunk_id[0] = 'R';                                     /* R */
-    handle->wav.chunk_id[1] = 'I';                                     /* I */
-    handle->wav.chunk_id[2] = 'F';                                     /* F */
-    handle->wav.chunk_id[3] = 'F';                                     /* F */
-    handle->wav.chunk_size = 0x00000000;                               /* init 0 */
-    handle->wav.format[0] = 'W';                                       /* W */
-    handle->wav.format[1] = 'A';                                       /* A */
-    handle->wav.format[2] = 'V';                                       /* V */
-    handle->wav.format[3] = 'E';                                       /* E */
-    handle->wav.sub_chunk1_id[0] = 'f';                                /* f */
-    handle->wav.sub_chunk1_id[1] = 'm';                                /* m */
-    handle->wav.sub_chunk1_id[2] = 't';                                /* t */
-    handle->wav.sub_chunk1_id[3] = 0x20;                               /* 0x20 */
-    handle->wav.sub_chunk1_size = 16;                                  /* 16 bytes */
-    handle->wav.audio_format = 0x01;                                   /* pcm */
-    handle->wav.num_channel = 1;                                       /* 1 channel */
-    handle->wav.sample_rate = sample_rate;                             /* set sample rate */
-    handle->wav.byte_rate = handle->wav.sample_rate * 2;               /* double */
-    handle->wav.block_align = 2;                                       /* 2 bytes */
-    handle->wav.bit_per_sample = 16;                                   /* 16 bits */
-    handle->wav.sub_chunk2_id[0] = 'd';                                /* d */
-    handle->wav.sub_chunk2_id[1] = 'a';                                /* a */
-    handle->wav.sub_chunk2_id[2] = 't';                                /* t */
-    handle->wav.sub_chunk2_id[3] = 'a';                                /* a */
-    handle->wav.sub_chunk2_size = 0x00000000;                          /* init 0 */
-    if (a_vs1053b_write_wav_header(handle, &handle->wav) != 0)         /* write wav header */
+    if (handle->record_type != 0)                                      /* ogg */
     {
-        return 1;                                                      /* return error */
+        if ((handle->plugin_patch_type >= 0x02) && 
+            (handle->plugin_patch_type <= 0x0C))                       /* 8000hz */
+        {
+            if (sample_rate != 8000)                                   /* check sample rate */
+            {
+                handle->debug_print("vs1053b: sample rate "
+                                    "doesn't match path.\n");          /* sample rate doesn't match patch */
+
+                return 5;                                              /* return error */
+            }
+        }
+        else if ((handle->plugin_patch_type >= 0x0D) && 
+                 (handle->plugin_patch_type <= 0x22))                  /* 16000hz */
+        {
+            if (sample_rate != 16000)                                  /* check sample rate */
+            {
+                handle->debug_print("vs1053b: sample rate "
+                                    "doesn't match path.\n");          /* sample rate doesn't match patch */
+
+                return 5;                                              /* return error */
+            }
+        }
+        else if ((handle->plugin_patch_type >= 0x23) && 
+                 (handle->plugin_patch_type <= 0x2E))                  /* 44100hz */
+        {
+            if (sample_rate != 44100)                                  /* check sample rate */
+            {
+                handle->debug_print("vs1053b: sample rate "
+                                    "doesn't match path.\n");          /* sample rate doesn't match patch */
+
+                return 5;                                              /* return error */
+            }
+        }
+        else
+        {
+            handle->debug_print("vs1053b: sample rate "
+                                "doesn't match path.\n");              /* sample rate doesn't match patch */
+
+            return 5;                                                  /* return error */
+        }
+
+        if (a_check_busy_pin(handle) != 0)                             /* check busy */
+        {
+            handle->debug_print("vs1053b: chip is busy.\n");           /* chip is busy */
+
+            return 1;                                                  /* return error */
+        }
+        buf[0] = 0x00;                                                 /* set msb */
+        buf[1] = 0x34;                                                 /* set lsb */
+        res = a_vs1053b_spi_write(handle, VS1053B_REG_AIADDR, buf, 2); /* write aiaddr */
+        if (res != 0)                                                  /* check result */
+        {
+            handle->debug_print("vs1053b: write aiaddr failed.\n");    /* write aiaddr failed */
+
+            return 1;                                                  /* return error */
+        }
+    }
+    else                                                               /* wav */
+    {
+        handle->wav.chunk_id[0] = 'R';                                 /* R */
+        handle->wav.chunk_id[1] = 'I';                                 /* I */
+        handle->wav.chunk_id[2] = 'F';                                 /* F */
+        handle->wav.chunk_id[3] = 'F';                                 /* F */
+        handle->wav.chunk_size = 0x00000000;                           /* init 0 */
+        handle->wav.format[0] = 'W';                                   /* W */
+        handle->wav.format[1] = 'A';                                   /* A */
+        handle->wav.format[2] = 'V';                                   /* V */
+        handle->wav.format[3] = 'E';                                   /* E */
+        handle->wav.sub_chunk1_id[0] = 'f';                            /* f */
+        handle->wav.sub_chunk1_id[1] = 'm';                            /* m */
+        handle->wav.sub_chunk1_id[2] = 't';                            /* t */
+        handle->wav.sub_chunk1_id[3] = 0x20;                           /* 0x20 */
+        handle->wav.sub_chunk1_size = 16;                              /* 16 bytes */
+        handle->wav.audio_format = 0x01;                               /* pcm */
+        handle->wav.num_channel = 1;                                   /* 1 channel */
+        handle->wav.sample_rate = sample_rate;                         /* set sample rate */
+        handle->wav.byte_rate = handle->wav.sample_rate * 2;           /* double */
+        handle->wav.block_align = 2;                                   /* 2 bytes */
+        handle->wav.bit_per_sample = 16;                               /* 16 bits */
+        handle->wav.sub_chunk2_id[0] = 'd';                            /* d */
+        handle->wav.sub_chunk2_id[1] = 'a';                            /* a */
+        handle->wav.sub_chunk2_id[2] = 't';                            /* t */
+        handle->wav.sub_chunk2_id[3] = 'a';                            /* a */
+        handle->wav.sub_chunk2_size = 0x00000000;                      /* init 0 */
+        if (a_vs1053b_write_wav_header(handle, &handle->wav) != 0)     /* write wav header */
+        {
+            return 1;                                                  /* return error */
+        }
     }
     handle->timestamp_read(&sec, &us);                                 /* read timestamp */
     handle->timestamp = (((uint64_t)sec) * 1000000 + ((uint64_t)us));  /* set timestamp */
@@ -5648,96 +6883,263 @@ uint8_t vs1053b_stop(vs1053b_handle_t *handle)
     uint8_t buf[2];
     uint16_t prev;
 
-    if (handle == NULL)                                                    /* check handle */
+    if (handle == NULL)                                                            /* check handle */
     {
-        return 2;                                                          /* return error */
+        return 2;                                                                  /* return error */
     }
-    if (handle->inited != 1)                                               /* check handle initialization */
+    if (handle->inited != 1)                                                       /* check handle initialization */
     {
-        return 3;                                                          /* return error */
+        return 3;                                                                  /* return error */
     }
-    if (handle->status == 0)                                               /* check played */
+    if (handle->status == 0)                                                       /* check played */
     {
-        handle->debug_print("vs1053b: audio not working.\n");              /* audio not working */
+        handle->debug_print("vs1053b: audio not working.\n");                      /* audio not working */
 
-        return 4;                                                          /* return error */
+        return 4;                                                                  /* return error */
     }
 
-    if (handle->status == 1)                                               /* play */
+    if (handle->status == 1)                                                       /* play */
     {
-        if (a_vs1053b_stop(handle) != 0)                                   /* stop audio */
+        if (a_vs1053b_stop(handle) != 0)                                           /* stop audio */
         {
-            return 1;                                                      /* return error */
+            return 1;                                                              /* return error */
         }
-        if (handle->audio_deinit() != 0)                                   /* audio deinit */
+        if (handle->audio_deinit() != 0)                                           /* audio deinit */
         {
-            handle->debug_print("vs1053b: audio deinit failed.\n");        /* audio deinit failed */
+            handle->debug_print("vs1053b: audio deinit failed.\n");                /* audio deinit failed */
 
-            return 1;                                                      /* return error */
+            return 1;                                                              /* return error */
         }
-        handle->status = VS1053B_STATUS_STOP;                              /* set not working */
-        if (handle->receive_callback != NULL)                              /* check not null */
+        handle->status = VS1053B_STATUS_STOP;                                      /* set not working */
+        if (handle->receive_callback != NULL)                                      /* check not null */
         {
             handle->receive_callback(VS1053B_TYPE_PLAY_END,
-                                     handle->cur_pos);                     /* run callback */
+                                     handle->cur_pos);                             /* run callback */
         }
 
-        return 0;                                                          /* success return 0 */
+        return 0;                                                                  /* success return 0 */
     }
-    else if (handle->status == 2)                                          /* record */
+    else if (handle->status == 2)                                                  /* record */
     {
-        if (a_check_busy_pin(handle) != 0)                                 /* check busy */
+        if ((handle->pause != 0) || (handle->status == VS1053B_STATUS_STOP))       /* if pause and return */
         {
-            handle->debug_print("vs1053b: chip is busy.\n");               /* chip is busy */
+            return 0;                                                              /* success return 0 */
+        }
+        
+        if (handle->record_type != 0)                                              /* ogg */
+        {
+            uint8_t b[2];
+            uint16_t i;
+            uint16_t j;
+            uint16_t l;
+            uint16_t ll;
+            uint16_t dat1;
+            
+            if (a_check_busy_pin(handle) != 0)                                     /* check busy */
+            {
+                handle->debug_print("vs1053b: chip is busy.\n");                   /* chip is busy */
 
-            return 1;                                                      /* return error */
+                return 1;                                                          /* return error */
+            }
+            buf[0] = 0x00;                                                         /* 0x00 */
+            buf[1] = 0x01;                                                         /* 0x01 */
+            res = a_vs1053b_spi_write(handle, VS1053B_REG_AICTRL3, buf, 2);        /* read the aictrl3 */
+            if (res != 0)                                                          /* check result */
+            {
+                handle->debug_print("vs1053b: read hdat1 failed.\n");              /* read hdat1 failed */
+
+                return 1;                                                          /* return error */
+            }
+            
+            if (a_check_busy_pin(handle) != 0)                                     /* check busy */
+            {
+                handle->debug_print("vs1053b: chip is busy.\n");                   /* chip is busy */
+
+                return 1;                                                          /* return error */
+            }
+            res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT1, buf, 2);           /* read the hdat1 */
+            if (res != 0)                                                          /* check result */
+            {
+                handle->debug_print("vs1053b: read hdat1 failed.\n");              /* read hdat1 failed */
+
+                return 1;                                                          /* return error */
+            }
+            dat1 = ((uint16_t)(buf[0]) << 8) | buf[1];                             /* combine the config */
+            
+            if (a_check_busy_pin(handle) != 0)                                     /* check busy */
+            {
+                handle->debug_print("vs1053b: chip is busy.\n");                   /* chip is busy */
+
+                return 1;                                                          /* return error */
+            }
+            res = a_vs1053b_spi_read(handle, VS1053B_REG_AICTRL3, buf, 2);         /* read the aictrl3 */
+            if (res != 0)                                                          /* check result */
+            {
+                handle->debug_print("vs1053b: read hdat1 failed.\n");              /* read hdat1 failed */
+
+                return 1;                                                          /* return error */
+            }
+            ll = ((uint16_t)(buf[0]) << 8) | buf[1];                               /* combine the config */
+            if ((ll & (1 << 1)) != 0)                                              /* check next state*/
+            {
+                if (a_check_busy_pin(handle) != 0)                                 /* check busy */
+                {
+                    handle->debug_print("vs1053b: chip is busy.\n");               /* chip is busy */
+
+                    return 1;                                                      /* return error */
+                }
+                res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT1, buf, 2);       /* read the hdat1 */
+                if (res != 0)                                                      /* check result */
+                {
+                    handle->debug_print("vs1053b: read hdat1 failed.\n");          /* read hdat1 failed */
+
+                    return 1;                                                      /* return error */
+                }
+                dat1 = ((uint16_t)(buf[0]) << 8) | buf[1];                         /* combine the config */
+            }
+            
+            while (dat1 >= 256)                                                    /* check length */
+            {
+                l = MIN(dat1, 256);                                                /* get min */
+                dat1 -= l;                                                         /* dat1 - length */
+                if (((ll & (1 << 1)) != 0) && (!dat1))                             /* check data */
+                {
+                    l--;                                                           /* length-- */
+                }
+                i = 0;                                                             /* init 0 */
+                for (j = 0; j < l; j++)                                            /* loop all */
+                {
+                    res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT0, buf, 2);   /* read the hdat0 */
+                    if (res != 0)                                                  /* check result */
+                    {
+                        handle->debug_print("vs1053b: read hdat0 failed.\n");      /* read hdat0 failed */
+
+                        return 1;                                                  /* return error */
+                    }
+                    handle->buf[i++] = buf[0];                                     /* save low part */
+                    handle->buf[i++] = buf[1];                                     /* save high part */
+                }
+                if (handle->receive_callback != NULL)                              /* check not null */
+                {
+                    handle->receive_callback(VS1053B_TYPE_RECORD_READ,
+                                             handle->cur_pos);                     /* run callback */
+                }
+                res = handle->audio_write(handle->cur_pos, l * 2, handle->buf);    /* write buffer */
+                if (res != 0)                                                      /* check result */
+                {
+                    handle->debug_print("vs1053b: audio write failed.\n");         /* audio write failed */
+
+                    return 1;                                                      /* return error */
+                }
+                handle->cur_pos += l * 2;                                          /* add bytes */
+                if (handle->receive_callback != NULL)                              /* check not null */
+                {
+                    handle->receive_callback(VS1053B_TYPE_RECORD_WRITE,
+                                             handle->cur_pos);                     /* run callback */
+                }
+                if (l < 256)                                                       /* check 256 */
+                {
+                    res = a_vs1053b_spi_read(handle, VS1053B_REG_HDAT0, b, 2);     /* read the hdat0 */
+                    if (res != 0)                                                  /* check result */
+                    {
+                        handle->debug_print("vs1053b: read hdat0 failed.\n");      /* read hdat0 failed */
+
+                        return 1;                                                  /* return error */
+                    }
+                    res = a_vs1053b_spi_read(handle, VS1053B_REG_AICTRL3, buf, 2); /* read the aictrl3 */
+                    if (res != 0)                                                  /* check result */
+                    {
+                        handle->debug_print("vs1053b: read hdat1 failed.\n");      /* read hdat1 failed */
+
+                        return 1;                                                  /* return error */
+                    }
+                    res = a_vs1053b_spi_read(handle, VS1053B_REG_AICTRL3, buf, 2); /* read the aictrl3 */
+                    if (res != 0)                                                  /* check result */
+                    {
+                        handle->debug_print("vs1053b: read hdat1 failed.\n");      /* read hdat1 failed */
+
+                        return 1;                                                  /* return error */
+                    }
+                    dat1 = ((uint16_t)(buf[0]) << 8) | buf[1];                     /* combine the config */
+                    if (!(dat1 & (1 << 2)))
+                    {
+                        res = handle->audio_write(handle->cur_pos, 2, b);          /* write buffer */
+                        if (res != 0)                                              /* check result */
+                        {
+                            handle->debug_print("vs1053b: audio write failed.\n"); /* audio write failed */
+
+                            return 1;                                              /* return error */
+                        }
+                        handle->cur_pos += 2;                                      /* add bytes */
+                    }
+                    else
+                    {
+                        res = handle->audio_write(handle->cur_pos, 1, b);          /* write buffer */
+                        if (res != 0)                                              /* check result */
+                        {
+                            handle->debug_print("vs1053b: audio write failed.\n"); /* audio write failed */
+
+                            return 1;                                              /* return error */
+                        }
+                        handle->cur_pos += 1;                                      /* add bytes */
+                    }
+                }
+            }
+        }
+        else                                                                       /* wav */
+        {
+            if (a_check_busy_pin(handle) != 0)                                     /* check busy */
+            {
+                handle->debug_print("vs1053b: chip is busy.\n");                   /* chip is busy */
+
+                return 1;                                                          /* return error */
+            }
+
+            res = a_vs1053b_spi_read(handle, VS1053B_REG_MODE, buf, 2);            /* read the mode */
+            if (res != 0)                                                          /* check result */
+            {
+                handle->debug_print("vs1053b: read mode failed.\n");               /* read mode failed */
+
+                return 1;                                                          /* return error */
+            }
+            prev = ((uint16_t)(buf[0]) << 8) | buf[1];                             /* combine the config */
+            prev &= ~(1 << 12);                                                    /* clear the settings */
+            prev |= 0 << 12;                                                       /* set the config */
+            buf[0] = (prev >> 8) & 0xFF;                                           /* get msb */
+            buf[1] = (prev >> 0) & 0xFF;                                           /* get lsb */
+            res = a_vs1053b_spi_write(handle, VS1053B_REG_MODE, buf, 2);           /* write the mode */
+            if (res != 0)                                                          /* check result */
+            {
+                handle->debug_print("vs1053b: write mode failed.\n");              /* write mode failed */
+
+                return 1;                                                          /* return error */
+            }
+            handle->wav.chunk_size = handle->cur_pos - 44 + 36;                    /* set chunk size */
+            handle->wav.sub_chunk2_size = handle->cur_pos - 44;                    /* set sub chunk2 size */
+            if (a_vs1053b_write_wav_header(handle, &handle->wav) != 0)             /* write wav header */
+            {
+                return 1;                                                          /* return error */
+            }
+        }
+        if (handle->audio_deinit() != 0)                                           /* audio deinit */
+        {
+            handle->debug_print("vs1053b: audio deinit failed.\n");                /* audio deinit failed */
+
+            return 1;                                                              /* return error */
+        }
+        handle->status = VS1053B_STATUS_STOP;                                      /* set not working */
+        if (handle->receive_callback != NULL)                                      /* check not null */
+        {
+            handle->receive_callback(VS1053B_TYPE_RECORD_END, handle->cur_pos);    /* run callback */
         }
 
-        res = a_vs1053b_spi_read(handle, VS1053B_REG_MODE, buf, 2);        /* read the mode */
-        if (res != 0)                                                      /* check result */
-        {
-            handle->debug_print("vs1053b: read mode failed.\n");           /* read mode failed */
-
-            return 1;                                                      /* return error */
-        }
-        prev = ((uint16_t)(buf[0]) << 8) | buf[1];                         /* combine the config */
-        prev &= ~(1 << 12);                                                /* clear the settings */
-        prev |= 0 << 12;                                                   /* set the config */
-        buf[0] = (prev >> 8) & 0xFF;                                       /* get msb */
-        buf[1] = (prev >> 0) & 0xFF;                                       /* get lsb */
-        res = a_vs1053b_spi_write(handle, VS1053B_REG_MODE, buf, 2);       /* write the mode */
-        if (res != 0)                                                      /* check result */
-        {
-            handle->debug_print("vs1053b: write mode failed.\n");          /* write mode failed */
-
-            return 1;                                                      /* return error */
-        }
-        handle->wav.chunk_size = handle->cur_pos - 44 + 36;                /* set chunk size */
-        handle->wav.sub_chunk2_size = handle->cur_pos - 44;                /* set sub chunk2 size */
-        if (a_vs1053b_write_wav_header(handle, &handle->wav) != 0)         /* write wav header */
-        {
-            return 1;                                                      /* return error */
-        }
-        if (handle->audio_deinit() != 0)                                   /* audio deinit */
-        {
-            handle->debug_print("vs1053b: audio deinit failed.\n");        /* audio deinit failed */
-
-            return 1;                                                      /* return error */
-        }
-        handle->status = VS1053B_STATUS_STOP;                              /* set not working */
-        if (handle->receive_callback != NULL)                              /* check not null */
-        {
-            handle->receive_callback(VS1053B_TYPE_RECORD_END,
-                                     handle->cur_pos);                     /* run callback */
-        }
-
-        return 0;                                                          /* success return 0 */
+        return 0;                                                                  /* success return 0 */
     }
     else
     {
-        handle->debug_print("vs1053b: status is invalid.\n");              /* status is invalid */
+        handle->debug_print("vs1053b: status is invalid.\n");                      /* status is invalid */
 
-        return 5;                                                          /* return error */
+        return 5;                                                                  /* return error */
     }
 }
 
@@ -5988,27 +7390,342 @@ uint8_t vs1053b_parse_info(vs1053b_handle_t *handle, uint16_t dat0, uint16_t dat
  */
 uint8_t vs1053b_get_patch(vs1053b_handle_t *handle, vs1053b_patch_t type, const uint16_t **patch_addr, uint16_t *len)
 {
-    if (handle == NULL)                                 /* check handle */
+    if (handle == NULL)                                            /* check handle */
     {
-        return 2;                                       /* return error */
+        return 2;                                                  /* return error */
     }
-    if (handle->inited != 1)                            /* check handle initialization */
+    if (handle->inited != 1)                                       /* check handle initialization */
     {
-        return 3;                                       /* return error */
-    }
-
-    if (type == VS1053B_PATCH_FLAC)                     /* flac */
-    {
-        *patch_addr = gsc_vs1053b_patch_flac_plugin;    /* set flac plugin address */
-        *len = VS1053B_PATCH_FLAC_PLUGIN_SIZE;          /* set flac plugin size */
-    }
-    else                                                /* wav */
-    {
-        *patch_addr = gsc_vs1053b_patch_wav_plugin;     /* set wav plugin address */
-        *len = VS1053B_PATCH_WAV_PLUGIN_SIZE;           /* set wav plugin size */
+        return 3;                                                  /* return error */
     }
 
-    return 0;                                           /* success return 0 */
+    if (type == VS1053B_PATCH_FLAC)                                /* flac */
+    {
+        *patch_addr = gsc_vs1053b_patch_flac_plugin;               /* set flac plugin address */
+        *len = VS1053B_PATCH_FLAC_PLUGIN_SIZE;                     /* set flac plugin size */
+    }
+#if VS1053B_OGG_VENC08K1Q00 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC08K1Q00)                /* ogg venc08k1q00 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc08k1q00_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC08K1Q00_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q01 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC08K1Q01)                /* ogg venc08k1q01 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc08k1q01_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC08K1Q01_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q02 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC08K1Q02)                /* ogg venc08k1q02 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc08k1q02_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC08K1Q02_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q03 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC08K1Q03)                /* ogg venc08k1q03 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc08k1q03_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC08K1Q03_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q04 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC08K1Q04)                /* ogg venc08k1q04 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc08k1q04_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC08K1Q04_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q05 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC08K1Q05)                /* ogg venc08k1q05 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc08k1q05_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC08K1Q05_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q06 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC08K1Q06)                /* ogg venc08k1q06 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc08k1q06_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC08K1Q06_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q07 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC08K1Q07)                /* ogg venc08k1q07 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc08k1q07_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC08K1Q07_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q08 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC08K1Q08)                /* ogg venc08k1q08 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc08k1q08_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC08K1Q08_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q09 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC08K1Q09)                /* ogg venc08k1q09 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc08k1q09_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC08K1Q09_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q10 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC08K1Q10)                /* ogg venc08k1q10 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc08k1q10_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC08K1Q10_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q00 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K1Q00)                /* ogg venc16k1q00 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k1q00_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K1Q00_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q01 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K1Q01)                /* ogg venc16k1q01 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k1q01_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K1Q01_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q02 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K1Q02)                /* ogg venc16k1q02 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k1q02_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K1Q02_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q03 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K1Q03)                /* ogg venc16k1q03 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k1q03_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K1Q03_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q04 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K1Q04)                /* ogg venc16k1q04 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k1q04_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K1Q04_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q05 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K1Q05)                /* ogg venc16k1q05 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k1q05_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K1Q05_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q06 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K1Q06)                /* ogg venc16k1q06 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k1q06_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K1Q06_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q07 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K1Q07)                /* ogg venc16k1q07 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k1q07_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K1Q07_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q08 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K1Q08)                /* ogg venc16k1q08 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k1q08_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K1Q08_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q09 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K1Q09)                /* ogg venc16k1q09 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k1q09_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K1Q09_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q10 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K1Q10)                /* ogg venc16k1q10 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k1q10_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K1Q10_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q00 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K2Q00)                /* ogg venc16k2q00 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k2q00_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K2Q00_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q01 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K2Q01)                /* ogg venc16k2q01 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k2q01_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K2Q01_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q02 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K2Q02)                /* ogg venc16k2q02 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k2q02_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K2Q02_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q03 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K2Q03)                /* ogg venc16k2q03 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k2q03_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K2Q03_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q04 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K2Q04)                /* ogg venc16k2q04 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k2q04_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K2Q04_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q05 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K2Q05)                /* ogg venc16k2q05 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k2q05_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K2Q05_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q06 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K2Q06)                /* ogg venc16k2q06 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k2q06_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K2Q06_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q07 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K2Q07)                /* ogg venc16k2q07 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k2q07_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K2Q07_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q08 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K2Q08)                /* ogg venc16k2q08 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k2q08_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K2Q08_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q09 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K2Q09)                /* ogg venc16k2q09 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k2q09_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K2Q09_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q10 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC16K2Q10)                /* ogg venc16k2q10 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc16k2q10_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC16K2Q10_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q00 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K1Q00)                /* ogg venc44k1q00 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k1q00_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K1Q00_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q01 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K1Q01)                /* ogg venc44k1q01 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k1q01_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K1Q01_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q02 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K1Q02)                /* ogg venc44k1q02 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k1q02_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K1Q02_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q03 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K1Q03)                /* ogg venc44k1q03 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k1q03_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K1Q03_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q04 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K1Q04)                /* ogg venc44k1q04 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k1q04_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K1Q04_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q05 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K1Q05)                /* ogg venc44k1q05 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k1q05_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K1Q05_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q00 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K2Q00)                /* ogg venc44k2q00 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k2q00_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K2Q00_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q01 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K2Q01)                /* ogg venc44k2q01 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k2q01_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K2Q01_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q02 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K2Q02)                /* ogg venc44k2q02 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k2q02_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K2Q02_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q03 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K2Q03)                /* ogg venc44k2q03 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k2q03_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K2Q03_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q04 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K2Q04)                /* ogg venc44k2q04 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k2q04_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K2Q04_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q05 != 0
+    else if (type == VS1053B_PATCH_OGG_VENC44K2Q05)                /* ogg venc44k2q05 */
+    {
+        *patch_addr = gsc_vs1053b_patch_ogg_venc44k2q05_plugin;    /* set plugin address */
+        *len = VS1053B_PATCH_OGG_VENC44K2Q05_PLUGIN_SIZE;          /* set plugin size */
+    }
+#endif
+    else                                                           /* wav */
+    {
+        *patch_addr = gsc_vs1053b_patch_wav_plugin;                /* set wav plugin address */
+        *len = VS1053B_PATCH_WAV_PLUGIN_SIZE;                      /* set wav plugin size */
+    }
+
+    return 0;                                                      /* success return 0 */
 }
 
 /**
@@ -6021,6 +7738,7 @@ uint8_t vs1053b_get_patch(vs1053b_handle_t *handle, vs1053b_patch_t type, const 
  *            - 1 load patch failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
+ *            - 4 invalid path address
  * @note      none
  */
 uint8_t vs1053b_load_patch(vs1053b_handle_t *handle, const uint16_t *patch, uint16_t len)
@@ -6041,6 +7759,291 @@ uint8_t vs1053b_load_patch(vs1053b_handle_t *handle, const uint16_t *patch, uint
         return 3;                                                                /* return error */
     }
 
+    if (patch == gsc_vs1053b_patch_flac_plugin)                                  /* flac */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_FLAC;                          /* save type */
+    }
+#if VS1053B_OGG_VENC08K1Q00 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc08k1q00_plugin)                  /* venc08k1q00 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC08K1Q00;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q01 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc08k1q01_plugin)                  /* venc08k1q01 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC08K1Q01;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q02 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc08k1q02_plugin)                  /* venc08k1q02 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC08K1Q02;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q03 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc08k1q03_plugin)                  /* venc08k1q03 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC08K1Q03;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q04 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc08k1q04_plugin)                  /* venc08k1q04 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC08K1Q04;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q05 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc08k1q05_plugin)                  /* venc08k1q05 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC08K1Q05;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q06 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc08k1q06_plugin)                  /* venc08k1q06 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC08K1Q06;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q07 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc08k1q07_plugin)                  /* venc08k1q07 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC08K1Q07;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q08 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc08k1q08_plugin)                  /* venc08k1q08 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC08K1Q08;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q09 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc08k1q09_plugin)                  /* venc08k1q09 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC08K1Q09;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC08K1Q10 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc08k1q10_plugin)                  /* venc08k1q10 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC08K1Q10;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q00 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k1q00_plugin)                  /* venc16k1q00 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K1Q00;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q01 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k1q01_plugin)                  /* venc16k1q01 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K1Q01;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q02 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k1q02_plugin)                  /* venc16k1q02 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K1Q02;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q03 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k1q03_plugin)                  /* venc16k1q03 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K1Q03;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q04 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k1q04_plugin)                  /* venc16k1q04 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K1Q04;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q05 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k1q05_plugin)                  /* venc16k1q05 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K1Q05;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q06 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k1q06_plugin)                  /* venc16k1q06 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K1Q06;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q07 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k1q07_plugin)                  /* venc16k1q07 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K1Q07;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q08 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k1q08_plugin)                  /* venc16k1q08 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K1Q08;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q09 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k1q09_plugin)                  /* venc16k1q09 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K1Q09;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K1Q10 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k1q10_plugin)                  /* venc16k1q10 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K1Q10;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q00 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k2q00_plugin)                  /* venc16k2q00 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K2Q00;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q01 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k2q01_plugin)                  /* venc16k2q01 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K2Q01;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q02 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k2q02_plugin)                  /* venc16k2q02 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K2Q02;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q03 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k2q03_plugin)                  /* venc16k2q03 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K2Q03;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q04 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k2q04_plugin)                  /* venc16k2q04 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K2Q04;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q05 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k2q05_plugin)                  /* venc16k2q05 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K2Q05;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q06 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k2q06_plugin)                  /* venc16k2q06 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K2Q06;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q07 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k2q07_plugin)                  /* venc16k2q07 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K2Q07;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q08 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k2q08_plugin)                  /* venc16k2q08 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K2Q08;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q09 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k2q09_plugin)                  /* venc16k2q09 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K2Q09;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC16K2Q10 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc16k2q10_plugin)                  /* venc16k2q10 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC16K2Q10;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q00 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k1q00_plugin)                  /* venc44k1q00 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K1Q00;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q01 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k1q01_plugin)                  /* venc44k1q01 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K1Q01;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q02 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k1q02_plugin)                  /* venc44k1q02 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K1Q02;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q03 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k1q03_plugin)                  /* venc44k1q03 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K1Q03;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q04 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k1q04_plugin)                  /* venc44k1q04 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K1Q04;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K1Q05 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k1q05_plugin)                  /* venc44k1q05 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K1Q05;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q00 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k2q00_plugin)                  /* venc44k2q00 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K2Q00;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q01 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k2q01_plugin)                  /* venc44k2q01 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K2Q01;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q02 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k2q02_plugin)                  /* venc44k2q02 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K2Q02;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q03 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k2q03_plugin)                  /* venc44k2q03 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K2Q03;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q04 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k2q04_plugin)                  /* venc44k2q04 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K2Q04;               /* save type */
+    }
+#endif
+#if VS1053B_OGG_VENC44K2Q05 != 0
+    else if (patch == gsc_vs1053b_patch_ogg_venc44k2q05_plugin)                  /* venc44k2q05 */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_OGG_VENC44K2Q05;               /* save type */
+    }
+#endif
+    else if (patch == gsc_vs1053b_patch_wav_plugin)                              /* wav */
+    {
+        handle->plugin_patch_type = VS1053B_PATCH_WAV;                           /* save type */
+    }
+    else
+    {
+        handle->debug_print("vs1053b: invalid path address.\n");                 /* invalid path address */
+
+        return 4;                                                                /* return error */
+    }
+    
     i = 0;                                                                       /* init 0 */
     while (i < len)                                                              /* loop */
     {

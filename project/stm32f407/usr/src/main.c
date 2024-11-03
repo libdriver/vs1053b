@@ -345,7 +345,7 @@ uint8_t vs1053b(uint8_t argc, char **argv)
         uint8_t res;
         
         /* play init */
-        res = vs1053b_basic_init(VS1053B_MODE_PLAY, a_callback);
+        res = vs1053b_basic_init(VS1053B_MODE_PLAY, VS1053B_RECORD_FORMAT_WAV, a_callback);
         if (res != 0)
         {
             return 1;
@@ -393,11 +393,23 @@ uint8_t vs1053b(uint8_t argc, char **argv)
         /* output */
         vs1053b_interface_debug_print("start record\n");
         
-        /* record init */
-        res = vs1053b_basic_init(VS1053B_MODE_RECORD, a_callback);
-        if (res != 0)
+        if (strstr(file, ".ogg") != NULL)
         {
-            return 1;
+            /* record init */
+            res = vs1053b_basic_init(VS1053B_MODE_RECORD, VS1053B_RECORD_FORMAT_OGG, a_callback);
+            if (res != 0)
+            {
+                return 1;
+            }
+        }
+        else
+        {
+            /* record init */
+            res = vs1053b_basic_init(VS1053B_MODE_RECORD, VS1053B_RECORD_FORMAT_WAV, a_callback);
+            if (res != 0)
+            {
+                return 1;
+            }
         }
         
         /* set timeout */

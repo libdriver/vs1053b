@@ -362,7 +362,31 @@ vs1053b: vs1053b_clock_frequency_convert_to_register/vs1053b_clock_frequency_con
 vs1053b: clock frequency convert check 12000000.00 and 12000000.00.
 vs1053b: vs1053b_vol_convert_to_register/vs1053b_vol_convert_to_data test.
 vs1053b: vol convert check 3.50 and 3.50.
-vs1053b: vs1053b_vol_convert_to_register/vs1053b_vol_convert_to_data test.
+vs1053b: vs1053b_set_iis_mclk/vs1053b_get_iis_mclk test.
+vs1053b: enable iis mclk.
+vs1053b: check iis mclk ok.
+vs1053b: disable iis mclk.
+vs1053b: check iis mclk ok.
+vs1053b: vs1053b_set_iis/vs1053b_get_iis test.
+vs1053b: enable iis.
+vs1053b: check iis ok.
+vs1053b: disable iis.
+vs1053b: check iis ok.
+vs1053b: vs1053b_set_iis_rate/vs1053b_get_iis_rate test.
+vs1053b: set iis rate 48khz.
+vs1053b: check iis rate ok.
+vs1053b: set iis rate 96hz.
+vs1053b: check iis rate ok.
+vs1053b: set iis rate 192hz.
+vs1053b: check iis rate ok.
+vs1053b: vs1053b_set_gpio_direction/vs1053b_get_gpio_direction test.
+vs1053b: set gpio direction 0x00F0.
+vs1053b: check gpio direction ok.
+vs1053b: vs1053b_set_gpio_output/vs1053b_get_gpio_output test.
+vs1053b: set gpio output 0x0010.
+vs1053b: check gpio output ok.
+vs1053b: vs1053b_get_gpio_input test.
+vs1053b: gpio input is 0x091C.
 vs1053b: finish register test.
 ```
 
@@ -589,6 +613,24 @@ vs1053b: finish record test.
 ```
 
 ```shell
+./vs1053b -t record --file=record.ogg --time=60
+
+vs1053b: chip is VLSI VS1053B.
+vs1053b: manufacturer is VLSI.
+vs1053b: interface is SPI.
+vs1053b: driver version is 1.0.
+vs1053b: min supply voltage is 2.6V.
+vs1053b: max supply voltage is 3.6V.
+vs1053b: max current is 60.00mA.
+vs1053b: max temperature is 85.0C.
+vs1053b: min temperature is -40.0C.
+vs1053b: start record test.
+vs1053b: irq record end with 1202220.
+vs1053b: up to record time.
+vs1053b: finish record test.
+```
+
+```shell
 ./vs1053b -e play --file=music/we-are-the-world.mp3
 
 vs1053b: play time is 00:00:05.
@@ -615,6 +657,14 @@ vs1053b: play end.
 
 start record
 vs1053b: irq record end with 960556.
+vs1053b: up to record time.
+```
+
+```shell
+./vs1053b -e record --file=test.ogg --time=60
+
+start record
+vs1053b: irq record end with 1202732.
 vs1053b: up to record time.
 ```
 

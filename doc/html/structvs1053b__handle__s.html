@@ -140,10 +140,14 @@ Data Fields</h2></td></tr>
 <tr class="separator:af3c05466583eb49ae2f3978a82fab72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11452d300d926b97a3d10ff70dc5da35"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvs1053b__handle__s.html#a11452d300d926b97a3d10ff70dc5da35">timestamp_read</a> )(uint32_t *sec, uint32_t *us)</td></tr>
 <tr class="separator:a11452d300d926b97a3d10ff70dc5da35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3147d1fe204f2dd4f2ffcf6eb243c239"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvs1053b__handle__s.html#a3147d1fe204f2dd4f2ffcf6eb243c239">buf</a> [<a class="el" href="group__vs1053b__driver.html#ga80e4859c3f889bb55ef42f7ea0d3b460">VS1053B_BUFFER_SIZE</a>]</td></tr>
+<tr class="memitem:a3147d1fe204f2dd4f2ffcf6eb243c239"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvs1053b__handle__s.html#a3147d1fe204f2dd4f2ffcf6eb243c239">buf</a> [<a class="el" href="group__vs1053b__basic__driver.html#ga80e4859c3f889bb55ef42f7ea0d3b460">VS1053B_BUFFER_SIZE</a>]</td></tr>
 <tr class="separator:a3147d1fe204f2dd4f2ffcf6eb243c239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19bedf28d2b9748f6a62d9ae93f4e68f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvs1053b__handle__s.html#a19bedf28d2b9748f6a62d9ae93f4e68f">inited</a></td></tr>
 <tr class="separator:a19bedf28d2b9748f6a62d9ae93f4e68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba867b99c2b823386437aeef37f3390"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvs1053b__handle__s.html#a7ba867b99c2b823386437aeef37f3390">record_type</a></td></tr>
+<tr class="separator:a7ba867b99c2b823386437aeef37f3390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af346488860fbcd1e77d0d2c0c8a10c28"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvs1053b__handle__s.html#af346488860fbcd1e77d0d2c0c8a10c28">plugin_patch_type</a></td></tr>
+<tr class="separator:af346488860fbcd1e77d0d2c0c8a10c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade818037fd6c985038ff29656089758d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvs1053b__handle__s.html#ade818037fd6c985038ff29656089758d">status</a></td></tr>
 <tr class="separator:ade818037fd6c985038ff29656089758d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c1700a5b4f7caa63984a84173a11d8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvs1053b__handle__s.html#a21c1700a5b4f7caa63984a84173a11d8">pause</a></td></tr>
@@ -166,7 +170,7 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>vs1053b handle structure definition </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00275">275</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00654">654</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="aea467c1948ffd35eed6f6b30d9190124"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea467c1948ffd35eed6f6b30d9190124">&#9670;&nbsp;</a></span>audio_deinit</h2>
@@ -181,7 +185,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a audio_deinit function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00294">294</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00673">673</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -198,7 +202,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a audio_init function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00293">293</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00672">672</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -215,7 +219,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a audio_read function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00295">295</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00674">674</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -232,7 +236,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a audio_write function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00296">296</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00675">675</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -243,13 +247,13 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t buf[<a class="el" href="group__vs1053b__driver.html#ga80e4859c3f889bb55ef42f7ea0d3b460">VS1053B_BUFFER_SIZE</a>]</td>
+          <td class="memname">uint8_t buf[<a class="el" href="group__vs1053b__basic__driver.html#ga80e4859c3f889bb55ef42f7ea0d3b460">VS1053B_BUFFER_SIZE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>buffer </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00298">298</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00677">677</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -266,7 +270,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>buffer position </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00303">303</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00684">684</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +287,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>current position </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00302">302</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00683">683</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -300,7 +304,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a debug_print function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00291">291</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00670">670</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -317,7 +321,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a delay_ms function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00290">290</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00669">669</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -334,7 +338,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a dreq_gpio_deinit function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00281">281</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00660">660</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -351,7 +355,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a dreq_gpio_init function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00280">280</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00659">659</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -368,7 +372,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a dreq_gpio_read function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00282">282</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00661">661</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -385,7 +389,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>inited flag </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00299">299</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00678">678</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +406,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>pause </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00301">301</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00682">682</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -419,7 +423,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>period </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00306">306</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00687">687</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -436,7 +440,24 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>period enable </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00307">307</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00688">688</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+
+</div>
+</div>
+<a id="af346488860fbcd1e77d0d2c0c8a10c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af346488860fbcd1e77d0d2c0c8a10c28">&#9670;&nbsp;</a></span>plugin_patch_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t plugin_patch_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>plugin patch type </p>
+
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00680">680</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -453,7 +474,24 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a receive_callback function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00292">292</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00671">671</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+
+</div>
+</div>
+<a id="a7ba867b99c2b823386437aeef37f3390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba867b99c2b823386437aeef37f3390">&#9670;&nbsp;</a></span>record_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t record_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>record type </p>
+
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00679">679</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -470,7 +508,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a reset_gpio_deinit function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00278">278</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00657">657</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -487,7 +525,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a reset_gpio_init function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00277">277</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00656">656</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +542,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a reset_gpio_write function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00279">279</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00658">658</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +559,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>size </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00304">304</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00685">685</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -538,7 +576,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a spi_cmd_deinit function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00284">284</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00663">663</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -555,7 +593,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a spi_cmd_init function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00283">283</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00662">662</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +610,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a spi_cmd_read_address16 function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00285">285</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00664">664</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -589,7 +627,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a spi_cmd_write_address16 function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00286">286</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00665">665</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -606,7 +644,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a spi_dat_deinit function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00288">288</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00667">667</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -623,7 +661,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a spi_dat_init function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00287">287</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00666">666</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +678,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a spi_dat_write_cmd function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00289">289</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00668">668</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -657,7 +695,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>status </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00300">300</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00681">681</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -674,7 +712,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>timestamp </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00305">305</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00686">686</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -691,7 +729,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>point to a timestamp_read function address </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00297">297</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00676">676</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>
@@ -708,7 +746,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>wav header </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00308">308</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8h_source.html#l00689">689</a> of file <a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>.</p>
 
 </div>
 </div>

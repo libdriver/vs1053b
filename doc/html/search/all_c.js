@@ -1,21 +1,8 @@
 var searchData=
 [
-  ['sample_5frate_75',['sample_rate',['../structvs1053b__wav__s.html#a2fba55d9442e7dba4623825cd737e520',1,'vs1053b_wav_s']]],
-  ['size_76',['size',['../structvs1053b__handle__s.html#ab2c6b258f02add8fdf4cfc7c371dd772',1,'vs1053b_handle_s']]],
-  ['spi_5fcmd_5fdeinit_77',['spi_cmd_deinit',['../structvs1053b__handle__s.html#a20f788153c40128cc7c79ee6f23ca85e',1,'vs1053b_handle_s']]],
-  ['spi_5fcmd_5finit_78',['spi_cmd_init',['../structvs1053b__handle__s.html#a32a107d915e8ee492387bd82e328d51f',1,'vs1053b_handle_s']]],
-  ['spi_5fcmd_5fread_5faddress16_79',['spi_cmd_read_address16',['../structvs1053b__handle__s.html#a496951a8abaf48e1f0d111d0dcfb7d54',1,'vs1053b_handle_s']]],
-  ['spi_5fcmd_5fwrite_5faddress16_80',['spi_cmd_write_address16',['../structvs1053b__handle__s.html#a12a527e2d913cb9bb11ee527fe9e1e03',1,'vs1053b_handle_s']]],
-  ['spi_5fdat_5fdeinit_81',['spi_dat_deinit',['../structvs1053b__handle__s.html#a113a74a7d0e10bcda59ad6da36093450',1,'vs1053b_handle_s']]],
-  ['spi_5fdat_5finit_82',['spi_dat_init',['../structvs1053b__handle__s.html#acc69f7e7adfeaebc548fcfb5d29c8ea4',1,'vs1053b_handle_s']]],
-  ['spi_5fdat_5fwrite_5fcmd_83',['spi_dat_write_cmd',['../structvs1053b__handle__s.html#a1a8d72431592b2b1ecce35d1c7dc65c4',1,'vs1053b_handle_s']]],
-  ['status_84',['status',['../structvs1053b__handle__s.html#ade818037fd6c985038ff29656089758d',1,'vs1053b_handle_s']]],
-  ['sub_5fchunk1_5fid_85',['sub_chunk1_id',['../structvs1053b__wav__s.html#ab74dc55ea36c802aa81dab1bc06b193c',1,'vs1053b_wav_s']]],
-  ['sub_5fchunk1_5fsize_86',['sub_chunk1_size',['../structvs1053b__wav__s.html#a0b106402e28370a1589ce919725e837e',1,'vs1053b_wav_s']]],
-  ['sub_5fchunk2_5fid_87',['sub_chunk2_id',['../structvs1053b__wav__s.html#a8d48ef83d694900c5f07615790e08479',1,'vs1053b_wav_s']]],
-  ['sub_5fchunk2_5fsize_88',['sub_chunk2_size',['../structvs1053b__wav__s.html#a34495093da4e64c79bb8f0ca0683e2db',1,'vs1053b_wav_s']]],
-  ['supply_5fvoltage_5fmax_89',['SUPPLY_VOLTAGE_MAX',['../driver__vs1053b_8c.html#a68eba8b601afe11f1b871d944976c035',1,'driver_vs1053b.c']]],
-  ['supply_5fvoltage_5fmax_5fv_90',['supply_voltage_max_v',['../structvs1053b__info__s.html#a3d2b12bcac7a85ea8646bff9debe8660',1,'vs1053b_info_s']]],
-  ['supply_5fvoltage_5fmin_91',['SUPPLY_VOLTAGE_MIN',['../driver__vs1053b_8c.html#aac8d8cbd899667d609787ef4cf37054d',1,'driver_vs1053b.c']]],
-  ['supply_5fvoltage_5fmin_5fv_92',['supply_voltage_min_v',['../structvs1053b__info__s.html#ad8bde6ddadaf43d951e62f3befb9d35a',1,'vs1053b_info_s']]]
+  ['receive_5fcallback_163',['receive_callback',['../structvs1053b__handle__s.html#a572c825159d50c52210dbba03057b9e0',1,'vs1053b_handle_s']]],
+  ['record_5ftype_164',['record_type',['../structvs1053b__handle__s.html#a7ba867b99c2b823386437aeef37f3390',1,'vs1053b_handle_s']]],
+  ['reset_5fgpio_5fdeinit_165',['reset_gpio_deinit',['../structvs1053b__handle__s.html#a69c42ff05fc69e3f1621f3c0347a840b',1,'vs1053b_handle_s']]],
+  ['reset_5fgpio_5finit_166',['reset_gpio_init',['../structvs1053b__handle__s.html#aa264e23f5c4ddd7a9bfa5cd9e387e013',1,'vs1053b_handle_s']]],
+  ['reset_5fgpio_5fwrite_167',['reset_gpio_write',['../structvs1053b__handle__s.html#ae88962c62483f005e4930e9ca4b00981',1,'vs1053b_handle_s']]]
 ];

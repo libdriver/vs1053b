@@ -86,6 +86,7 @@ uint8_t vs1053b_register_test(void)
     vs1053b_allowed_multiplier_addition_t addition;
     vs1053b_channel_t channel;
     vs1053b_play_speed_t speed;
+    vs1053b_iis_rate_t iis_rate;
 
     /* link interface function */
     DRIVER_VS1053B_LINK_INIT(&gs_handle, vs1053b_handle_t); 
@@ -2071,8 +2072,214 @@ uint8_t vs1053b_register_test(void)
     }
     vs1053b_interface_debug_print("vs1053b: vol convert check %0.2f and %0.2f.\n", db, db_check);
     
-    /* vs1053b_vol_convert_to_register/vs1053b_vol_convert_to_data test */
-    vs1053b_interface_debug_print("vs1053b: vs1053b_vol_convert_to_register/vs1053b_vol_convert_to_data test.\n");
+    /* vs1053b_set_iis_mclk/vs1053b_get_iis_mclk test */
+    vs1053b_interface_debug_print("vs1053b: vs1053b_set_iis_mclk/vs1053b_get_iis_mclk test.\n");
+    
+    /* enable iis mclk */
+    res = vs1053b_set_iis_mclk(&gs_handle, VS1053B_BOOL_TRUE);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set iis mclk failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: enable iis mclk.\n");
+    res = vs1053b_get_iis_mclk(&gs_handle, &enable);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: get iis mclk failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: check iis mclk %s.\n", enable == VS1053B_BOOL_TRUE ? "ok" : "error");
+    
+    /* disable iis mclk */
+    res = vs1053b_set_iis_mclk(&gs_handle, VS1053B_BOOL_FALSE);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set iis mclk failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: disable iis mclk.\n");
+    res = vs1053b_get_iis_mclk(&gs_handle, &enable);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: get iis mclk failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: check iis mclk %s.\n", enable == VS1053B_BOOL_FALSE ? "ok" : "error");
+    
+    /* vs1053b_set_iis/vs1053b_get_iis test */
+    vs1053b_interface_debug_print("vs1053b: vs1053b_set_iis/vs1053b_get_iis test.\n");
+    
+    /* enable iis */
+    res = vs1053b_set_iis(&gs_handle, VS1053B_BOOL_TRUE);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set iis failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: enable iis.\n");
+    res = vs1053b_get_iis(&gs_handle, &enable);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: get iis failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: check iis %s.\n", enable == VS1053B_BOOL_TRUE ? "ok" : "error");
+    
+    /* disable iis */
+    res = vs1053b_set_iis(&gs_handle, VS1053B_BOOL_FALSE);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set iis failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: disable iis.\n");
+    res = vs1053b_get_iis(&gs_handle, &enable);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: get iis failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: check iis %s.\n", enable == VS1053B_BOOL_FALSE ? "ok" : "error");
+    
+    /* vs1053b_set_iis_rate/vs1053b_get_iis_rate test */
+    vs1053b_interface_debug_print("vs1053b: vs1053b_set_iis_rate/vs1053b_get_iis_rate test.\n");
+    
+    /* set iis rate 48khz */
+    res = vs1053b_set_iis_rate(&gs_handle, VS1053B_IIS_RATE_48KHZ);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set iis rate failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: set iis rate 48khz.\n");
+    res = vs1053b_get_iis_rate(&gs_handle, &iis_rate);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: get iis rate failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: check iis rate %s.\n", iis_rate == VS1053B_IIS_RATE_48KHZ ? "ok" : "error");
+    
+    /* set iis rate 96khz */
+    res = vs1053b_set_iis_rate(&gs_handle, VS1053B_IIS_RATE_96KHZ);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set iis rate failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: set iis rate 96hz.\n");
+    res = vs1053b_get_iis_rate(&gs_handle, &iis_rate);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: get iis rate failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: check iis rate %s.\n", iis_rate == VS1053B_IIS_RATE_96KHZ ? "ok" : "error");
+    
+    /* set iis rate 192khz */
+    res = vs1053b_set_iis_rate(&gs_handle, VS1053B_IIS_RATE_192KHZ);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set iis rate failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: set iis rate 192hz.\n");
+    res = vs1053b_get_iis_rate(&gs_handle, &iis_rate);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: get iis rate failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: check iis rate %s.\n", iis_rate == VS1053B_IIS_RATE_192KHZ ? "ok" : "error");
+    
+    /* vs1053b_set_gpio_direction/vs1053b_get_gpio_direction test */
+    vs1053b_interface_debug_print("vs1053b: vs1053b_set_gpio_direction/vs1053b_get_gpio_direction test.\n");
+    
+    /* set gpio direction 0x00F0 */
+    res = vs1053b_set_gpio_direction(&gs_handle, 0x00F0);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set gpio direction failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: set gpio direction 0x00F0.\n");
+    res = vs1053b_get_gpio_direction(&gs_handle, &dat0);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: get gpio direction failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: check gpio direction %s.\n", dat0 == 0x00F0 ? "ok" : "error");
+    
+    /* vs1053b_set_gpio_output/vs1053b_get_gpio_output test */
+    vs1053b_interface_debug_print("vs1053b: vs1053b_set_gpio_output/vs1053b_get_gpio_output test.\n");
+    
+    /* set gpio output 0x0010 */
+    res = vs1053b_set_gpio_output(&gs_handle, 0x0010);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set gpio output failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: set gpio output 0x0010.\n");
+    res = vs1053b_get_gpio_output(&gs_handle, &dat0);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: get gpio output failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: check gpio output %s.\n", dat0 == 0x0010 ? "ok" : "error");
+    
+    /* vs1053b_get_gpio_input test */
+    vs1053b_interface_debug_print("vs1053b: vs1053b_get_gpio_input test.\n");
+    
+    /* get gpio input */
+    res = vs1053b_get_gpio_input(&gs_handle, &dat0);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: get gpio input failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+        
+        return 1;
+    }
+    vs1053b_interface_debug_print("vs1053b: gpio input is 0x%04X.\n", dat0);
     
     /* soft reset */
     res = vs1053b_set_soft_reset(&gs_handle, VS1053B_BOOL_TRUE);
