@@ -547,8 +547,8 @@ uint8_t vs1053b_play_test(char *path)
         return 1;
     }
     
-    /* -20.0db */
-    res = vs1053b_vol_convert_to_register(&gs_handle, -20.0f, &reg);
+    /* -10.0db */
+    res = vs1053b_vol_convert_to_register(&gs_handle, -10.0f, &reg);
     if (res != 0)
     {
         vs1053b_interface_debug_print("vs1053b: vol convert to register failed.\n");
@@ -572,6 +572,46 @@ uint8_t vs1053b_play_test(char *path)
     if (res != 0)
     {
         vs1053b_interface_debug_print("vs1053b: set play speed failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+         
+        return 1;
+    }
+    
+    /* set iis gpio direction */
+    res = vs1053b_set_gpio_direction(&gs_handle, 0x00F0);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set gpio direction failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+         
+        return 1;
+    }
+    
+    /* enable iis mclk */
+    res = vs1053b_set_iis_mclk(&gs_handle, VS1053B_BOOL_TRUE);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set iis mclk failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+         
+        return 1;
+    }
+    
+    /* set iis rate 48khz */
+    res = vs1053b_set_iis_rate(&gs_handle, VS1053B_IIS_RATE_48KHZ);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set iis rate failed.\n");
+        (void)vs1053b_deinit(&gs_handle);
+         
+        return 1;
+    }
+    
+    /* enable iis */
+    res = vs1053b_set_iis(&gs_handle, VS1053B_BOOL_TRUE);
+    if (res != 0)
+    {
+        vs1053b_interface_debug_print("vs1053b: set iis failed.\n");
         (void)vs1053b_deinit(&gs_handle);
          
         return 1;

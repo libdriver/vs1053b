@@ -158,7 +158,7 @@ static void a_callback(uint8_t type, uint32_t cur_pos)
 }
 
 /* play init */
-res = vs1053b_basic_init(VS1053B_MODE_PLAY, a_callback);
+res = vs1053b_basic_init(VS1053B_MODE_PLAY, VS1053B_RECORD_FORMAT_WAV, a_callback);
 if (res != 0)
 {
     return 1;
@@ -306,7 +306,7 @@ static void a_callback(uint8_t type, uint32_t cur_pos)
 }
 
 /* record init */
-res = vs1053b_basic_init(VS1053B_MODE_RECORD, a_callback);
+res = vs1053b_basic_init(VS1053B_MODE_RECORD, VS1053B_RECORD_FORMAT_WAV, a_callback);
 if (res != 0)
 {
     return 1;

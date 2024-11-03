@@ -53,61 +53,94 @@ extern "C"{
 /**
  * @brief vs1053b basic example default definition
  */
-#define VS1053B_BASIC_DEFAULT_PLAY_CLOCK_MULTIPLIER                        VS1053B_CLOCK_MULTIPLIER_3P5_XTALI                   /**< 3.5 xtali */
-#define VS1053B_BASIC_DEFAULT_PLAY_ALLOWED_MULTIPLIER_ADDITION             VS1053B_ALLOWED_MULTIPLIER_ADDITION_2P0_XTALI        /**< 2.0 xtali */
-#define VS1053B_BASIC_DEFAULT_PLAY_CLOCK_FREQUENCY                         8000000.0f                                           /**< 8000000Hz */
-#define VS1053B_BASIC_DEFAULT_PLAY_DIFF                                    VS1053B_DIFF_NORMAL                                  /**< diff normal mode */
-#define VS1053B_BASIC_DEFAULT_PLAY_MPEG_LAYER_I_AND_II                     VS1053B_BOOL_TRUE                                    /**< enable mpeg i and ii */
-#define VS1053B_BASIC_DEFAULT_PLAY_CANCEL_DECODING_CURRENT_FILE            VS1053B_BOOL_FALSE                                   /**< disable cancel decoding */
-#define VS1053B_BASIC_DEFAULT_PLAY_EAR_SPEAKER_LOW_SETTING                 VS1053B_BOOL_FALSE                                   /**< disable ear low setting */
-#define VS1053B_BASIC_DEFAULT_PLAY_EAR_SPEAKER_HIGH_SETTING                VS1053B_BOOL_FALSE                                   /**< disable ear high setting */
-#define VS1053B_BASIC_DEFAULT_PLAY_DCLK_EDGE                               VS1053B_DCLK_EDGE_RISING                             /**< dclk edge rising */
-#define VS1053B_BASIC_DEFAULT_PLAY_BIT_ORDER                               VS1053B_BIT_ORDER_MSB_FIRST                          /**< bit order msb first */
-#define VS1053B_BASIC_DEFAULT_PLAY_SHARE_SPI_CHIP_SELECT                   VS1053B_BOOL_FALSE                                   /**< disable share spi */
-#define VS1053B_BASIC_DEFAULT_PLAY_SELECTOR                                VS1053B_SELECTOR_MICP                                /**< micp */
-#define VS1053B_BASIC_DEFAULT_PLAY_CLOCK_RANGE                             VS1053B_CLOCK_RANGE_12MHZ_13MHZ                      /**< 12 - 13MHz */
-#define VS1053B_BASIC_DEFAULT_PLAY_DO_NOT_JUMP                             VS1053B_BOOL_FALSE                                   /**< disable do not jump */
-#define VS1053B_BASIC_DEFAULT_PLAY_SWING                                   0.0f                                                 /**< 0.0f */
-#define VS1053B_BASIC_DEFAULT_PLAY_OVERLOAD_DETECTION                      VS1053B_BOOL_TRUE                                    /**< enable overload detection */
-#define VS1053B_BASIC_DEFAULT_PLAY_ANALOG_DRIVER_POWER_DOWN                VS1053B_BOOL_FALSE                                   /**< disable analog driver power down */
-#define VS1053B_BASIC_DEFAULT_PLAY_ANALOG_INTERNAL_POWER_DOWN              VS1053B_BOOL_FALSE                                   /**< disable analog internal power down */
-#define VS1053B_BASIC_DEFAULT_PLAY_AD_CLOCK                                VS1053B_AD_CLOCK_6MHZ                                /**< ad clock 6MHz */
-#define VS1053B_BASIC_DEFAULT_PLAY_REFERENCE_VOLTAGE                       VS1053B_REFERENCE_VOLTAGE_1P23V                      /**< 1.23V */
-#define VS1053B_BASIC_DEFAULT_PLAY_TREBLE_CONTROL                          22.5f                                                /**< 22.5 */
-#define VS1053B_BASIC_DEFAULT_PLAY_LOWER_LIMIT_FREQUENCY_IN_1000_HZ        10000                                                /**< 10000Hz */
-#define VS1053B_BASIC_DEFAULT_PLAY_BASS_ENHANCEMENT                        15                                                   /**< 15db */
-#define VS1053B_BASIC_DEFAULT_PLAY_LOWER_LIMIT_FREQUENCY_IN_10_HZ          60                                                   /**< 60Hz */
-#define VS1053B_BASIC_DEFAULT_PLAY_VOL                                     -20.0f                                               /**< -20.0 db */
-#define VS1053B_BASIC_DEFAULT_PLAY_SPEED                                   VS1053B_PLAY_SPEED_1P0_X                             /**< 1.0X */
-#define VS1053B_BASIC_DEFAULT_RECORD_CLOCK_MULTIPLIER                      VS1053B_CLOCK_MULTIPLIER_2P0_XTALI                   /**< 2.0 xtali */
-#define VS1053B_BASIC_DEFAULT_RECORD_ALLOWED_MULTIPLIER_ADDITION           VS1053B_ALLOWED_MULTIPLIER_ADDITION_NONE             /**< none */
-#define VS1053B_BASIC_DEFAULT_RECORD_CLOCK_FREQUENCY                       8000000.0f                                           /**< 8000000Hz */
-#define VS1053B_BASIC_DEFAULT_RECORD_DO_NOT_JUMP                           VS1053B_BOOL_FALSE                                   /**< disable do not jump */
-#define VS1053B_BASIC_DEFAULT_RECORD_SWING                                 0.0f                                                 /**< 0.0f */
-#define VS1053B_BASIC_DEFAULT_RECORD_OVERLOAD_DETECTION                    VS1053B_BOOL_TRUE                                    /**< enable overload detection */
-#define VS1053B_BASIC_DEFAULT_RECORD_ANALOG_DRIVER_POWER_DOWN              VS1053B_BOOL_FALSE                                   /**< disable analog driver power down */
-#define VS1053B_BASIC_DEFAULT_RECORD_ANALOG_INTERNAL_POWER_DOWN            VS1053B_BOOL_FALSE                                   /**< disable analog internal power down */
-#define VS1053B_BASIC_DEFAULT_RECORD_AD_CLOCK                              VS1053B_AD_CLOCK_6MHZ                                /**< ad clock 6MHz */
-#define VS1053B_BASIC_DEFAULT_RECORD_REFERENCE_VOLTAGE                     VS1053B_REFERENCE_VOLTAGE_1P23V                      /**< 1.23V */
-#define VS1053B_BASIC_DEFAULT_RECORD_TREBLE_CONTROL                        0.0f                                                 /**< 0.0 */
-#define VS1053B_BASIC_DEFAULT_RECORD_LOWER_LIMIT_FREQUENCY_IN_1000_HZ      0                                                    /**< 0Hz */
-#define VS1053B_BASIC_DEFAULT_RECORD_BASS_ENHANCEMENT                      0                                                    /**< 0 db */
-#define VS1053B_BASIC_DEFAULT_RECORD_LOWER_LIMIT_FREQUENCY_IN_10_HZ        0                                                    /**< 0Hz */
-#define VS1053B_BASIC_DEFAULT_RECORD_VOL                                   -20.0f                                               /**< -20.0 db */
-#define VS1053B_BASIC_DEFAULT_RECORD_SAMPLE                                8000                                                 /**< 8000MHz */
-#define VS1053B_BASIC_DEFAULT_RECORD_TIMES                                 1024 * 5                                             /**< 5 times */
-#define VS1053B_BASIC_DEFAULT_RECORD_GAIN                                  0                                                    /**< agc */
-#define VS1053B_BASIC_DEFAULT_RECORD_CHANNEL                               6                                                    /**< left micro */
-#define VS1053B_BASIC_DEFAULT_RECORD_DIFF                                  VS1053B_DIFF_NORMAL                                  /**< diff normal mode */
-#define VS1053B_BASIC_DEFAULT_RECORD_MPEG_LAYER_I_AND_II                   VS1053B_BOOL_FALSE                                   /**< disable mpeg i and ii */
-#define VS1053B_BASIC_DEFAULT_RECORD_CANCEL_DECODING_CURRENT_FILE          VS1053B_BOOL_FALSE                                   /**< disable cancel decoding */
-#define VS1053B_BASIC_DEFAULT_RECORD_EAR_SPEAKER_LOW_SETTING               VS1053B_BOOL_FALSE                                   /**< disable ear low setting */
-#define VS1053B_BASIC_DEFAULT_RECORD_EAR_SPEAKER_HIGH_SETTING              VS1053B_BOOL_FALSE                                   /**< disable ear high setting */
-#define VS1053B_BASIC_DEFAULT_RECORD_DCLK_EDGE                             VS1053B_DCLK_EDGE_RISING                             /**< dclk edge rising */
-#define VS1053B_BASIC_DEFAULT_RECORD_BIT_ORDER                             VS1053B_BIT_ORDER_MSB_FIRST                          /**< bit order msb first */
-#define VS1053B_BASIC_DEFAULT_RECORD_SHARE_SPI_CHIP_SELECT                 VS1053B_BOOL_FALSE                                   /**< disable share spi */
-#define VS1053B_BASIC_DEFAULT_RECORD_SELECTOR                              VS1053B_SELECTOR_MICP                                /**< micp */
-#define VS1053B_BASIC_DEFAULT_RECORD_CLOCK_RANGE                           VS1053B_CLOCK_RANGE_12MHZ_13MHZ                      /**< 12 - 13MHz */
+#define VS1053B_BASIC_DEFAULT_PLAY_CLOCK_MULTIPLIER                            VS1053B_CLOCK_MULTIPLIER_3P5_XTALI                   /**< 3.5 xtali */
+#define VS1053B_BASIC_DEFAULT_PLAY_ALLOWED_MULTIPLIER_ADDITION                 VS1053B_ALLOWED_MULTIPLIER_ADDITION_2P0_XTALI        /**< 2.0 xtali */
+#define VS1053B_BASIC_DEFAULT_PLAY_CLOCK_FREQUENCY                             8000000.0f                                           /**< 8000000Hz */
+#define VS1053B_BASIC_DEFAULT_PLAY_DIFF                                        VS1053B_DIFF_NORMAL                                  /**< diff normal mode */
+#define VS1053B_BASIC_DEFAULT_PLAY_MPEG_LAYER_I_AND_II                         VS1053B_BOOL_TRUE                                    /**< enable mpeg i and ii */
+#define VS1053B_BASIC_DEFAULT_PLAY_CANCEL_DECODING_CURRENT_FILE                VS1053B_BOOL_FALSE                                   /**< disable cancel decoding */
+#define VS1053B_BASIC_DEFAULT_PLAY_EAR_SPEAKER_LOW_SETTING                     VS1053B_BOOL_FALSE                                   /**< disable ear low setting */
+#define VS1053B_BASIC_DEFAULT_PLAY_EAR_SPEAKER_HIGH_SETTING                    VS1053B_BOOL_FALSE                                   /**< disable ear high setting */
+#define VS1053B_BASIC_DEFAULT_PLAY_DCLK_EDGE                                   VS1053B_DCLK_EDGE_RISING                             /**< dclk edge rising */
+#define VS1053B_BASIC_DEFAULT_PLAY_BIT_ORDER                                   VS1053B_BIT_ORDER_MSB_FIRST                          /**< bit order msb first */
+#define VS1053B_BASIC_DEFAULT_PLAY_SHARE_SPI_CHIP_SELECT                       VS1053B_BOOL_FALSE                                   /**< disable share spi */
+#define VS1053B_BASIC_DEFAULT_PLAY_SELECTOR                                    VS1053B_SELECTOR_MICP                                /**< micp */
+#define VS1053B_BASIC_DEFAULT_PLAY_CLOCK_RANGE                                 VS1053B_CLOCK_RANGE_12MHZ_13MHZ                      /**< 12 - 13MHz */
+#define VS1053B_BASIC_DEFAULT_PLAY_DO_NOT_JUMP                                 VS1053B_BOOL_FALSE                                   /**< disable do not jump */
+#define VS1053B_BASIC_DEFAULT_PLAY_SWING                                       0.0f                                                 /**< 0.0f */
+#define VS1053B_BASIC_DEFAULT_PLAY_OVERLOAD_DETECTION                          VS1053B_BOOL_TRUE                                    /**< enable overload detection */
+#define VS1053B_BASIC_DEFAULT_PLAY_ANALOG_DRIVER_POWER_DOWN                    VS1053B_BOOL_FALSE                                   /**< disable analog driver power down */
+#define VS1053B_BASIC_DEFAULT_PLAY_ANALOG_INTERNAL_POWER_DOWN                  VS1053B_BOOL_FALSE                                   /**< disable analog internal power down */
+#define VS1053B_BASIC_DEFAULT_PLAY_AD_CLOCK                                    VS1053B_AD_CLOCK_6MHZ                                /**< ad clock 6MHz */
+#define VS1053B_BASIC_DEFAULT_PLAY_REFERENCE_VOLTAGE                           VS1053B_REFERENCE_VOLTAGE_1P23V                      /**< 1.23V */
+#define VS1053B_BASIC_DEFAULT_PLAY_TREBLE_CONTROL                              22.5f                                                /**< 22.5 */
+#define VS1053B_BASIC_DEFAULT_PLAY_LOWER_LIMIT_FREQUENCY_IN_1000_HZ            10000                                                /**< 10000Hz */
+#define VS1053B_BASIC_DEFAULT_PLAY_BASS_ENHANCEMENT                            15                                                   /**< 15db */
+#define VS1053B_BASIC_DEFAULT_PLAY_LOWER_LIMIT_FREQUENCY_IN_10_HZ              60                                                   /**< 60Hz */
+#define VS1053B_BASIC_DEFAULT_PLAY_VOL                                         -10.0f                                               /**< -20.0 db */
+#define VS1053B_BASIC_DEFAULT_PLAY_SPEED                                       VS1053B_PLAY_SPEED_1P0_X                             /**< 1.0X */
+#define VS1053B_BASIC_DEFAULT_PLAY_IIS_OUTPUT                                  VS1053B_BOOL_FALSE                                   /**< disable iis */
+#define VS1053B_BASIC_DEFAULT_PLAY_IIS_MCLK_OUTPUT                             VS1053B_BOOL_TRUE                                    /**< enable mclk */
+#define VS1053B_BASIC_DEFAULT_PLAY_IIS_RATE                                    VS1053B_IIS_RATE_48KHZ                               /**< 48khz */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_CLOCK_MULTIPLIER                      VS1053B_CLOCK_MULTIPLIER_2P0_XTALI                   /**< 2.0 xtali */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_ALLOWED_MULTIPLIER_ADDITION           VS1053B_ALLOWED_MULTIPLIER_ADDITION_NONE             /**< none */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_CLOCK_FREQUENCY                       8000000.0f                                           /**< 8000000Hz */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_DO_NOT_JUMP                           VS1053B_BOOL_FALSE                                   /**< disable do not jump */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_SWING                                 0.0f                                                 /**< 0.0f */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_OVERLOAD_DETECTION                    VS1053B_BOOL_TRUE                                    /**< enable overload detection */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_ANALOG_DRIVER_POWER_DOWN              VS1053B_BOOL_FALSE                                   /**< disable analog driver power down */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_ANALOG_INTERNAL_POWER_DOWN            VS1053B_BOOL_FALSE                                   /**< disable analog internal power down */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_AD_CLOCK                              VS1053B_AD_CLOCK_6MHZ                                /**< ad clock 6MHz */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_REFERENCE_VOLTAGE                     VS1053B_REFERENCE_VOLTAGE_1P23V                      /**< 1.23V */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_TREBLE_CONTROL                        0.0f                                                 /**< 0.0 */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_LOWER_LIMIT_FREQUENCY_IN_1000_HZ      0                                                    /**< 0Hz */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_BASS_ENHANCEMENT                      0                                                    /**< 0 db */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_LOWER_LIMIT_FREQUENCY_IN_10_HZ        0                                                    /**< 0Hz */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_VOL                                   -100.0f                                              /**< -100.0 db */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_SAMPLE                                8000                                                 /**< 8000Hz */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_TIMES                                 1024 * 5                                             /**< 5 times */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_GAIN                                  0                                                    /**< agc */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_CHANNEL                               6                                                    /**< left micro */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_DIFF                                  VS1053B_DIFF_NORMAL                                  /**< diff normal mode */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_MPEG_LAYER_I_AND_II                   VS1053B_BOOL_FALSE                                   /**< disable mpeg i and ii */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_CANCEL_DECODING_CURRENT_FILE          VS1053B_BOOL_FALSE                                   /**< disable cancel decoding */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_EAR_SPEAKER_LOW_SETTING               VS1053B_BOOL_FALSE                                   /**< disable ear low setting */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_EAR_SPEAKER_HIGH_SETTING              VS1053B_BOOL_FALSE                                   /**< disable ear high setting */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_DCLK_EDGE                             VS1053B_DCLK_EDGE_RISING                             /**< dclk edge rising */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_BIT_ORDER                             VS1053B_BIT_ORDER_MSB_FIRST                          /**< bit order msb first */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_SHARE_SPI_CHIP_SELECT                 VS1053B_BOOL_FALSE                                   /**< disable share spi */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_SELECTOR                              VS1053B_SELECTOR_MICP                                /**< micp */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_CLOCK_RANGE                           VS1053B_CLOCK_RANGE_12MHZ_13MHZ                      /**< 12 - 13MHz */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_CLOCK_MULTIPLIER                      VS1053B_CLOCK_MULTIPLIER_4P5_XTALI                   /**< 4.5 xtali */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_ALLOWED_MULTIPLIER_ADDITION           VS1053B_ALLOWED_MULTIPLIER_ADDITION_NONE             /**< none */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_CLOCK_FREQUENCY                       8000000.0f                                           /**< 8000000Hz */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_DO_NOT_JUMP                           VS1053B_BOOL_FALSE                                   /**< disable do not jump */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_SWING                                 0.0f                                                 /**< 0.0f */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_OVERLOAD_DETECTION                    VS1053B_BOOL_TRUE                                    /**< enable overload detection */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_ANALOG_DRIVER_POWER_DOWN              VS1053B_BOOL_FALSE                                   /**< disable analog driver power down */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_ANALOG_INTERNAL_POWER_DOWN            VS1053B_BOOL_FALSE                                   /**< disable analog internal power down */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_AD_CLOCK                              VS1053B_AD_CLOCK_6MHZ                                /**< ad clock 6MHz */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_REFERENCE_VOLTAGE                     VS1053B_REFERENCE_VOLTAGE_1P23V                      /**< 1.23V */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_TREBLE_CONTROL                        0.0f                                                 /**< 0.0 */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_LOWER_LIMIT_FREQUENCY_IN_1000_HZ      0                                                    /**< 0Hz */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_BASS_ENHANCEMENT                      0                                                    /**< 0 db */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_LOWER_LIMIT_FREQUENCY_IN_10_HZ        0                                                    /**< 0Hz */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_VOL                                   -100.0f                                              /**< -100.0 db */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_SAMPLE                                44100                                                /**< 44100Hz */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_TIMES                                 1024                                                 /**< 5 times */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_GAIN                                  0                                                    /**< agc */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_CONTROL                               0                                                    /**< stop */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_DIFF                                  VS1053B_DIFF_NORMAL                                  /**< diff normal mode */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_MPEG_LAYER_I_AND_II                   VS1053B_BOOL_FALSE                                   /**< disable mpeg i and ii */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_CANCEL_DECODING_CURRENT_FILE          VS1053B_BOOL_FALSE                                   /**< disable cancel decoding */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_EAR_SPEAKER_LOW_SETTING               VS1053B_BOOL_FALSE                                   /**< disable ear low setting */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_EAR_SPEAKER_HIGH_SETTING              VS1053B_BOOL_FALSE                                   /**< disable ear high setting */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_DCLK_EDGE                             VS1053B_DCLK_EDGE_RISING                             /**< dclk edge rising */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_BIT_ORDER                             VS1053B_BIT_ORDER_MSB_FIRST                          /**< bit order msb first */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_SHARE_SPI_CHIP_SELECT                 VS1053B_BOOL_FALSE                                   /**< disable share spi */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_SELECTOR                              VS1053B_SELECTOR_MICP                                /**< micp */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_CLOCK_RANGE                           VS1053B_CLOCK_RANGE_12MHZ_13MHZ                      /**< 12 - 13MHz */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_VENC                                  VS1053B_PATCH_OGG_VENC44K2Q05                        /**< ogg venc44k2q05 */
 
 /**
  * @brief vs1053b mode enumeration definition
@@ -121,13 +154,14 @@ typedef enum
 /**
  * @brief     basic example init
  * @param[in] mode is the chip working mode
+ * @param[in] format is the set record format
  * @param[in] *callback points to a callback function
  * @return    status code
  *            - 0 success
  *            - 1 init failed
  * @note      none
  */
-uint8_t vs1053b_basic_init(vs1053b_mode_t mode, void (*callback)(uint8_t type, uint32_t cur_pos));
+uint8_t vs1053b_basic_init(vs1053b_mode_t mode, vs1053b_record_format_t format, void (*callback)(uint8_t type, uint32_t cur_pos));
 
 /**
  * @brief  basic example deinit

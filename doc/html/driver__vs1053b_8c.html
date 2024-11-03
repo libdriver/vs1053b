@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('driver__vs1053b_8c.html',''); initResi
 <p>driver vs1053b source file  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="driver__vs1053b_8h_source.html">driver_vs1053b.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="driver__vs1053b__patch__ogg__venc44k2q05_8h_source.html">driver_vs1053b_patch_ogg_venc44k2q05.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="driver__vs1053b__patch__flac_8h_source.html">driver_vs1053b_patch_flac.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="driver__vs1053b__patch__wav_8h_source.html">driver_vs1053b_patch_wav.h</a>&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
@@ -165,6 +166,9 @@ Macros</h2></td></tr>
 <tr class="separator:ae3b5e848dd174b14f2ac8b9778a2102e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac31b1ca36876d273230837fb5aa13c18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="driver__vs1053b_8c.html#ac31b1ca36876d273230837fb5aa13c18">VS1053B_STATUS_RECORD</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="separator:ac31b1ca36876d273230837fb5aa13c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="driver__vs1053b_8c.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(a,  b)&#160;&#160;&#160;(((a) &lt; (b)) ? (a) : (b))</td></tr>
+<tr class="memdesc:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">inner function definition  <a href="driver__vs1053b_8c.html#a3acffbd305ee72dcd4593c0d8af64a4f">More...</a><br /></td></tr>
+<tr class="separator:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -447,6 +451,45 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1452449dea2c808fd878fd800163b09b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#ga1452449dea2c808fd878fd800163b09b">vs1053b_get_end_fill_byte</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, uint16_t *byte)</td></tr>
 <tr class="memdesc:ga1452449dea2c808fd878fd800163b09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get end fill byte  <a href="group__vs1053b__basic__driver.html#ga1452449dea2c808fd878fd800163b09b">More...</a><br /></td></tr>
 <tr class="separator:ga1452449dea2c808fd878fd800163b09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga037815f21938d8f1a04239818b23f753"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#ga037815f21938d8f1a04239818b23f753">vs1053b_set_iis_mclk</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, <a class="el" href="group__vs1053b__basic__driver.html#ga3c243c161eac06139e3f9105262bb28c">vs1053b_bool_t</a> enable)</td></tr>
+<tr class="memdesc:ga037815f21938d8f1a04239818b23f753"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable or disable iis mclk  <a href="group__vs1053b__basic__driver.html#ga037815f21938d8f1a04239818b23f753">More...</a><br /></td></tr>
+<tr class="separator:ga037815f21938d8f1a04239818b23f753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ea7e35ea03146094c7e0d30c034946e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#ga8ea7e35ea03146094c7e0d30c034946e">vs1053b_get_iis_mclk</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, <a class="el" href="group__vs1053b__basic__driver.html#ga3c243c161eac06139e3f9105262bb28c">vs1053b_bool_t</a> *enable)</td></tr>
+<tr class="memdesc:ga8ea7e35ea03146094c7e0d30c034946e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get iis mclk status  <a href="group__vs1053b__basic__driver.html#ga8ea7e35ea03146094c7e0d30c034946e">More...</a><br /></td></tr>
+<tr class="separator:ga8ea7e35ea03146094c7e0d30c034946e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad069b2b4df07ac6957989c624e25e2e9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#gad069b2b4df07ac6957989c624e25e2e9">vs1053b_set_iis</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, <a class="el" href="group__vs1053b__basic__driver.html#ga3c243c161eac06139e3f9105262bb28c">vs1053b_bool_t</a> enable)</td></tr>
+<tr class="memdesc:gad069b2b4df07ac6957989c624e25e2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable or disable iis  <a href="group__vs1053b__basic__driver.html#gad069b2b4df07ac6957989c624e25e2e9">More...</a><br /></td></tr>
+<tr class="separator:gad069b2b4df07ac6957989c624e25e2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1726757a94c86ecfa9936f25e26816e5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#ga1726757a94c86ecfa9936f25e26816e5">vs1053b_get_iis</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, <a class="el" href="group__vs1053b__basic__driver.html#ga3c243c161eac06139e3f9105262bb28c">vs1053b_bool_t</a> *enable)</td></tr>
+<tr class="memdesc:ga1726757a94c86ecfa9936f25e26816e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">get iis status  <a href="group__vs1053b__basic__driver.html#ga1726757a94c86ecfa9936f25e26816e5">More...</a><br /></td></tr>
+<tr class="separator:ga1726757a94c86ecfa9936f25e26816e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7578150f207cb6bbfbcb17c1e8548387"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#ga7578150f207cb6bbfbcb17c1e8548387">vs1053b_set_iis_rate</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, <a class="el" href="group__vs1053b__basic__driver.html#gacd1e451a70f631bf3495b4e30bd6701c">vs1053b_iis_rate_t</a> iis_rate)</td></tr>
+<tr class="memdesc:ga7578150f207cb6bbfbcb17c1e8548387"><td class="mdescLeft">&#160;</td><td class="mdescRight">set iis rate  <a href="group__vs1053b__basic__driver.html#ga7578150f207cb6bbfbcb17c1e8548387">More...</a><br /></td></tr>
+<tr class="separator:ga7578150f207cb6bbfbcb17c1e8548387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad93e57f6f2b725cf31e77411b686d99d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#gad93e57f6f2b725cf31e77411b686d99d">vs1053b_get_iis_rate</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, <a class="el" href="group__vs1053b__basic__driver.html#gacd1e451a70f631bf3495b4e30bd6701c">vs1053b_iis_rate_t</a> *iis_rate)</td></tr>
+<tr class="memdesc:gad93e57f6f2b725cf31e77411b686d99d"><td class="mdescLeft">&#160;</td><td class="mdescRight">get iis rate  <a href="group__vs1053b__basic__driver.html#gad93e57f6f2b725cf31e77411b686d99d">More...</a><br /></td></tr>
+<tr class="separator:gad93e57f6f2b725cf31e77411b686d99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga450cba2743472bae6836cde24319d09d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#ga450cba2743472bae6836cde24319d09d">vs1053b_set_gpio_direction</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, uint16_t mask)</td></tr>
+<tr class="memdesc:ga450cba2743472bae6836cde24319d09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set gpio direction  <a href="group__vs1053b__basic__driver.html#ga450cba2743472bae6836cde24319d09d">More...</a><br /></td></tr>
+<tr class="separator:ga450cba2743472bae6836cde24319d09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga399cb9e8ee08ab31e4ec61e2fb3cdab5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#ga399cb9e8ee08ab31e4ec61e2fb3cdab5">vs1053b_get_gpio_direction</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, uint16_t *mask)</td></tr>
+<tr class="memdesc:ga399cb9e8ee08ab31e4ec61e2fb3cdab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">get gpio direction  <a href="group__vs1053b__basic__driver.html#ga399cb9e8ee08ab31e4ec61e2fb3cdab5">More...</a><br /></td></tr>
+<tr class="separator:ga399cb9e8ee08ab31e4ec61e2fb3cdab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46db723920c2cb98f76e4122021d5ede"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#ga46db723920c2cb98f76e4122021d5ede">vs1053b_get_gpio_input</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, uint16_t *data)</td></tr>
+<tr class="memdesc:ga46db723920c2cb98f76e4122021d5ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">get gpio input  <a href="group__vs1053b__basic__driver.html#ga46db723920c2cb98f76e4122021d5ede">More...</a><br /></td></tr>
+<tr class="separator:ga46db723920c2cb98f76e4122021d5ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad40a8fa19f867c42e8c2cb572ffa2760"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#gad40a8fa19f867c42e8c2cb572ffa2760">vs1053b_set_gpio_output</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, uint16_t data)</td></tr>
+<tr class="memdesc:gad40a8fa19f867c42e8c2cb572ffa2760"><td class="mdescLeft">&#160;</td><td class="mdescRight">set gpio output  <a href="group__vs1053b__basic__driver.html#gad40a8fa19f867c42e8c2cb572ffa2760">More...</a><br /></td></tr>
+<tr class="separator:gad40a8fa19f867c42e8c2cb572ffa2760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c8e038c73c639f652841c2171306a70"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#ga2c8e038c73c639f652841c2171306a70">vs1053b_get_gpio_output</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, uint16_t *data)</td></tr>
+<tr class="memdesc:ga2c8e038c73c639f652841c2171306a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">get gpio output  <a href="group__vs1053b__basic__driver.html#ga2c8e038c73c639f652841c2171306a70">More...</a><br /></td></tr>
+<tr class="separator:ga2c8e038c73c639f652841c2171306a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga952ce044b4060809e1878b04c72c7811"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#ga952ce044b4060809e1878b04c72c7811">vs1053b_set_record_format</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, <a class="el" href="group__vs1053b__basic__driver.html#gabc4c860c6b7d1057b12ae8eb8c3aa8f8">vs1053b_record_format_t</a> format)</td></tr>
+<tr class="memdesc:ga952ce044b4060809e1878b04c72c7811"><td class="mdescLeft">&#160;</td><td class="mdescRight">set record format  <a href="group__vs1053b__basic__driver.html#ga952ce044b4060809e1878b04c72c7811">More...</a><br /></td></tr>
+<tr class="separator:ga952ce044b4060809e1878b04c72c7811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1b6708940706f6e1e849d39f92bff45"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#gaa1b6708940706f6e1e849d39f92bff45">vs1053b_get_record_format</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle, <a class="el" href="group__vs1053b__basic__driver.html#gabc4c860c6b7d1057b12ae8eb8c3aa8f8">vs1053b_record_format_t</a> *format)</td></tr>
+<tr class="memdesc:gaa1b6708940706f6e1e849d39f92bff45"><td class="mdescLeft">&#160;</td><td class="mdescRight">get record format  <a href="group__vs1053b__basic__driver.html#gaa1b6708940706f6e1e849d39f92bff45">More...</a><br /></td></tr>
+<tr class="separator:gaa1b6708940706f6e1e849d39f92bff45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga55c662d6809ca657dc82a14d3f041b6f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vs1053b__basic__driver.html#ga55c662d6809ca657dc82a14d3f041b6f">vs1053b_init</a> (<a class="el" href="group__vs1053b__basic__driver.html#gac71afc2814b43ffd60cdb90f98c3fe3a">vs1053b_handle_t</a> *handle)</td></tr>
 <tr class="memdesc:ga55c662d6809ca657dc82a14d3f041b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the chip  <a href="group__vs1053b__basic__driver.html#ga55c662d6809ca657dc82a14d3f041b6f">More...</a><br /></td></tr>
 <tr class="separator:ga55c662d6809ca657dc82a14d3f041b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -534,7 +577,7 @@ Functions</h2></td></tr>
 <p>chip information definition </p>
 <p>chip name </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00045">45</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00180">180</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -551,7 +594,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>driver version </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00052">52</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00187">187</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -568,7 +611,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>manufacturer name </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00046">46</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00181">181</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -585,7 +628,40 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>chip max current </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00049">49</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00184">184</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+
+</div>
+</div>
+<a id="a3acffbd305ee72dcd4593c0d8af64a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3acffbd305ee72dcd4593c0d8af64a4f">&#9670;&nbsp;</a></span>MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((a) &lt; (b)) ? (a) : (b))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>inner function definition </p>
+<p>min function </p>
+
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00225">225</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -602,7 +678,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>chip max supply voltage </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00048">48</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00183">183</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -619,7 +695,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>chip min supply voltage </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00047">47</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00182">182</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -636,7 +712,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>chip max operating temperature </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00051">51</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00186">186</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -653,7 +729,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>chip min operating temperature </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00050">50</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00185">185</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -672,7 +748,7 @@ Functions</h2></td></tr>
 <p>chip command definition </p>
 <p>read command </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00057">57</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00192">192</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -689,7 +765,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>write command </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00058">58</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00193">193</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -706,7 +782,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>start address of application register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00073">73</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00208">208</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -723,7 +799,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>application control register 0 register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00075">75</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00210">210</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -740,7 +816,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>application control register 1 register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00076">76</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00211">211</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -757,7 +833,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>application control register 2 register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00077">77</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00212">212</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -774,7 +850,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>application control register 3 register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00078">78</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00213">213</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -791,7 +867,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>misc audio data register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00068">68</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00203">203</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -808,7 +884,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>built-in bass register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00065">65</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00200">200</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -825,7 +901,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>clock freq register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00066">66</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00201">201</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -842,7 +918,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>decode time register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00067">67</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00202">202</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -859,7 +935,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>stream header data 0 register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00071">71</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00206">206</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -876,7 +952,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>stream header data 1 register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00072">72</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00207">207</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -895,7 +971,7 @@ Functions</h2></td></tr>
 <p>chip register definition </p>
 <p>mode control register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00063">63</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00198">198</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -912,7 +988,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>status register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00064">64</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00199">199</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -929,7 +1005,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>volume control register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00074">74</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00209">209</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -946,7 +1022,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>ram register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00069">69</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00204">204</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -963,7 +1039,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>base address for ram register </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00070">70</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00205">205</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -980,7 +1056,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>play status </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00084">84</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00219">219</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -997,7 +1073,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>record status </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00085">85</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00220">220</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1092,7 @@ Functions</h2></td></tr>
 <p>chip status definition </p>
 <p>stop status </p>
 
-<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00083">83</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="driver__vs1053b_8c_source.html#l00218">218</a> of file <a class="el" href="driver__vs1053b_8c_source.html">driver_vs1053b.c</a>.</p>
 
 </div>
 </div>

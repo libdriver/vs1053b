@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['libdriver_20vs1053b_61',['LibDriver VS1053B',['../index.html',1,'']]]
+  ['kbps_150',['kbps',['../structvs1053b__audio__info__s.html#a122bfb71dee8223261d77e43ada50d85',1,'vs1053b_audio_info_s']]]
 ];

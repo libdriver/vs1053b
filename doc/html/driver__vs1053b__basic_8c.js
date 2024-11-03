@@ -5,7 +5,7 @@ var driver__vs1053b__basic_8c =
     [ "vs1053b_basic_get_decode_time", "group__vs1053b__example__driver.html#ga1b83745b7bb6818c4316c4960854db37", null ],
     [ "vs1053b_basic_get_info", "group__vs1053b__example__driver.html#ga4625da1289365128a4a01d10ce53db14", null ],
     [ "vs1053b_basic_get_sample_rate", "group__vs1053b__example__driver.html#gae82fa0a48dde923d7caaaabafc9b1420", null ],
-    [ "vs1053b_basic_init", "group__vs1053b__example__driver.html#gabc3d95327203975094e9e840ca8a078e", null ],
+    [ "vs1053b_basic_init", "group__vs1053b__example__driver.html#gac4dbbca4429122fb1d3510c252f67bff", null ],
     [ "vs1053b_basic_pause", "group__vs1053b__example__driver.html#ga8300507f6134b059931d2815c1f2f69e", null ],
     [ "vs1053b_basic_play", "group__vs1053b__example__driver.html#gaee14bfa044826eb36513c9b07f72fa27", null ],
     [ "vs1053b_basic_record", "group__vs1053b__example__driver.html#ga0ae09e28eff06eb64428514222cf8121", null ],

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['receive_5fcallback_569',['receive_callback',['../structvs1053b__handle__s.html#a572c825159d50c52210dbba03057b9e0',1,'vs1053b_handle_s']]],
-  ['reset_5fgpio_5fdeinit_570',['reset_gpio_deinit',['../structvs1053b__handle__s.html#a69c42ff05fc69e3f1621f3c0347a840b',1,'vs1053b_handle_s']]],
-  ['reset_5fgpio_5finit_571',['reset_gpio_init',['../structvs1053b__handle__s.html#aa264e23f5c4ddd7a9bfa5cd9e387e013',1,'vs1053b_handle_s']]],
-  ['reset_5fgpio_5fwrite_572',['reset_gpio_write',['../structvs1053b__handle__s.html#ae88962c62483f005e4930e9ca4b00981',1,'vs1053b_handle_s']]]
+  ['pause_950',['pause',['../structvs1053b__handle__s.html#a21c1700a5b4f7caa63984a84173a11d8',1,'vs1053b_handle_s']]],
+  ['period_951',['period',['../structvs1053b__handle__s.html#a473ee3fcea196f6207eeda1e747746e8',1,'vs1053b_handle_s']]],
+  ['period_5fenable_952',['period_enable',['../structvs1053b__handle__s.html#ad74ec4f20d52858f7d4dc723f9b6f981',1,'vs1053b_handle_s']]],
+  ['plugin_5fpatch_5ftype_953',['plugin_patch_type',['../structvs1053b__handle__s.html#af346488860fbcd1e77d0d2c0c8a10c28',1,'vs1053b_handle_s']]]
 ];

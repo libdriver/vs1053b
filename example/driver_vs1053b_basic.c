@@ -42,13 +42,14 @@ static vs1053b_handle_t gs_handle;        /**< vs1053b handle */
 /**
  * @brief     basic example init
  * @param[in] mode is the chip working mode
+ * @param[in] format is the set record format
  * @param[in] *callback points to a callback function
  * @return    status code
  *            - 0 success
  *            - 1 init failed
  * @note      none
  */
-uint8_t vs1053b_basic_init(vs1053b_mode_t mode, void (*callback)(uint8_t type, uint32_t cur_pos))
+uint8_t vs1053b_basic_init(vs1053b_mode_t mode, vs1053b_record_format_t format, void (*callback)(uint8_t type, uint32_t cur_pos))
 {
     uint8_t res;
     uint8_t reg;
@@ -461,409 +462,857 @@ uint8_t vs1053b_basic_init(vs1053b_mode_t mode, void (*callback)(uint8_t type, u
              
             return 1;
         }
+    #if (VS1053B_BASIC_DEFAULT_PLAY_IIS_OUTPUT == VS1053B_BOOL_TRUE)
+        /* set default gpio direction */
+        res = vs1053b_set_gpio_direction(&gs_handle, 0x00F0);
+        if (res != 0)
+        {
+            vs1053b_interface_debug_print("vs1053b: set gpio direction failed.\n");
+            (void)vs1053b_deinit(&gs_handle);
+             
+            return 1;
+        }
+        
+        /* set default iis mclk */
+        res = vs1053b_set_iis_mclk(&gs_handle, VS1053B_BASIC_DEFAULT_PLAY_IIS_MCLK_OUTPUT);
+        if (res != 0)
+        {
+            vs1053b_interface_debug_print("vs1053b: set iis mclk failed.\n");
+            (void)vs1053b_deinit(&gs_handle);
+             
+            return 1;
+        }
+        
+        /* set default iis rate */
+        res = vs1053b_set_iis_rate(&gs_handle, VS1053B_BASIC_DEFAULT_PLAY_IIS_RATE);
+        if (res != 0)
+        {
+            vs1053b_interface_debug_print("vs1053b: set iis rate failed.\n");
+            (void)vs1053b_deinit(&gs_handle);
+             
+            return 1;
+        }
+        
+        /* set default iis */
+        res = vs1053b_set_iis(&gs_handle, VS1053B_BASIC_DEFAULT_PLAY_IIS_OUTPUT);
+        if (res != 0)
+        {
+            vs1053b_interface_debug_print("vs1053b: set iis failed.\n");
+            (void)vs1053b_deinit(&gs_handle);
+             
+            return 1;
+        }
+    #endif
     }
     else
     {
-        /* set default record clock multiplier */
-        res = vs1053b_set_clock_multiplier(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_CLOCK_MULTIPLIER);
-        if (res != 0)
+        if (format == VS1053B_RECORD_FORMAT_WAV)
         {
-            vs1053b_interface_debug_print("vs1053b: set clock multiplier failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set default record allowed multiplier addition */
-        res = vs1053b_set_allowed_multiplier_addition(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_ALLOWED_MULTIPLIER_ADDITION);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set allowed multiplier addition failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set default record clock frequency */
-        res = vs1053b_clock_frequency_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_CLOCK_FREQUENCY, &clk);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: clock frequency convert to register failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set clock frequency */
-        res = vs1053b_set_clock_frequency(&gs_handle, clk);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set clock frequency failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
+            /* set default record clock multiplier */
+            res = vs1053b_set_clock_multiplier(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_CLOCK_MULTIPLIER);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set clock multiplier failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record allowed multiplier addition */
+            res = vs1053b_set_allowed_multiplier_addition(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_ALLOWED_MULTIPLIER_ADDITION);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set allowed multiplier addition failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record clock frequency */
+            res = vs1053b_clock_frequency_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_CLOCK_FREQUENCY, &clk);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: clock frequency convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set clock frequency */
+            res = vs1053b_set_clock_frequency(&gs_handle, clk);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set clock frequency failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
 
-        /* set default record do not jump */
-        res = vs1053b_set_do_not_jump(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_DO_NOT_JUMP);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set do not jump failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record do not jump */
+            res = vs1053b_set_do_not_jump(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_DO_NOT_JUMP);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set do not jump failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record swing */
-        res = vs1053b_swing_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_SWING, &reg);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: swing convert to register failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record swing */
+            res = vs1053b_swing_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_SWING, &reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: swing convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set swing */
-        res = vs1053b_set_swing(&gs_handle, reg);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set swing failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set swing */
+            res = vs1053b_set_swing(&gs_handle, reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set swing failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record overload detection */
-        res = vs1053b_set_overload_detection(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OVERLOAD_DETECTION);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set overload detection failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record overload detection */
+            res = vs1053b_set_overload_detection(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_OVERLOAD_DETECTION);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set overload detection failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record analog driver power down */
-        res = vs1053b_set_analog_driver_power_down(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_ANALOG_DRIVER_POWER_DOWN);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set analog driver power down failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record analog driver power down */
+            res = vs1053b_set_analog_driver_power_down(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_ANALOG_DRIVER_POWER_DOWN);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set analog driver power down failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record analog internal power down */
-        res = vs1053b_set_analog_internal_power_down(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_ANALOG_INTERNAL_POWER_DOWN);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set analog internal power down failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record analog internal power down */
+            res = vs1053b_set_analog_internal_power_down(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_ANALOG_INTERNAL_POWER_DOWN);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set analog internal power down failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record ad clock */
-        res = vs1053b_set_ad_clock(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_AD_CLOCK);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set ad clock failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record ad clock */
+            res = vs1053b_set_ad_clock(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_AD_CLOCK);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set ad clock failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record reference voltage */
-        res = vs1053b_set_reference_voltage(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_REFERENCE_VOLTAGE);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set reference voltage failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record reference voltage */
+            res = vs1053b_set_reference_voltage(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_REFERENCE_VOLTAGE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set reference voltage failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record treble control */
-        res = vs1053b_treble_control_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_TREBLE_CONTROL, &reg);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: treble control convert to register failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set treble control */
-        res = vs1053b_set_treble_control(&gs_handle, reg);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set treble control failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set default record lower limit frequency in 1000 hz convert to register */
-        res = vs1053b_lower_limit_frequency_in_1000_hz_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_LOWER_LIMIT_FREQUENCY_IN_1000_HZ, &reg);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: lower limit frequency in 1000 hz convert to register failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set lower limit frequency in 1000 hz */
-        res = vs1053b_set_lower_limit_frequency_in_1000_hz(&gs_handle, reg);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set lower limit frequency in 1000 hz failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set default record bass enhancement */
-        res = vs1053b_set_bass_enhancement(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_BASS_ENHANCEMENT);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set bass enhancement failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set default record lower limit frequency in 10 hz convert to register */
-        res = vs1053b_lower_limit_frequency_in_10_hz_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_LOWER_LIMIT_FREQUENCY_IN_10_HZ, &reg);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: lower limit frequency in 10 hz convert to register failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set lower limit frequency in 10 hz */
-        res = vs1053b_set_lower_limit_frequency_in_10_hz(&gs_handle, reg);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set lower limit frequency in 10 hz failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* init 0x0000 */
-        res = vs1053b_set_decode_time(&gs_handle, 0x0000);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set decode time failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set default record vol */
-        res = vs1053b_vol_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_VOL, &reg);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: vol convert to register failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set vol */
-        res = vs1053b_set_vol(&gs_handle, reg, reg);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set vol failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
+            /* set default record treble control */
+            res = vs1053b_treble_control_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_TREBLE_CONTROL, &reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: treble control convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set treble control */
+            res = vs1053b_set_treble_control(&gs_handle, reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set treble control failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record lower limit frequency in 1000 hz convert to register */
+            res = vs1053b_lower_limit_frequency_in_1000_hz_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_LOWER_LIMIT_FREQUENCY_IN_1000_HZ, &reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: lower limit frequency in 1000 hz convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set lower limit frequency in 1000 hz */
+            res = vs1053b_set_lower_limit_frequency_in_1000_hz(&gs_handle, reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set lower limit frequency in 1000 hz failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record bass enhancement */
+            res = vs1053b_set_bass_enhancement(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_BASS_ENHANCEMENT);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set bass enhancement failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record lower limit frequency in 10 hz convert to register */
+            res = vs1053b_lower_limit_frequency_in_10_hz_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_LOWER_LIMIT_FREQUENCY_IN_10_HZ, &reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: lower limit frequency in 10 hz convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set lower limit frequency in 10 hz */
+            res = vs1053b_set_lower_limit_frequency_in_10_hz(&gs_handle, reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set lower limit frequency in 10 hz failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* init 0x0000 */
+            res = vs1053b_set_decode_time(&gs_handle, 0x0000);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set decode time failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record vol */
+            res = vs1053b_vol_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_VOL, &reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: vol convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set vol */
+            res = vs1053b_set_vol(&gs_handle, reg, reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set vol failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
 
-        /* set default record sample rate */
-        config = VS1053B_BASIC_DEFAULT_RECORD_SAMPLE;
-        buf[0] = (config >> 8) & 0xFF;
-        buf[1] = (config >> 0) & 0xFF;
-        res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_0, buf, 2);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: write application failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set default record times */
-        config = VS1053B_BASIC_DEFAULT_RECORD_TIMES;
-        buf[0] = (config >> 8) & 0xFF;
-        buf[1] = (config >> 0) & 0xFF;
-        res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_1, buf, 2);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: write application failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set default record gain */
-        config = VS1053B_BASIC_DEFAULT_RECORD_GAIN;
-        buf[0] = (config >> 8) & 0xFF;
-        buf[1] = (config >> 0) & 0xFF;
-        res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_2, buf, 2);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: write application failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set default record channel */
-        config = VS1053B_BASIC_DEFAULT_RECORD_CHANNEL;
-        buf[0] = (config >> 8) & 0xFF;
-        buf[1] = (config >> 0) & 0xFF;
-        res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_3, buf, 2);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: write application failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
-             
-            return 1;
-        }
-        
-        /* set default record diff */
-        res = vs1053b_set_diff(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_DIFF);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set diff failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record sample rate */
+            config = VS1053B_BASIC_DEFAULT_RECORD_WAV_SAMPLE;
+            buf[0] = (config >> 8) & 0xFF;
+            buf[1] = (config >> 0) & 0xFF;
+            res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_0, buf, 2);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: write application failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record mpeg layer i and ii */
-        res = vs1053b_set_mpeg_layer_i_and_ii(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_MPEG_LAYER_I_AND_II);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set mpeg layer i and ii failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record times */
+            config = VS1053B_BASIC_DEFAULT_RECORD_WAV_TIMES;
+            buf[0] = (config >> 8) & 0xFF;
+            buf[1] = (config >> 0) & 0xFF;
+            res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_1, buf, 2);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: write application failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record cancel decoding current file */
-        res = vs1053b_set_cancel_decoding_current_file(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_CANCEL_DECODING_CURRENT_FILE);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set cancel decoding current file failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record gain */
+            config = VS1053B_BASIC_DEFAULT_RECORD_WAV_GAIN;
+            buf[0] = (config >> 8) & 0xFF;
+            buf[1] = (config >> 0) & 0xFF;
+            res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_2, buf, 2);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: write application failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record ear speaker low setting */
-        res = vs1053b_set_ear_speaker_low_setting(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_EAR_SPEAKER_LOW_SETTING);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set ear speaker low setting failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record channel */
+            config = VS1053B_BASIC_DEFAULT_RECORD_WAV_CHANNEL;
+            buf[0] = (config >> 8) & 0xFF;
+            buf[1] = (config >> 0) & 0xFF;
+            res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_3, buf, 2);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: write application failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* disable allow sdi test */
-        res = vs1053b_set_allow_sdi_test(&gs_handle, VS1053B_BOOL_FALSE);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set allow sdi test failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record diff */
+            res = vs1053b_set_diff(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_DIFF);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set diff failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* disable stream mode */
-        res = vs1053b_set_stream_mode(&gs_handle, VS1053B_BOOL_FALSE);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set stream mode failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record mpeg layer i and ii */
+            res = vs1053b_set_mpeg_layer_i_and_ii(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_MPEG_LAYER_I_AND_II);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set mpeg layer i and ii failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record ear speaker high setting */
-        res = vs1053b_set_ear_speaker_high_setting(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_EAR_SPEAKER_HIGH_SETTING);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set ear speaker high setting failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record cancel decoding current file */
+            res = vs1053b_set_cancel_decoding_current_file(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_CANCEL_DECODING_CURRENT_FILE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set cancel decoding current file failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record dclk edge */
-        res = vs1053b_set_dclk_edge(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_DCLK_EDGE);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set dclk edge failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record ear speaker low setting */
+            res = vs1053b_set_ear_speaker_low_setting(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_EAR_SPEAKER_LOW_SETTING);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set ear speaker low setting failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record sdi bit order */
-        res = vs1053b_set_sdi_bit_order(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_BIT_ORDER);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set sdi bit order failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* disable allow sdi test */
+            res = vs1053b_set_allow_sdi_test(&gs_handle, VS1053B_BOOL_FALSE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set allow sdi test failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record share spi chip select */
-        res = vs1053b_set_share_spi_chip_select(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_SHARE_SPI_CHIP_SELECT);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set share spi chip select failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* disable stream mode */
+            res = vs1053b_set_stream_mode(&gs_handle, VS1053B_BOOL_FALSE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set stream mode failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* enable native spi modes */
-        res = vs1053b_set_native_spi_modes(&gs_handle, VS1053B_BOOL_TRUE);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set native spi modes failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record ear speaker high setting */
+            res = vs1053b_set_ear_speaker_high_setting(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_EAR_SPEAKER_HIGH_SETTING);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set ear speaker high setting failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record selector */
-        res = vs1053b_set_selector(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_SELECTOR);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set selector failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record dclk edge */
+            res = vs1053b_set_dclk_edge(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_DCLK_EDGE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set dclk edge failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
-        }
-        
-        /* set default record clock range */
-        res = vs1053b_set_clock_range(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_CLOCK_RANGE);
-        if (res != 0)
-        {
-            vs1053b_interface_debug_print("vs1053b: set clock range failed.\n");
-            (void)vs1053b_deinit(&gs_handle);
+            /* set default record sdi bit order */
+            res = vs1053b_set_sdi_bit_order(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_BIT_ORDER);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set sdi bit order failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
             
-            return 1;
+            /* set default record share spi chip select */
+            res = vs1053b_set_share_spi_chip_select(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_SHARE_SPI_CHIP_SELECT);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set share spi chip select failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* enable native spi modes */
+            res = vs1053b_set_native_spi_modes(&gs_handle, VS1053B_BOOL_TRUE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set native spi modes failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record selector */
+            res = vs1053b_set_selector(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_SELECTOR);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set selector failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record clock range */
+            res = vs1053b_set_clock_range(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_WAV_CLOCK_RANGE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set clock range failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+        }
+        else
+        {
+            /* set default record clock multiplier */
+            res = vs1053b_set_clock_multiplier(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_CLOCK_MULTIPLIER);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set clock multiplier failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record allowed multiplier addition */
+            res = vs1053b_set_allowed_multiplier_addition(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_ALLOWED_MULTIPLIER_ADDITION);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set allowed multiplier addition failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record clock frequency */
+            res = vs1053b_clock_frequency_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_CLOCK_FREQUENCY, &clk);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: clock frequency convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set clock frequency */
+            res = vs1053b_set_clock_frequency(&gs_handle, clk);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set clock frequency failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+
+            /* set default record do not jump */
+            res = vs1053b_set_do_not_jump(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_DO_NOT_JUMP);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set do not jump failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record swing */
+            res = vs1053b_swing_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_SWING, &reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: swing convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set swing */
+            res = vs1053b_set_swing(&gs_handle, reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set swing failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record overload detection */
+            res = vs1053b_set_overload_detection(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_OVERLOAD_DETECTION);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set overload detection failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record analog driver power down */
+            res = vs1053b_set_analog_driver_power_down(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_ANALOG_DRIVER_POWER_DOWN);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set analog driver power down failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record analog internal power down */
+            res = vs1053b_set_analog_internal_power_down(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_ANALOG_INTERNAL_POWER_DOWN);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set analog internal power down failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record ad clock */
+            res = vs1053b_set_ad_clock(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_AD_CLOCK);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set ad clock failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record reference voltage */
+            res = vs1053b_set_reference_voltage(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_REFERENCE_VOLTAGE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set reference voltage failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record treble control */
+            res = vs1053b_treble_control_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_TREBLE_CONTROL, &reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: treble control convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set treble control */
+            res = vs1053b_set_treble_control(&gs_handle, reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set treble control failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record lower limit frequency in 1000 hz convert to register */
+            res = vs1053b_lower_limit_frequency_in_1000_hz_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_LOWER_LIMIT_FREQUENCY_IN_1000_HZ, &reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: lower limit frequency in 1000 hz convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set lower limit frequency in 1000 hz */
+            res = vs1053b_set_lower_limit_frequency_in_1000_hz(&gs_handle, reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set lower limit frequency in 1000 hz failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record bass enhancement */
+            res = vs1053b_set_bass_enhancement(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_BASS_ENHANCEMENT);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set bass enhancement failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record lower limit frequency in 10 hz convert to register */
+            res = vs1053b_lower_limit_frequency_in_10_hz_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_LOWER_LIMIT_FREQUENCY_IN_10_HZ, &reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: lower limit frequency in 10 hz convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set lower limit frequency in 10 hz */
+            res = vs1053b_set_lower_limit_frequency_in_10_hz(&gs_handle, reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set lower limit frequency in 10 hz failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* init 0x0000 */
+            res = vs1053b_set_decode_time(&gs_handle, 0x0000);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set decode time failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record vol */
+            res = vs1053b_vol_convert_to_register(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_VOL, &reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: vol convert to register failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set vol */
+            res = vs1053b_set_vol(&gs_handle, reg, reg);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set vol failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+
+            /* set default record sample rate */
+            config = VS1053B_BASIC_DEFAULT_RECORD_OGG_SAMPLE;
+            buf[0] = (config >> 8) & 0xFF;
+            buf[1] = (config >> 0) & 0xFF;
+            res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_0, buf, 2);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: write application failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record times */
+            config = VS1053B_BASIC_DEFAULT_RECORD_OGG_TIMES;
+            buf[0] = (config >> 8) & 0xFF;
+            buf[1] = (config >> 0) & 0xFF;
+            res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_1, buf, 2);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: write application failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record gain */
+            config = VS1053B_BASIC_DEFAULT_RECORD_OGG_GAIN;
+            buf[0] = (config >> 8) & 0xFF;
+            buf[1] = (config >> 0) & 0xFF;
+            res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_2, buf, 2);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: write application failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* stop */
+            config = VS1053B_BASIC_DEFAULT_RECORD_OGG_CONTROL;
+            buf[0] = (config >> 8) & 0xFF;
+            buf[1] = (config >> 0) & 0xFF;
+            res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_3, buf, 2);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: write application failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                 
+                return 1;
+            }
+            
+            /* set default record diff */
+            res = vs1053b_set_diff(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_DIFF);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set diff failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record mpeg layer i and ii */
+            res = vs1053b_set_mpeg_layer_i_and_ii(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_MPEG_LAYER_I_AND_II);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set mpeg layer i and ii failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record cancel decoding current file */
+            res = vs1053b_set_cancel_decoding_current_file(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_CANCEL_DECODING_CURRENT_FILE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set cancel decoding current file failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record ear speaker low setting */
+            res = vs1053b_set_ear_speaker_low_setting(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_EAR_SPEAKER_LOW_SETTING);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set ear speaker low setting failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* disable allow sdi test */
+            res = vs1053b_set_allow_sdi_test(&gs_handle, VS1053B_BOOL_FALSE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set allow sdi test failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* disable stream mode */
+            res = vs1053b_set_stream_mode(&gs_handle, VS1053B_BOOL_FALSE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set stream mode failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record ear speaker high setting */
+            res = vs1053b_set_ear_speaker_high_setting(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_EAR_SPEAKER_HIGH_SETTING);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set ear speaker high setting failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record dclk edge */
+            res = vs1053b_set_dclk_edge(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_DCLK_EDGE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set dclk edge failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record sdi bit order */
+            res = vs1053b_set_sdi_bit_order(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_BIT_ORDER);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set sdi bit order failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record share spi chip select */
+            res = vs1053b_set_share_spi_chip_select(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_SHARE_SPI_CHIP_SELECT);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set share spi chip select failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* enable native spi modes */
+            res = vs1053b_set_native_spi_modes(&gs_handle, VS1053B_BOOL_TRUE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set native spi modes failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record selector */
+            res = vs1053b_set_selector(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_SELECTOR);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set selector failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
+            
+            /* set default record clock range */
+            res = vs1053b_set_clock_range(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_CLOCK_RANGE);
+            if (res != 0)
+            {
+                vs1053b_interface_debug_print("vs1053b: set clock range failed.\n");
+                (void)vs1053b_deinit(&gs_handle);
+                
+                return 1;
+            }
         }
     }
     
@@ -979,28 +1428,35 @@ uint8_t vs1053b_basic_record(char *path)
 {
     uint8_t res;
     
-    /* enable pcm adpcm recording active */
-    res = vs1053b_set_pcm_adpcm_recording_active(&gs_handle, VS1053B_BOOL_TRUE);
-    if (res != 0)
-    {
-        return 1;
-    }
-    
-    /* both soft reset and pcm adpcm recording active to start ima adpcm mode */
-    res = vs1053b_set_soft_reset(&gs_handle, VS1053B_BOOL_TRUE);
-    if (res != 0)
-    {
-        return 1;
-    }
-    
-    /* delay 5ms */
-    vs1053b_interface_delay_ms(5);
-    
     /* if wav format, load the wav patch */
     if (strstr(path, ".wav") != NULL)
     {
         const uint16_t *patch_addr;
         uint16_t l;
+        
+        /* enable pcm adpcm recording active */
+        res = vs1053b_set_pcm_adpcm_recording_active(&gs_handle, VS1053B_BOOL_TRUE);
+        if (res != 0)
+        {
+            return 1;
+        }
+        
+        /* both soft reset and pcm adpcm recording active to start ima adpcm mode */
+        res = vs1053b_set_soft_reset(&gs_handle, VS1053B_BOOL_TRUE);
+        if (res != 0)
+        {
+            return 1;
+        }
+        
+        /* delay 5ms */
+        vs1053b_interface_delay_ms(5);
+        
+        /* set record format wav */
+        res = vs1053b_set_record_format(&gs_handle, VS1053B_RECORD_FORMAT_WAV);
+        if (res != 0)
+        {
+            return 1;
+        }
         
         /* get wav patch */
         res = vs1053b_get_patch(&gs_handle, VS1053B_PATCH_WAV, &patch_addr, &l);
@@ -1015,20 +1471,98 @@ uint8_t vs1053b_basic_record(char *path)
         {
             return 1;
         }
+        
+        /* record audio */
+        res = vs1053b_record(&gs_handle, path, VS1053B_BASIC_DEFAULT_RECORD_WAV_SAMPLE);
+        if (res != 0)
+        {
+            return 1;
+        }
+    }
+    else if (strstr(path, ".ogg") != NULL)
+    {
+        uint8_t buf[2];
+        const uint16_t *patch_addr;
+        uint16_t l;
+        uint16_t addr;
+        uint16_t value;
+        
+        /* enable pcm adpcm recording active */
+        res = vs1053b_set_pcm_adpcm_recording_active(&gs_handle, VS1053B_BOOL_TRUE);
+        if (res != 0)
+        {
+            return 1;
+        }
+        
+        /* both soft reset and pcm adpcm recording active to start ima adpcm mode */
+        res = vs1053b_set_soft_reset(&gs_handle, VS1053B_BOOL_TRUE);
+        if (res != 0)
+        {
+            return 1;
+        }
+        
+        /* delay 5ms */
+        vs1053b_interface_delay_ms(5);
+        
+        /* set interrupt enable ram address */
+        addr = 0xC01A;
+        res = vs1053b_set_ram_address(&gs_handle, addr);
+        if (res != 0)
+        {
+            vs1053b_interface_debug_print("vs1053b: set ram address failed.\n");
+            (void)vs1053b_deinit(&gs_handle);
+            
+            return 1;
+        }
+        
+        /* disable all interrupts except sci */
+        value = 0x0002;
+        buf[0] = (value >> 8) & 0xFF;
+        buf[1] = (value >> 0) & 0xFF;
+        res = vs1053b_write_ram(&gs_handle, buf, 2);
+        if (res != 0)
+        {
+            vs1053b_interface_debug_print("vs1053b: write ram failed.\n");
+            (void)vs1053b_deinit(&gs_handle);
+            
+            return 1;
+        }
+        
+        /* set record format ogg */
+        res = vs1053b_set_record_format(&gs_handle, VS1053B_RECORD_FORMAT_OGG);
+        if (res != 0)
+        {
+            return 1;
+        }
+        
+        /* get ogg patch */
+        res = vs1053b_get_patch(&gs_handle, VS1053B_BASIC_DEFAULT_RECORD_OGG_VENC, &patch_addr, &l);
+        if (res != 0)
+        {
+            return 1;
+        }
+        
+        /* load ogg patch */
+        res = vs1053b_load_patch(&gs_handle, patch_addr, l);
+        if (res != 0)
+        {
+            return 1;
+        }
+        
+        /* record audio */
+        res = vs1053b_record(&gs_handle, path, VS1053B_BASIC_DEFAULT_RECORD_OGG_SAMPLE);
+        if (res != 0)
+        {
+            return 1;
+        }
     }
     else
     {
-        vs1053b_interface_debug_print("vs1053b: record only support wav format.\n");
+        vs1053b_interface_debug_print("vs1053b: record only supports wav and ogg format.\n");
         
         return 1;
     }
-    
-    /* record audio */
-    res = vs1053b_record(&gs_handle, path, VS1053B_BASIC_DEFAULT_RECORD_SAMPLE);
-    if (res != 0)
-    {
-        return 1;
-    }
+
     
     return 0;
 }

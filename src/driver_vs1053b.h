@@ -52,6 +52,11 @@ extern "C"{
  */
 
 /**
+ * @addtogroup vs1053b_basic_driver
+ * @{
+ */
+
+/**
  * @brief vs1053b buffer size definition
  */
 #ifndef VS1053B_BUFFER_SIZE
@@ -66,9 +71,319 @@ extern "C"{
 #endif
 
 /**
- * @addtogroup vs1053b_basic_driver
- * @{
+ * @brief vs1053b venc08k1q00 definition
  */
+#ifndef VS1053B_OGG_VENC08K1Q00
+    #define VS1053B_OGG_VENC08K1Q00        0        /**< ogg venc08k1q00 */
+#endif
+
+/**
+ * @brief vs1053b venc08k1q01 definition
+ */
+#ifndef VS1053B_OGG_VENC08K1Q01
+    #define VS1053B_OGG_VENC08K1Q01        0        /**< ogg venc08k1q01 */
+#endif
+
+/**
+ * @brief vs1053b venc08k1q02 definition
+ */
+#ifndef VS1053B_OGG_VENC08K1Q02
+    #define VS1053B_OGG_VENC08K1Q02        0        /**< ogg venc08k1q02 */
+#endif
+
+/**
+ * @brief vs1053b venc08k1q03 definition
+ */
+#ifndef VS1053B_OGG_VENC08K1Q03
+    #define VS1053B_OGG_VENC08K1Q03        0        /**< ogg venc08k1q03 */
+#endif
+
+/**
+ * @brief vs1053b venc08k1q04 definition
+ */
+#ifndef VS1053B_OGG_VENC08K1Q04
+    #define VS1053B_OGG_VENC08K1Q04        0        /**< ogg venc08k1q04 */
+#endif
+
+/**
+ * @brief vs1053b venc08k1q05 definition
+ */
+#ifndef VS1053B_OGG_VENC08K1Q05
+    #define VS1053B_OGG_VENC08K1Q05        0        /**< ogg venc08k1q05 */
+#endif
+
+/**
+ * @brief vs1053b venc08k1q06 definition
+ */
+#ifndef VS1053B_OGG_VENC08K1Q06
+    #define VS1053B_OGG_VENC08K1Q06        0        /**< ogg venc08k1q06 */
+#endif
+
+/**
+ * @brief vs1053b venc08k1q07 definition
+ */
+#ifndef VS1053B_OGG_VENC08K1Q07
+    #define VS1053B_OGG_VENC08K1Q07        0        /**< ogg venc08k1q07 */
+#endif
+
+/**
+ * @brief vs1053b venc08k1q08 definition
+ */
+#ifndef VS1053B_OGG_VENC08K1Q08
+    #define VS1053B_OGG_VENC08K1Q08        0        /**< ogg venc08k1q08 */
+#endif
+
+/**
+ * @brief vs1053b venc08k1q09 definition
+ */
+#ifndef VS1053B_OGG_VENC08K1Q09
+    #define VS1053B_OGG_VENC08K1Q09        0        /**< ogg venc08k1q09 */
+#endif
+
+/**
+ * @brief vs1053b venc08k1q10 definition
+ */
+#ifndef VS1053B_OGG_VENC08K1Q10
+    #define VS1053B_OGG_VENC08K1Q10        0        /**< ogg venc08k1q10 */
+#endif
+
+/**
+ * @brief vs1053b venc16k1q00 definition
+ */
+#ifndef VS1053B_OGG_VENC16K1Q00
+    #define VS1053B_OGG_VENC16K1Q00        0        /**< ogg venc16k1q00 */
+#endif
+
+/**
+ * @brief vs1053b venc16k1q01 definition
+ */
+#ifndef VS1053B_OGG_VENC16K1Q01
+    #define VS1053B_OGG_VENC16K1Q01        0        /**< ogg venc16k1q01 */
+#endif
+
+/**
+ * @brief vs1053b venc16k1q02 definition
+ */
+#ifndef VS1053B_OGG_VENC16K1Q02
+    #define VS1053B_OGG_VENC16K1Q02        0        /**< ogg venc16k1q02 */
+#endif
+
+/**
+ * @brief vs1053b venc16k1q03 definition
+ */
+#ifndef VS1053B_OGG_VENC16K1Q03
+    #define VS1053B_OGG_VENC16K1Q03        0        /**< ogg venc16k1q03 */
+#endif
+
+/**
+ * @brief vs1053b venc16k1q04 definition
+ */
+#ifndef VS1053B_OGG_VENC16K1Q04
+    #define VS1053B_OGG_VENC16K1Q04        0        /**< ogg venc16k1q04 */
+#endif
+
+/**
+ * @brief vs1053b venc16k1q05 definition
+ */
+#ifndef VS1053B_OGG_VENC16K1Q05
+    #define VS1053B_OGG_VENC16K1Q05        0        /**< ogg venc16k1q05 */
+#endif
+
+/**
+ * @brief vs1053b venc16k1q06 definition
+ */
+#ifndef VS1053B_OGG_VENC16K1Q06
+    #define VS1053B_OGG_VENC16K1Q06        0        /**< ogg venc16k1q06 */
+#endif
+
+/**
+ * @brief vs1053b venc16k1q07 definition
+ */
+#ifndef VS1053B_OGG_VENC16K1Q07
+    #define VS1053B_OGG_VENC16K1Q07        0        /**< ogg venc16k1q07 */
+#endif
+
+/**
+ * @brief vs1053b venc16k1q08 definition
+ */
+#ifndef VS1053B_OGG_VENC16K1Q08
+    #define VS1053B_OGG_VENC16K1Q08        0        /**< ogg venc16k1q08 */
+#endif
+
+/**
+ * @brief vs1053b venc16k1q09 definition
+ */
+#ifndef VS1053B_OGG_VENC16K1Q09
+    #define VS1053B_OGG_VENC16K1Q09        0        /**< ogg venc16k1q09 */
+#endif
+
+/**
+ * @brief vs1053b venc16k1q10 definition
+ */
+#ifndef VS1053B_OGG_VENC16K1Q10
+    #define VS1053B_OGG_VENC16K1Q10        0        /**< ogg venc16k1q10 */
+#endif
+
+/**
+ * @brief vs1053b venc16k2q00 definition
+ */
+#ifndef VS1053B_OGG_VENC16K2Q00
+    #define VS1053B_OGG_VENC16K2Q00        0        /**< ogg venc16k2q00 */
+#endif
+
+/**
+ * @brief vs1053b venc16k2q01 definition
+ */
+#ifndef VS1053B_OGG_VENC16K2Q01
+    #define VS1053B_OGG_VENC16K2Q01        0        /**< ogg venc16k2q01 */
+#endif
+
+/**
+ * @brief vs1053b venc16k2q02 definition
+ */
+#ifndef VS1053B_OGG_VENC16K2Q02
+    #define VS1053B_OGG_VENC16K2Q02        0        /**< ogg venc16k2q02 */
+#endif
+
+/**
+ * @brief vs1053b venc16k2q03 definition
+ */
+#ifndef VS1053B_OGG_VENC16K2Q03
+    #define VS1053B_OGG_VENC16K2Q03        0        /**< ogg venc16k2q03 */
+#endif
+
+/**
+ * @brief vs1053b venc16k2q04 definition
+ */
+#ifndef VS1053B_OGG_VENC16K2Q04
+    #define VS1053B_OGG_VENC16K2Q04        0        /**< ogg venc16k2q04 */
+#endif
+
+/**
+ * @brief vs1053b venc16k2q05 definition
+ */
+#ifndef VS1053B_OGG_VENC16K2Q05
+    #define VS1053B_OGG_VENC16K2Q05        0        /**< ogg venc16k2q05 */
+#endif
+
+/**
+ * @brief vs1053b venc16k2q06 definition
+ */
+#ifndef VS1053B_OGG_VENC16K2Q06
+    #define VS1053B_OGG_VENC16K2Q06        0        /**< ogg venc16k2q06 */
+#endif
+
+/**
+ * @brief vs1053b venc16k2q07 definition
+ */
+#ifndef VS1053B_OGG_VENC16K2Q07
+    #define VS1053B_OGG_VENC16K2Q07        0        /**< ogg venc16k2q07 */
+#endif
+
+/**
+ * @brief vs1053b venc16k2q08 definition
+ */
+#ifndef VS1053B_OGG_VENC16K2Q08
+    #define VS1053B_OGG_VENC16K2Q08        0        /**< ogg venc16k2q08 */
+#endif
+
+/**
+ * @brief vs1053b venc16k2q09 definition
+ */
+#ifndef VS1053B_OGG_VENC16K2Q09
+    #define VS1053B_OGG_VENC16K2Q09        0        /**< ogg venc16k2q09 */
+#endif
+
+/**
+ * @brief vs1053b venc16k2q10 definition
+ */
+#ifndef VS1053B_OGG_VENC16K2Q10
+    #define VS1053B_OGG_VENC16K2Q10        0        /**< ogg venc16k2q10 */
+#endif
+
+/**
+ * @brief vs1053b venc44k1q00 definition
+ */
+#ifndef VS1053B_OGG_VENC44K1Q00
+    #define VS1053B_OGG_VENC44K1Q00        0        /**< ogg venc44k1q00 */
+#endif
+
+/**
+ * @brief vs1053b venc44k1q01 definition
+ */
+#ifndef VS1053B_OGG_VENC44K1Q01
+    #define VS1053B_OGG_VENC44K1Q01        0        /**< ogg venc44k1q01 */
+#endif
+
+/**
+ * @brief vs1053b venc44k1q02 definition
+ */
+#ifndef VS1053B_OGG_VENC44K1Q02
+    #define VS1053B_OGG_VENC44K1Q02        0        /**< ogg venc44k1q02 */
+#endif
+
+/**
+ * @brief vs1053b venc44k1q03 definition
+ */
+#ifndef VS1053B_OGG_VENC44K1Q03
+    #define VS1053B_OGG_VENC44K1Q03        0        /**< ogg venc44k1q03 */
+#endif
+
+/**
+ * @brief vs1053b venc44k1q04 definition
+ */
+#ifndef VS1053B_OGG_VENC44K1Q04
+    #define VS1053B_OGG_VENC44K1Q04        0        /**< ogg venc44k1q04 */
+#endif
+
+/**
+ * @brief vs1053b venc44k1q05 definition
+ */
+#ifndef VS1053B_OGG_VENC44K1Q05
+    #define VS1053B_OGG_VENC44K1Q05        0        /**< ogg venc44k1q05 */
+#endif
+
+/**
+ * @brief vs1053b venc44k2q00 definition
+ */
+#ifndef VS1053B_OGG_VENC44K2Q00
+    #define VS1053B_OGG_VENC44K2Q00        0        /**< ogg venc44k2q00 */
+#endif
+
+/**
+ * @brief vs1053b venc44k2q01 definition
+ */
+#ifndef VS1053B_OGG_VENC44K2Q01
+    #define VS1053B_OGG_VENC44K2Q01        0        /**< ogg venc44k2q01 */
+#endif
+
+/**
+ * @brief vs1053b venc44k2q02 definition
+ */
+#ifndef VS1053B_OGG_VENC44K2Q02
+    #define VS1053B_OGG_VENC44K2Q02        0        /**< ogg venc44k2q02 */
+#endif
+
+/**
+ * @brief vs1053b venc44k2q03 definition
+ */
+#ifndef VS1053B_OGG_VENC44K2Q03
+    #define VS1053B_OGG_VENC44K2Q03        0        /**< ogg venc44k2q03 */
+#endif
+
+/**
+ * @brief vs1053b venc44k2q04 definition
+ */
+#ifndef VS1053B_OGG_VENC44K2Q04
+    #define VS1053B_OGG_VENC44K2Q04        0        /**< ogg venc44k2q04 */
+#endif
+
+/**
+ * @brief vs1053b venc44k2q05 definition
+ */
+#ifndef VS1053B_OGG_VENC44K2Q05
+    #define VS1053B_OGG_VENC44K2Q05        1        /**< ogg venc44k2q05 */
+#endif
 
 /**
  * @brief vs1053b bool enumeration definition
@@ -235,9 +550,73 @@ typedef enum
  */
 typedef enum
 {
-    VS1053B_PATCH_FLAC = 0x00,        /**< flac */
-    VS1053B_PATCH_WAV  = 0x01,        /**< wav */
+    VS1053B_PATCH_FLAC            = 0x00,        /**< flac */
+    VS1053B_PATCH_WAV             = 0x01,        /**< wav */
+    VS1053B_PATCH_OGG_VENC08K1Q00 = 0x02,        /**< ogg venc08k1q00 */
+    VS1053B_PATCH_OGG_VENC08K1Q01 = 0x03,        /**< ogg venc08k1q01 */
+    VS1053B_PATCH_OGG_VENC08K1Q02 = 0x04,        /**< ogg venc08k1q02 */
+    VS1053B_PATCH_OGG_VENC08K1Q03 = 0x05,        /**< ogg venc08k1q03 */
+    VS1053B_PATCH_OGG_VENC08K1Q04 = 0x06,        /**< ogg venc08k1q04 */
+    VS1053B_PATCH_OGG_VENC08K1Q05 = 0x07,        /**< ogg venc08k1q05 */
+    VS1053B_PATCH_OGG_VENC08K1Q06 = 0x08,        /**< ogg venc08k1q06 */
+    VS1053B_PATCH_OGG_VENC08K1Q07 = 0x09,        /**< ogg venc08k1q07 */
+    VS1053B_PATCH_OGG_VENC08K1Q08 = 0x0A,        /**< ogg venc08k1q08 */
+    VS1053B_PATCH_OGG_VENC08K1Q09 = 0x0B,        /**< ogg venc08k1q09 */
+    VS1053B_PATCH_OGG_VENC08K1Q10 = 0x0C,        /**< ogg venc08k1q10 */
+    VS1053B_PATCH_OGG_VENC16K1Q00 = 0x0D,        /**< ogg venc16k1q00 */
+    VS1053B_PATCH_OGG_VENC16K1Q01 = 0x0E,        /**< ogg venc16k1q01 */
+    VS1053B_PATCH_OGG_VENC16K1Q02 = 0x0F,        /**< ogg venc16k1q02 */
+    VS1053B_PATCH_OGG_VENC16K1Q03 = 0x10,        /**< ogg venc16k1q03 */
+    VS1053B_PATCH_OGG_VENC16K1Q04 = 0x11,        /**< ogg venc16k1q04 */
+    VS1053B_PATCH_OGG_VENC16K1Q05 = 0x12,        /**< ogg venc16k1q05 */
+    VS1053B_PATCH_OGG_VENC16K1Q06 = 0x13,        /**< ogg venc16k1q06 */
+    VS1053B_PATCH_OGG_VENC16K1Q07 = 0x14,        /**< ogg venc16k1q07 */
+    VS1053B_PATCH_OGG_VENC16K1Q08 = 0x15,        /**< ogg venc16k1q08 */
+    VS1053B_PATCH_OGG_VENC16K1Q09 = 0x16,        /**< ogg venc16k1q09 */
+    VS1053B_PATCH_OGG_VENC16K1Q10 = 0x17,        /**< ogg venc16k1q10 */
+    VS1053B_PATCH_OGG_VENC16K2Q00 = 0x18,        /**< ogg venc16k2q00 */
+    VS1053B_PATCH_OGG_VENC16K2Q01 = 0x19,        /**< ogg venc16k2q01 */
+    VS1053B_PATCH_OGG_VENC16K2Q02 = 0x1A,        /**< ogg venc16k2q02 */
+    VS1053B_PATCH_OGG_VENC16K2Q03 = 0x1B,        /**< ogg venc16k2q03 */
+    VS1053B_PATCH_OGG_VENC16K2Q04 = 0x1C,        /**< ogg venc16k2q04 */
+    VS1053B_PATCH_OGG_VENC16K2Q05 = 0x1D,        /**< ogg venc16k2q05 */
+    VS1053B_PATCH_OGG_VENC16K2Q06 = 0x1E,        /**< ogg venc16k2q06 */
+    VS1053B_PATCH_OGG_VENC16K2Q07 = 0x1F,        /**< ogg venc16k2q07 */
+    VS1053B_PATCH_OGG_VENC16K2Q08 = 0x20,        /**< ogg venc16k2q08 */
+    VS1053B_PATCH_OGG_VENC16K2Q09 = 0x21,        /**< ogg venc16k2q09 */
+    VS1053B_PATCH_OGG_VENC16K2Q10 = 0x22,        /**< ogg venc16k2q10 */
+    VS1053B_PATCH_OGG_VENC44K1Q00 = 0x23,        /**< ogg venc44k1q00 */
+    VS1053B_PATCH_OGG_VENC44K1Q01 = 0x24,        /**< ogg venc44k1q01 */
+    VS1053B_PATCH_OGG_VENC44K1Q02 = 0x25,        /**< ogg venc44k1q02 */
+    VS1053B_PATCH_OGG_VENC44K1Q03 = 0x26,        /**< ogg venc44k1q03 */
+    VS1053B_PATCH_OGG_VENC44K1Q04 = 0x27,        /**< ogg venc44k1q04 */
+    VS1053B_PATCH_OGG_VENC44K1Q05 = 0x28,        /**< ogg venc44k1q05 */
+    VS1053B_PATCH_OGG_VENC44K2Q00 = 0x29,        /**< ogg venc44k2q00 */
+    VS1053B_PATCH_OGG_VENC44K2Q01 = 0x2A,        /**< ogg venc44k2q01 */
+    VS1053B_PATCH_OGG_VENC44K2Q02 = 0x2B,        /**< ogg venc44k2q02 */
+    VS1053B_PATCH_OGG_VENC44K2Q03 = 0x2C,        /**< ogg venc44k2q03 */
+    VS1053B_PATCH_OGG_VENC44K2Q04 = 0x2D,        /**< ogg venc44k2q04 */
+    VS1053B_PATCH_OGG_VENC44K2Q05 = 0x2E,        /**< ogg venc44k2q05 */
 } vs1053b_patch_t;
+
+/**
+ * @brief vs1053b iis rate enumeration definition
+ */
+typedef enum
+{
+    VS1053B_IIS_RATE_48KHZ  = 0x00,        /**< 48khz */
+    VS1053B_IIS_RATE_96KHZ  = 0x01,        /**< 96khz */
+    VS1053B_IIS_RATE_192KHZ = 0x02,        /**< 192khz */
+} vs1053b_iis_rate_t;
+
+/**
+ * @brief vs1053b record format enumeration definition
+ */
+typedef enum
+{
+    VS1053B_RECORD_FORMAT_WAV = 0x00,        /**< wav format */
+    VS1053B_RECORD_FORMAT_OGG = 0x01,        /**< ogg format */
+} vs1053b_record_format_t;
 
 /**
  * @brief vs1053b audio info structure definition
@@ -297,6 +676,8 @@ typedef struct vs1053b_handle_s
     void (*timestamp_read)(uint32_t *sec, uint32_t *us);                             /**< point to a timestamp_read function address */
     uint8_t buf[VS1053B_BUFFER_SIZE];                                                /**< buffer */
     uint8_t inited;                                                                  /**< inited flag */
+    uint8_t record_type;                                                             /**< record type */
+    uint8_t plugin_patch_type;                                                       /**< plugin patch type */
     uint8_t status;                                                                  /**< status */
     uint8_t pause;                                                                   /**< pause */
     uint32_t cur_pos;                                                                /**< current position */
@@ -584,9 +965,34 @@ uint8_t vs1053b_play(vs1053b_handle_t *handle, char *path);
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
  *            - 4 audio working
+ *            - 5 sample rate doesn't match patch
  * @note      none
  */
 uint8_t vs1053b_record(vs1053b_handle_t *handle, char *path, uint32_t sample_rate);
+
+/**
+ * @brief     set record format
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] format is the set record format
+ * @return    status code
+ *            - 0 success
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_record_format(vs1053b_handle_t *handle, vs1053b_record_format_t format);
+
+/**
+ * @brief      get record format
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *format points to a record format buffer
+ * @return     status code
+ *             - 0 success
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_record_format(vs1053b_handle_t *handle, vs1053b_record_format_t *format);
 
 /**
  * @brief     pause audio
@@ -1932,9 +2338,153 @@ uint8_t vs1053b_get_patch(vs1053b_handle_t *handle, vs1053b_patch_t type, const 
  *            - 1 load patch failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
+ *            - 4 invalid path address
  * @note      none
  */
 uint8_t vs1053b_load_patch(vs1053b_handle_t *handle, const uint16_t *patch, uint16_t len);
+
+/**
+ * @brief     enable or disable iis mclk
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] enable is a bool value
+ * @return    status code
+ *            - 0 success
+ *            - 1 set iis mclk failed
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_iis_mclk(vs1053b_handle_t *handle, vs1053b_bool_t enable);
+
+/**
+ * @brief      get iis mclk status
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *enable points to a bool value buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get iis mclk failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_iis_mclk(vs1053b_handle_t *handle, vs1053b_bool_t *enable);
+
+/**
+ * @brief     enable or disable iis
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] enable is a bool value
+ * @return    status code
+ *            - 0 success
+ *            - 1 set iis failed
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_iis(vs1053b_handle_t *handle, vs1053b_bool_t enable);
+
+/**
+ * @brief      get iis status
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *enable points to a bool value buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get iis failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_iis(vs1053b_handle_t *handle, vs1053b_bool_t *enable);
+
+/**
+ * @brief     set iis rate
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] iis_rate is the set iis rate
+ * @return    status code
+ *            - 0 success
+ *            - 1 set iis rate failed
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_iis_rate(vs1053b_handle_t *handle, vs1053b_iis_rate_t iis_rate);
+
+/**
+ * @brief      get iis rate
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *iis_rate points to an iis rate buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get iis rate failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_iis_rate(vs1053b_handle_t *handle, vs1053b_iis_rate_t *iis_rate);
+
+/**
+ * @brief     set gpio direction
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] mask is the set gpio direction mask
+ * @return    status code
+ *            - 0 success
+ *            - 1 set gpio direction failed
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_gpio_direction(vs1053b_handle_t *handle, uint16_t mask);
+
+/**
+ * @brief      get gpio direction
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *mask points to a gpio direction mask buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get gpio direction failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_gpio_direction(vs1053b_handle_t *handle, uint16_t *mask);
+
+/**
+ * @brief      get gpio input
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *data points to a data buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get gpio input failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_gpio_input(vs1053b_handle_t *handle, uint16_t *data);
+
+/**
+ * @brief     set gpio output
+ * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] data is the set data
+ * @return    status code
+ *            - 0 success
+ *            - 1 set gpio output failed
+ *            - 2 handle is NULL
+ *            - 3 handle is not initialized
+ * @note      none
+ */
+uint8_t vs1053b_set_gpio_output(vs1053b_handle_t *handle, uint16_t data);
+
+/**
+ * @brief      get gpio output
+ * @param[in]  *handle points to a vs1053b handle structure
+ * @param[out] *data points to a data buffer
+ * @return     status code
+ *             - 0 success
+ *             - 1 get gpio output failed
+ *             - 2 handle is NULL
+ *             - 3 handle is not initialized
+ * @note       none
+ */
+uint8_t vs1053b_get_gpio_output(vs1053b_handle_t *handle, uint16_t *data);
 
 /**
  * @}
