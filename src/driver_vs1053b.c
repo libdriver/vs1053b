@@ -226,10 +226,10 @@
 
 /**
  * @brief      read bytes
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  reg is the register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data length
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  reg register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data length
  * @return     status code
  *             - 0 success
  *             - 1 spi read failed
@@ -249,10 +249,10 @@ static uint8_t a_vs1053b_spi_read(vs1053b_handle_t *handle, uint8_t reg, uint8_t
 
 /**
  * @brief     write bytes
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] reg is the register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] reg register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 spi write failed
@@ -272,9 +272,9 @@ static uint8_t a_vs1053b_spi_write(vs1053b_handle_t *handle, uint8_t reg, uint8_
 
 /**
  * @brief     write data bytes
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 spi write data failed
@@ -294,7 +294,7 @@ static uint8_t a_vs1053b_spi_write_data(vs1053b_handle_t *handle, uint8_t *buf, 
 
 /**
  * @brief     check busy pin
- * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] *handle pointer to a vs1053b handle structure
  * @return    status code
  *            - 0 success
  *            - 1 busy
@@ -332,7 +332,7 @@ static uint8_t a_check_busy_pin(vs1053b_handle_t *handle)
 
 /**
  * @brief     stop playing
- * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] *handle pointer to a vs1053b handle structure
  * @return    status code
  *            - 0 success
  *            - 1 stop failed
@@ -485,7 +485,7 @@ static uint8_t a_vs1053b_stop(vs1053b_handle_t *handle)
 
 /**
  * @brief     period callback
- * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] *handle pointer to a vs1053b handle structure
  * @note      none
  */
 static void a_period(vs1053b_handle_t *handle)
@@ -511,8 +511,8 @@ static void a_period(vs1053b_handle_t *handle)
 
 /**
  * @brief     write wav header
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] *wav points to a vs1053b wav structure
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] *wav pointer to a vs1053b wav structure
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -580,8 +580,8 @@ static uint8_t a_vs1053b_write_wav_header(vs1053b_handle_t *handle, vs1053b_wav_
 
 /**
  * @brief     set the audio differential
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] diff is the audio differential
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] diff audio differential
  * @return    status code
  *            - 0 success
  *            - 1 set diff failed
@@ -635,8 +635,8 @@ uint8_t vs1053b_set_diff(vs1053b_handle_t *handle, vs1053b_diff_t diff)
 
 /**
  * @brief      get the audio differential
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *diff points to an audio differential buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *diff pointer to an audio differential buffer
  * @return     status code
  *             - 0 success
  *             - 1 get diff failed
@@ -680,8 +680,8 @@ uint8_t vs1053b_get_diff(vs1053b_handle_t *handle, vs1053b_diff_t *diff)
 
 /**
  * @brief     enable or disable mpeg layer i and ii
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set mpeg layer i and ii failed
@@ -735,8 +735,8 @@ uint8_t vs1053b_set_mpeg_layer_i_and_ii(vs1053b_handle_t *handle, vs1053b_bool_t
 
 /**
  * @brief      get mpeg layer i and ii status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get mpeg layer i and ii failed
@@ -780,8 +780,8 @@ uint8_t vs1053b_get_mpeg_layer_i_and_ii(vs1053b_handle_t *handle, vs1053b_bool_t
 
 /**
  * @brief     enable or disable soft reset
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set soft reset failed
@@ -836,8 +836,8 @@ uint8_t vs1053b_set_soft_reset(vs1053b_handle_t *handle, vs1053b_bool_t enable)
 
 /**
  * @brief      get soft reset status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get soft reset failed
@@ -881,8 +881,8 @@ uint8_t vs1053b_get_soft_reset(vs1053b_handle_t *handle, vs1053b_bool_t *enable)
 
 /**
  * @brief     enable or disable cancel decoding current file
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set cancel decoding current file failed
@@ -936,8 +936,8 @@ uint8_t vs1053b_set_cancel_decoding_current_file(vs1053b_handle_t *handle, vs105
 
 /**
  * @brief      get cancel decoding current file status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get cancel decoding current file failed
@@ -981,8 +981,8 @@ uint8_t vs1053b_get_cancel_decoding_current_file(vs1053b_handle_t *handle, vs105
 
 /**
  * @brief     enable or disable ear speaker low setting
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set ear speaker low setting failed
@@ -1036,8 +1036,8 @@ uint8_t vs1053b_set_ear_speaker_low_setting(vs1053b_handle_t *handle, vs1053b_bo
 
 /**
  * @brief      get ear speaker low setting status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get ear speaker low setting failed
@@ -1081,8 +1081,8 @@ uint8_t vs1053b_get_ear_speaker_low_setting(vs1053b_handle_t *handle, vs1053b_bo
 
 /**
  * @brief     enable or disable allow sdi test
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set allow sdi test failed
@@ -1136,8 +1136,8 @@ uint8_t vs1053b_set_allow_sdi_test(vs1053b_handle_t *handle, vs1053b_bool_t enab
 
 /**
  * @brief      get allow sdi test status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get allow sdi test failed
@@ -1181,8 +1181,8 @@ uint8_t vs1053b_get_allow_sdi_test(vs1053b_handle_t *handle, vs1053b_bool_t *ena
 
 /**
  * @brief     enable or disable stream mode
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set stream mode failed
@@ -1236,8 +1236,8 @@ uint8_t vs1053b_set_stream_mode(vs1053b_handle_t *handle, vs1053b_bool_t enable)
 
 /**
  * @brief      get stream mode status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get stream mode failed
@@ -1281,8 +1281,8 @@ uint8_t vs1053b_get_stream_mode(vs1053b_handle_t *handle, vs1053b_bool_t *enable
 
 /**
  * @brief     enable or disable ear speaker high setting
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set ear speaker high setting failed
@@ -1336,8 +1336,8 @@ uint8_t vs1053b_set_ear_speaker_high_setting(vs1053b_handle_t *handle, vs1053b_b
 
 /**
  * @brief      get ear speaker high setting status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get ear speaker high setting failed
@@ -1381,8 +1381,8 @@ uint8_t vs1053b_get_ear_speaker_high_setting(vs1053b_handle_t *handle, vs1053b_b
 
 /**
  * @brief     set dclk edge
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] edge is the dclk edge
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] edge dclk edge
  * @return    status code
  *            - 0 success
  *            - 1 set dclk edge failed
@@ -1436,8 +1436,8 @@ uint8_t vs1053b_set_dclk_edge(vs1053b_handle_t *handle, vs1053b_dclk_edge_t edge
 
 /**
  * @brief      get dclk edge
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *edge points to a dclk edge buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *edge pointer to a dclk edge buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dclk edge failed
@@ -1481,8 +1481,8 @@ uint8_t vs1053b_get_dclk_edge(vs1053b_handle_t *handle, vs1053b_dclk_edge_t *edg
 
 /**
  * @brief     set sdi bit order
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] order is the bit order
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] order bit order
  * @return    status code
  *            - 0 success
  *            - 1 set sdi bit order failed
@@ -1536,8 +1536,8 @@ uint8_t vs1053b_set_sdi_bit_order(vs1053b_handle_t *handle, vs1053b_bit_order_t 
 
 /**
  * @brief      get sdi bit order
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *order points to a bit order buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *order pointer to a bit order buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sdi bit order failed
@@ -1581,8 +1581,8 @@ uint8_t vs1053b_get_sdi_bit_order(vs1053b_handle_t *handle, vs1053b_bit_order_t 
 
 /**
  * @brief     enable or disable share spi chip select
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set share spi chip select failed
@@ -1636,8 +1636,8 @@ uint8_t vs1053b_set_share_spi_chip_select(vs1053b_handle_t *handle, vs1053b_bool
 
 /**
  * @brief      get share spi chip select status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get share spi chip select failed
@@ -1681,8 +1681,8 @@ uint8_t vs1053b_get_share_spi_chip_select(vs1053b_handle_t *handle, vs1053b_bool
 
 /**
  * @brief     enable or disable native spi modes
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set native spi modes failed
@@ -1736,8 +1736,8 @@ uint8_t vs1053b_set_native_spi_modes(vs1053b_handle_t *handle, vs1053b_bool_t en
 
 /**
  * @brief      get native spi modes status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get native spi modes failed
@@ -1781,8 +1781,8 @@ uint8_t vs1053b_get_native_spi_modes(vs1053b_handle_t *handle, vs1053b_bool_t *e
 
 /**
  * @brief     enable or disable pcm adpcm recording active
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set pcm adpcm recording active failed
@@ -1836,8 +1836,8 @@ uint8_t vs1053b_set_pcm_adpcm_recording_active(vs1053b_handle_t *handle, vs1053b
 
 /**
  * @brief      get pcm adpcm recording active status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get pcm adpcm recording active failed
@@ -1881,8 +1881,8 @@ uint8_t vs1053b_get_pcm_adpcm_recording_active(vs1053b_handle_t *handle, vs1053b
 
 /**
  * @brief     set selector
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] selector is the set param
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] selector set param
  * @return    status code
  *            - 0 success
  *            - 1 set selector failed
@@ -1936,8 +1936,8 @@ uint8_t vs1053b_set_selector(vs1053b_handle_t *handle, vs1053b_selector_t select
 
 /**
  * @brief      get selector
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *selector points to a param buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *selector pointer to a param buffer
  * @return     status code
  *             - 0 success
  *             - 1 get selector failed
@@ -1981,8 +1981,8 @@ uint8_t vs1053b_get_selector(vs1053b_handle_t *handle, vs1053b_selector_t *selec
 
 /**
  * @brief     set clock range
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] range is the clock range
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] range clock range
  * @return    status code
  *            - 0 success
  *            - 1 set clock range failed
@@ -2036,8 +2036,8 @@ uint8_t vs1053b_set_clock_range(vs1053b_handle_t *handle, vs1053b_clock_range_t 
 
 /**
  * @brief      get clock range
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *range points to a range buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *range pointer to a range buffer
  * @return     status code
  *             - 0 success
  *             - 1 get clock range failed
@@ -2081,8 +2081,8 @@ uint8_t vs1053b_get_clock_range(vs1053b_handle_t *handle, vs1053b_clock_range_t 
 
 /**
  * @brief     enable or disable do not jump
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set do not jump failed
@@ -2136,8 +2136,8 @@ uint8_t vs1053b_set_do_not_jump(vs1053b_handle_t *handle, vs1053b_bool_t enable)
 
 /**
  * @brief      get do not jump status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get do not jump failed
@@ -2181,8 +2181,8 @@ uint8_t vs1053b_get_do_not_jump(vs1053b_handle_t *handle, vs1053b_bool_t *enable
 
 /**
  * @brief     set swing
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] swing is the set param
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] swing set param
  * @return    status code
  *            - 0 success
  *            - 1 set swing failed
@@ -2243,8 +2243,8 @@ uint8_t vs1053b_set_swing(vs1053b_handle_t *handle, uint8_t swing)
 
 /**
  * @brief      get swing
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *swing points to a param buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *swing pointer to a param buffer
  * @return     status code
  *             - 0 success
  *             - 1 get swing failed
@@ -2288,9 +2288,9 @@ uint8_t vs1053b_get_swing(vs1053b_handle_t *handle, uint8_t *swing)
 
 /**
  * @brief      convert the swing to the register raw data
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a register raw buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a register raw buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -2315,9 +2315,9 @@ uint8_t vs1053b_swing_convert_to_register(vs1053b_handle_t *handle, float db, ui
 
 /**
  * @brief      convert the register raw data to the swing
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  reg is the register raw data
- * @param[out] *db points to a db buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  reg register raw data
+ * @param[out] *db pointer to a db buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -2342,8 +2342,8 @@ uint8_t vs1053b_swing_convert_to_data(vs1053b_handle_t *handle, uint8_t reg, flo
 
 /**
  * @brief     enable or disable overload indicator
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set overload indicator failed
@@ -2397,8 +2397,8 @@ uint8_t vs1053b_set_overload_indicator(vs1053b_handle_t *handle, vs1053b_bool_t 
 
 /**
  * @brief      get overload indicator status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get overload indicator failed
@@ -2442,8 +2442,8 @@ uint8_t vs1053b_get_overload_indicator(vs1053b_handle_t *handle, vs1053b_bool_t 
 
 /**
  * @brief     enable or disable overload detection
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set overload detection failed
@@ -2497,8 +2497,8 @@ uint8_t vs1053b_set_overload_detection(vs1053b_handle_t *handle, vs1053b_bool_t 
 
 /**
  * @brief      get overload detection status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get overload detection failed
@@ -2542,8 +2542,8 @@ uint8_t vs1053b_get_overload_detection(vs1053b_handle_t *handle, vs1053b_bool_t 
 
 /**
  * @brief      get version
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *version points to a version buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *version pointer to a version buffer
  * @return     status code
  *             - 0 success
  *             - 1 get version failed
@@ -2587,8 +2587,8 @@ uint8_t vs1053b_get_version(vs1053b_handle_t *handle, uint8_t *version)
 
 /**
  * @brief     enable or disable analog driver power down
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set analog driver power down failed
@@ -2642,8 +2642,8 @@ uint8_t vs1053b_set_analog_driver_power_down(vs1053b_handle_t *handle, vs1053b_b
 
 /**
  * @brief      get analog driver power down status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get analog driver power down failed
@@ -2687,8 +2687,8 @@ uint8_t vs1053b_get_analog_driver_power_down(vs1053b_handle_t *handle, vs1053b_b
 
 /**
  * @brief     enable or disable analog internal power down
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set analog internal power down failed
@@ -2742,8 +2742,8 @@ uint8_t vs1053b_set_analog_internal_power_down(vs1053b_handle_t *handle, vs1053b
 
 /**
  * @brief      get analog internal power down status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool buffer
  * @return     status code
  *             - 0 success
  *             - 1 get analog internal power down failed
@@ -2787,8 +2787,8 @@ uint8_t vs1053b_get_analog_internal_power_down(vs1053b_handle_t *handle, vs1053b
 
 /**
  * @brief     set ad clock
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] ad_clock is the ad clock
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] ad_clock ad clock
  * @return    status code
  *            - 0 success
  *            - 1 set ad clock failed
@@ -2842,8 +2842,8 @@ uint8_t vs1053b_set_ad_clock(vs1053b_handle_t *handle, vs1053b_ad_clock_t ad_clo
 
 /**
  * @brief      get ad clock
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *ad_clock points to a ad clock buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *ad_clock pointer to a ad clock buffer
  * @return     status code
  *             - 0 success
  *             - 1 get ad clock failed
@@ -2887,8 +2887,8 @@ uint8_t vs1053b_get_ad_clock(vs1053b_handle_t *handle, vs1053b_ad_clock_t *ad_cl
 
 /**
  * @brief     set reference voltage
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] voltage is the reference voltage
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] voltage reference voltage
  * @return    status code
  *            - 0 success
  *            - 1 set reference voltage failed
@@ -2942,8 +2942,8 @@ uint8_t vs1053b_set_reference_voltage(vs1053b_handle_t *handle, vs1053b_referenc
 
 /**
  * @brief      get reference voltage
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *voltage points to a reference voltage buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *voltage pointer to a reference voltage buffer
  * @return     status code
  *             - 0 success
  *             - 1 get reference voltage failed
@@ -2987,8 +2987,8 @@ uint8_t vs1053b_get_reference_voltage(vs1053b_handle_t *handle, vs1053b_referenc
 
 /**
  * @brief     set treble control
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] db is the set db
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] db set db
  * @return    status code
  *            - 0 success
  *            - 1 set treble control failed
@@ -3049,8 +3049,8 @@ uint8_t vs1053b_set_treble_control(vs1053b_handle_t *handle, uint8_t db)
 
 /**
  * @brief      get treble control
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *db points to a db buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *db pointer to a db buffer
  * @return     status code
  *             - 0 success
  *             - 1 get treble control failed
@@ -3094,9 +3094,9 @@ uint8_t vs1053b_get_treble_control(vs1053b_handle_t *handle, uint8_t *db)
 
 /**
  * @brief      convert the treble control to the register raw data
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a register raw buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a register raw buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3121,9 +3121,9 @@ uint8_t vs1053b_treble_control_convert_to_register(vs1053b_handle_t *handle, flo
 
 /**
  * @brief      convert the register raw data to the treble control
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  reg is the register raw data
- * @param[out] *db points to a db buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  reg register raw data
+ * @param[out] *db pointer to a db buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3148,8 +3148,8 @@ uint8_t vs1053b_treble_control_convert_to_data(vs1053b_handle_t *handle, uint8_t
 
 /**
  * @brief     set lower limit frequency in 1000 hz
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] step is the set step
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] step set step
  * @return    status code
  *            - 0 success
  *            - 1 set lower limit frequency in 1000 hz failed
@@ -3210,8 +3210,8 @@ uint8_t vs1053b_set_lower_limit_frequency_in_1000_hz(vs1053b_handle_t *handle, u
 
 /**
  * @brief      get lower limit frequency in 1000 hz
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *step points to a step buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *step pointer to a step buffer
  * @return     status code
  *             - 0 success
  *             - 1 get lower limit frequency in 1000 hz failed
@@ -3255,9 +3255,9 @@ uint8_t vs1053b_get_lower_limit_frequency_in_1000_hz(vs1053b_handle_t *handle, u
 
 /**
  * @brief      convert the lower limit frequency in 1000 hz to the register raw data
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  hz is the set hz
- * @param[out] *reg points to a register raw buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  hz set hz
+ * @param[out] *reg pointer to a register raw buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3282,9 +3282,9 @@ uint8_t vs1053b_lower_limit_frequency_in_1000_hz_convert_to_register(vs1053b_han
 
 /**
  * @brief      convert the register raw data to the lower limit frequency in 1000 hz
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  reg is the register raw data
- * @param[out] *hz points to an hz buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  reg register raw data
+ * @param[out] *hz pointer to an hz buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3309,8 +3309,8 @@ uint8_t vs1053b_lower_limit_frequency_in_1000_hz_convert_to_data(vs1053b_handle_
 
 /**
  * @brief     set bass enhancement
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] db is the set db
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] db set db
  * @return    status code
  *            - 0 success
  *            - 1 set bass enhancement failed
@@ -3371,8 +3371,8 @@ uint8_t vs1053b_set_bass_enhancement(vs1053b_handle_t *handle, uint8_t db)
 
 /**
  * @brief      get bass enhancement
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *db points to a db buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *db pointer to a db buffer
  * @return     status code
  *             - 0 success
  *             - 1 get bass enhancement failed
@@ -3416,8 +3416,8 @@ uint8_t vs1053b_get_bass_enhancement(vs1053b_handle_t *handle, uint8_t *db)
 
 /**
  * @brief     set lower limit frequency in 10 hz
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] step is the set step
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] step set step
  * @return    status code
  *            - 0 success
  *            - 1 set lower limit frequency in 10 hz failed
@@ -3478,8 +3478,8 @@ uint8_t vs1053b_set_lower_limit_frequency_in_10_hz(vs1053b_handle_t *handle, uin
 
 /**
  * @brief      get lower limit frequency in 10 hz
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *step points to a step buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *step pointer to a step buffer
  * @return     status code
  *             - 0 success
  *             - 1 get lower limit frequency in 10 hz failed
@@ -3523,9 +3523,9 @@ uint8_t vs1053b_get_lower_limit_frequency_in_10_hz(vs1053b_handle_t *handle, uin
 
 /**
  * @brief      convert the lower limit frequency in 10 hz to the register raw data
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  hz is the set hz
- * @param[out] *reg points to a register raw buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  hz set hz
+ * @param[out] *reg pointer to a register raw buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3550,9 +3550,9 @@ uint8_t vs1053b_lower_limit_frequency_in_10_hz_convert_to_register(vs1053b_handl
 
 /**
  * @brief      convert the register raw data to the lower limit frequency in 10 hz
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  reg is the register raw data
- * @param[out] *hz points to an hz buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  reg register raw data
+ * @param[out] *hz pointer to an hz buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3577,8 +3577,8 @@ uint8_t vs1053b_lower_limit_frequency_in_10_hz_convert_to_data(vs1053b_handle_t 
 
 /**
  * @brief     set clock multiplier
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] multiplier is the clock multiplier
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] multiplier clock multiplier
  * @return    status code
  *            - 0 success
  *            - 1 set clock multiplier failed
@@ -3632,8 +3632,8 @@ uint8_t vs1053b_set_clock_multiplier(vs1053b_handle_t *handle, vs1053b_clock_mul
 
 /**
  * @brief      get clock multiplier
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *multiplier points to a clock multiplier buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *multiplier pointer to a clock multiplier buffer
  * @return     status code
  *             - 0 success
  *             - 1 get clock multiplier failed
@@ -3677,8 +3677,8 @@ uint8_t vs1053b_get_clock_multiplier(vs1053b_handle_t *handle, vs1053b_clock_mul
 
 /**
  * @brief     set allowed multiplier addition
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] addition is the allowed multiplier addition
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] addition allowed multiplier addition
  * @return    status code
  *            - 0 success
  *            - 1 set allowed multiplier addition failed
@@ -3732,8 +3732,8 @@ uint8_t vs1053b_set_allowed_multiplier_addition(vs1053b_handle_t *handle, vs1053
 
 /**
  * @brief      get allowed multiplier addition
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *addition points to an allowed multiplier addition buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *addition pointer to an allowed multiplier addition buffer
  * @return     status code
  *             - 0 success
  *             - 1 get allowed multiplier addition failed
@@ -3777,8 +3777,8 @@ uint8_t vs1053b_get_allowed_multiplier_addition(vs1053b_handle_t *handle, vs1053
 
 /**
  * @brief     set clock frequency
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] clk is the clock frequency
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] clk clock frequency
  * @return    status code
  *            - 0 success
  *            - 1 set clock frequency failed
@@ -3839,8 +3839,8 @@ uint8_t vs1053b_set_clock_frequency(vs1053b_handle_t *handle, uint16_t clk)
 
 /**
  * @brief      get clock frequency
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *clk points to a clock buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *clk pointer to a clock buffer
  * @return     status code
  *             - 0 success
  *             - 1 get clock frequency failed
@@ -3884,9 +3884,9 @@ uint8_t vs1053b_get_clock_frequency(vs1053b_handle_t *handle, uint16_t *clk)
 
 /**
  * @brief      convert the clock frequency to the register raw data
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  hz is the set hz
- * @param[out] *reg points to a register raw buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  hz set hz
+ * @param[out] *reg pointer to a register raw buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3911,9 +3911,9 @@ uint8_t vs1053b_clock_frequency_convert_to_register(vs1053b_handle_t *handle, fl
 
 /**
  * @brief      convert the register raw data to the clock frequency
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  reg is the register raw data
- * @param[out] *hz points to an hz buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  reg register raw data
+ * @param[out] *hz pointer to an hz buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3938,8 +3938,8 @@ uint8_t vs1053b_clock_frequency_convert_to_data(vs1053b_handle_t *handle, uint16
 
 /**
  * @brief     set decode time
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] decode_time is the decode time
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] decode_time decode time
  * @return    status code
  *            - 0 success
  *            - 1 set decode time failed
@@ -3995,8 +3995,8 @@ uint8_t vs1053b_set_decode_time(vs1053b_handle_t *handle, uint16_t decode_time)
 
 /**
  * @brief      get decode time
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *decode_time points to a decode time buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *decode_time pointer to a decode time buffer
  * @return     status code
  *             - 0 success
  *             - 1 get decode time failed
@@ -4038,9 +4038,9 @@ uint8_t vs1053b_get_decode_time(vs1053b_handle_t *handle, uint16_t *decode_time)
 
 /**
  * @brief     set sample rate
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] rate is the sample rate
- * @param[in] channel is the set channel
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] rate sample rate
+ * @param[in] channel set channel
  * @return    status code
  *            - 0 success
  *            - 1 set sample rate failed
@@ -4085,9 +4085,9 @@ uint8_t vs1053b_set_sample_rate(vs1053b_handle_t *handle, uint16_t rate, vs1053b
 
 /**
  * @brief      get sample rate
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *rate points to a sample rate buffer
- * @param[out] *channel points to a channel buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *rate pointer to a sample rate buffer
+ * @param[out] *channel pointer to a channel buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sample rate failed
@@ -4132,9 +4132,9 @@ uint8_t vs1053b_get_sample_rate(vs1053b_handle_t *handle, uint16_t *rate, vs1053
 
 /**
  * @brief     write ram
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] *buf points to an input buffer
- * @param[in] len is the buffer length
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] *buf pointer to an input buffer
+ * @param[in] len buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write ram failed
@@ -4174,9 +4174,9 @@ uint8_t vs1053b_write_ram(vs1053b_handle_t *handle, uint8_t *buf, uint16_t len)
 
 /**
  * @brief      read ram
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *buf points to an output buffer
- * @param[in]  len is the buffer length
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *buf pointer to an output buffer
+ * @param[in]  len buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read ram failed
@@ -4216,8 +4216,8 @@ uint8_t vs1053b_read_ram(vs1053b_handle_t *handle, uint8_t *buf, uint16_t len)
 
 /**
  * @brief     set ram address
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] addr is the ram address
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] addr ram address
  * @return    status code
  *            - 0 success
  *            - 1 set ram address failed
@@ -4260,9 +4260,9 @@ uint8_t vs1053b_set_ram_address(vs1053b_handle_t *handle, uint16_t addr)
 
 /**
  * @brief      get hdata
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *dat0 points to a data buffer
- * @param[out] *dat1 points to a data buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *dat0 pointer to a data buffer
+ * @param[out] *dat1 pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 get hdata failed
@@ -4312,8 +4312,8 @@ uint8_t vs1053b_get_hdata(vs1053b_handle_t *handle, uint16_t *dat0, uint16_t *da
 
 /**
  * @brief      get hdata0
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *dat0 points to a data buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *dat0 pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 get hdata0 failed
@@ -4355,8 +4355,8 @@ uint8_t vs1053b_get_hdata0(vs1053b_handle_t *handle, uint16_t *dat0)
 
 /**
  * @brief      get hdata1
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *dat1 points to a data buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *dat1 pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 get hdata1 failed
@@ -4398,8 +4398,8 @@ uint8_t vs1053b_get_hdata1(vs1053b_handle_t *handle, uint16_t *dat1)
 
 /**
  * @brief     set start address
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] addr is the start address
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] addr start address
  * @return    status code
  *            - 0 success
  *            - 1 set start address failed
@@ -4442,8 +4442,8 @@ uint8_t vs1053b_set_start_address(vs1053b_handle_t *handle, uint16_t addr)
 
 /**
  * @brief      get start address
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *addr points to an address buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *addr pointer to an address buffer
  * @return     status code
  *             - 0 success
  *             - 1 get start address failed
@@ -4485,9 +4485,9 @@ uint8_t vs1053b_get_start_address(vs1053b_handle_t *handle, uint16_t *addr)
 
 /**
  * @brief     set vol
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] left is the left vol
- * @param[in] right is the right vol
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] left left vol
+ * @param[in] right right vol
  * @return    status code
  *            - 0 success
  *            - 1 set vol failed
@@ -4532,9 +4532,9 @@ uint8_t vs1053b_set_vol(vs1053b_handle_t *handle, uint8_t left, uint8_t right)
 
 /**
  * @brief      get vol
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *left points to a left vol buffer
- * @param[out] *right points to a right vol buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *left pointer to a left vol buffer
+ * @param[out] *right pointer to a right vol buffer
  * @return     status code
  *             - 0 success
  *             - 1 get vol failed
@@ -4577,9 +4577,9 @@ uint8_t vs1053b_get_vol(vs1053b_handle_t *handle, uint8_t *left, uint8_t *right)
 
 /**
  * @brief      convert vol to the register raw data
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  db is the set db
- * @param[out] *reg points to a register raw buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  db set db
+ * @param[out] *reg pointer to a register raw buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -4604,9 +4604,9 @@ uint8_t vs1053b_vol_convert_to_register(vs1053b_handle_t *handle, float db, uint
 
 /**
  * @brief      convert the register raw data to vol
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  reg is the register raw data
- * @param[out] *db points to a db buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  reg register raw data
+ * @param[out] *db pointer to a db buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -4631,10 +4631,10 @@ uint8_t vs1053b_vol_convert_to_data(vs1053b_handle_t *handle, uint8_t reg, float
 
 /**
  * @brief     write application
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] num is the application num
- * @param[in] *buf points to an input buffer
- * @param[in] len is the buffer length
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] num application num
+ * @param[in] *buf pointer to an input buffer
+ * @param[in] len buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write application failed
@@ -4707,10 +4707,10 @@ uint8_t vs1053b_write_application(vs1053b_handle_t *handle, vs1053b_application_
 
 /**
  * @brief      read application
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  num is the application num
- * @param[out] *buf points to an output buffer
- * @param[in]  len is the buffer length
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  num application num
+ * @param[out] *buf pointer to an output buffer
+ * @param[in]  len buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read application failed
@@ -4783,8 +4783,8 @@ uint8_t vs1053b_read_application(vs1053b_handle_t *handle, vs1053b_application_t
 
 /**
  * @brief     set play speed
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] speed is the play speed
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] speed play speed
  * @return    status code
  *            - 0 success
  *            - 1 set play speed failed
@@ -4846,8 +4846,8 @@ uint8_t vs1053b_set_play_speed(vs1053b_handle_t *handle, vs1053b_play_speed_t sp
 
 /**
  * @brief      get play speed
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *speed points to a play speed buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *speed pointer to a play speed buffer
  * @return     status code
  *             - 0 success
  *             - 1 get play speed failed
@@ -4908,8 +4908,8 @@ uint8_t vs1053b_get_play_speed(vs1053b_handle_t *handle, vs1053b_play_speed_t *s
 
 /**
  * @brief      get byte rate
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *rate points to a rate buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *rate pointer to a rate buffer
  * @return     status code
  *             - 0 success
  *             - 1 get byte rate failed
@@ -4969,8 +4969,8 @@ uint8_t vs1053b_get_byte_rate(vs1053b_handle_t *handle, uint16_t *rate)
 
 /**
  * @brief      get end fill byte
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *byte points to a byte buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *byte pointer to a byte buffer
  * @return     status code
  *             - 0 success
  *             - 1 get end fill byte failed
@@ -5030,8 +5030,8 @@ uint8_t vs1053b_get_end_fill_byte(vs1053b_handle_t *handle, uint16_t *byte)
 
 /**
  * @brief     enable or disable iis mclk
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set iis mclk failed
@@ -5127,8 +5127,8 @@ uint8_t vs1053b_set_iis_mclk(vs1053b_handle_t *handle, vs1053b_bool_t enable)
 
 /**
  * @brief      get iis mclk status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get iis mclk failed
@@ -5191,8 +5191,8 @@ uint8_t vs1053b_get_iis_mclk(vs1053b_handle_t *handle, vs1053b_bool_t *enable)
 
 /**
  * @brief     enable or disable iis
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set iis failed
@@ -5288,8 +5288,8 @@ uint8_t vs1053b_set_iis(vs1053b_handle_t *handle, vs1053b_bool_t enable)
 
 /**
  * @brief      get iis status
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get iis failed
@@ -5352,8 +5352,8 @@ uint8_t vs1053b_get_iis(vs1053b_handle_t *handle, vs1053b_bool_t *enable)
 
 /**
  * @brief     set iis rate
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] iis_rate is the set iis rate
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] iis_rate set iis rate
  * @return    status code
  *            - 0 success
  *            - 1 set iis rate failed
@@ -5449,8 +5449,8 @@ uint8_t vs1053b_set_iis_rate(vs1053b_handle_t *handle, vs1053b_iis_rate_t iis_ra
 
 /**
  * @brief      get iis rate
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *iis_rate points to an iis rate buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *iis_rate pointer to an iis rate buffer
  * @return     status code
  *             - 0 success
  *             - 1 get iis rate failed
@@ -5513,8 +5513,8 @@ uint8_t vs1053b_get_iis_rate(vs1053b_handle_t *handle, vs1053b_iis_rate_t *iis_r
 
 /**
  * @brief     set gpio direction
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] mask is the set gpio direction mask
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] mask set gpio direction mask
  * @return    status code
  *            - 0 success
  *            - 1 set gpio direction failed
@@ -5610,8 +5610,8 @@ uint8_t vs1053b_set_gpio_direction(vs1053b_handle_t *handle, uint16_t mask)
 
 /**
  * @brief      get gpio direction
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *mask points to a gpio direction mask buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *mask pointer to a gpio direction mask buffer
  * @return     status code
  *             - 0 success
  *             - 1 get gpio direction failed
@@ -5671,8 +5671,8 @@ uint8_t vs1053b_get_gpio_direction(vs1053b_handle_t *handle, uint16_t *mask)
 
 /**
  * @brief      get gpio input
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *data points to a data buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *data pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 get gpio input failed
@@ -5732,8 +5732,8 @@ uint8_t vs1053b_get_gpio_input(vs1053b_handle_t *handle, uint16_t *data)
 
 /**
  * @brief     set gpio output
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] data is the set data
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] data set data
  * @return    status code
  *            - 0 success
  *            - 1 set gpio output failed
@@ -5829,8 +5829,8 @@ uint8_t vs1053b_set_gpio_output(vs1053b_handle_t *handle, uint16_t data)
 
 /**
  * @brief      get gpio output
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *data points to a data buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *data pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 get gpio output failed
@@ -5890,8 +5890,8 @@ uint8_t vs1053b_get_gpio_output(vs1053b_handle_t *handle, uint16_t *data)
 
 /**
  * @brief     set record format
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] format is the set record format
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] format set record format
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -5916,8 +5916,8 @@ uint8_t vs1053b_set_record_format(vs1053b_handle_t *handle, vs1053b_record_forma
 
 /**
  * @brief      get record format
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *format points to a record format buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *format pointer to a record format buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -5942,7 +5942,7 @@ uint8_t vs1053b_get_record_format(vs1053b_handle_t *handle, vs1053b_record_forma
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] *handle pointer to a vs1053b handle structure
  * @return    status code
  *            - 0 success
  *            - 1 spi initialization failed
@@ -6240,7 +6240,7 @@ uint8_t vs1053b_init(vs1053b_handle_t *handle)
 
 /**
  * @brief     deinit the chip
- * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] *handle pointer to a vs1053b handle structure
  * @return    status code
  *            - 0 success
  *            - 1 deinit failed
@@ -6313,7 +6313,7 @@ uint8_t vs1053b_deinit(vs1053b_handle_t *handle)
 
 /**
  * @brief     audio process
- * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] *handle pointer to a vs1053b handle structure
  * @return    status code
  *            - 0 success
  *            - 1 process failed
@@ -6624,7 +6624,7 @@ uint8_t vs1053b_process(vs1053b_handle_t *handle)
 
 /**
  * @brief     pause audio
- * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] *handle pointer to a vs1053b handle structure
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -6656,8 +6656,8 @@ uint8_t vs1053b_pause(vs1053b_handle_t *handle)
 
 /**
  * @brief     play audio
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] *path points to a path buffer
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] *path pointer to a path buffer
  * @return    status code
  *            - 0 success
  *            - 1 play failed
@@ -6717,9 +6717,9 @@ uint8_t vs1053b_play(vs1053b_handle_t *handle, char *path)
 
 /**
  * @brief     record audio
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] *path points to a path buffer
- * @param[in] sample_rate is the set sample rate
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] *path pointer to a path buffer
+ * @param[in] sample_rate set sample rate
  * @return    status code
  *            - 0 success
  *            - 1 record failed
@@ -6867,7 +6867,7 @@ uint8_t vs1053b_record(vs1053b_handle_t *handle, char *path, uint32_t sample_rat
 
 /**
  * @brief     stop audio
- * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] *handle pointer to a vs1053b handle structure
  * @return    status code
  *            - 0 success
  *            - 1 stop failed
@@ -7145,7 +7145,7 @@ uint8_t vs1053b_stop(vs1053b_handle_t *handle)
 
 /**
  * @brief     hard reset
- * @param[in] *handle points to a vs1053b handle structure
+ * @param[in] *handle pointer to a vs1053b handle structure
  * @return    status code
  *            - 0 success
  *            - 1 hard reset failed
@@ -7193,10 +7193,10 @@ uint8_t vs1053b_hard_reset(vs1053b_handle_t *handle)
 
 /**
  * @brief     set period callback
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] second is the set second
- * @param[in] microsecond is the set microsecond
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] second set second
+ * @param[in] microsecond set microsecond
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -7222,10 +7222,10 @@ uint8_t vs1053b_set_period_callback(vs1053b_handle_t *handle, uint32_t second, u
 
 /**
  * @brief      get period callback
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[out] *second points to a second buffer
- * @param[out] *microsecond points to a microsecond buffer
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[out] *second pointer to a second buffer
+ * @param[out] *microsecond pointer to a microsecond buffer
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -7252,10 +7252,10 @@ uint8_t vs1053b_get_period_callback(vs1053b_handle_t *handle, uint32_t *second, 
 
 /**
  * @brief      parse info
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  dat0 is the hdata0
- * @param[in]  dat1 is the hdata1
- * @param[out] *info points to a vs1053b audio info structure
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  dat0 hdata0
+ * @param[in]  dat1 hdata1
+ * @param[out] *info pointer to a vs1053b audio info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -7378,10 +7378,10 @@ uint8_t vs1053b_parse_info(vs1053b_handle_t *handle, uint16_t dat0, uint16_t dat
 
 /**
  * @brief      get patch info
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  type is the patch info
- * @param[out] **patch_addr points to a patch address
- * @param[out] *len points to a length address
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  type patch info
+ * @param[out] **patch_addr pointer to a patch address
+ * @param[out] *len pointer to a length address
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -7730,9 +7730,9 @@ uint8_t vs1053b_get_patch(vs1053b_handle_t *handle, vs1053b_patch_t type, const 
 
 /**
  * @brief     load patch
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] *patch points to a patch buffer
- * @param[in] len is the length of length
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] *patch pointer to a patch buffer
+ * @param[in] len length of length
  * @return    status code
  *            - 0 success
  *            - 1 load patch failed
@@ -8089,9 +8089,9 @@ uint8_t vs1053b_load_patch(vs1053b_handle_t *handle, const uint16_t *patch, uint
 
 /**
  * @brief     set chip data
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write data failed
@@ -8115,10 +8115,10 @@ uint8_t vs1053b_set_data(vs1053b_handle_t *handle, uint8_t *buf, uint16_t len)
 
 /**
  * @brief     set the chip register
- * @param[in] *handle points to a vs1053b handle structure
- * @param[in] reg is the register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to a vs1053b handle structure
+ * @param[in] reg register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -8148,10 +8148,10 @@ uint8_t vs1053b_set_reg(vs1053b_handle_t *handle, uint8_t reg, uint8_t *buf, uin
 
 /**
  * @brief      get the chip register
- * @param[in]  *handle points to a vs1053b handle structure
- * @param[in]  reg is the register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to a vs1053b handle structure
+ * @param[in]  reg register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -8181,7 +8181,7 @@ uint8_t vs1053b_get_reg(vs1053b_handle_t *handle, uint8_t reg, uint8_t *buf, uin
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a vs1053b info structure
+ * @param[out] *info pointer to a vs1053b info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL

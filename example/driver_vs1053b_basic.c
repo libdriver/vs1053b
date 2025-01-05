@@ -41,9 +41,9 @@ static vs1053b_handle_t gs_handle;        /**< vs1053b handle */
 
 /**
  * @brief     basic example init
- * @param[in] mode is the chip working mode
- * @param[in] format is the set record format
- * @param[in] *callback points to a callback function
+ * @param[in] mode chip working mode
+ * @param[in] format set record format
+ * @param[in] *callback pointer to a callback function
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -1375,7 +1375,7 @@ uint8_t vs1053b_basic_stop(void)
 
 /**
  * @brief     basic example play
- * @param[in] *path points to a path buffer
+ * @param[in] *path pointer to a path buffer
  * @return    status code
  *            - 0 success
  *            - 1 play failed
@@ -1418,7 +1418,7 @@ uint8_t vs1053b_basic_play(char *path)
 
 /**
  * @brief     basic example record
- * @param[in] *path points to a path buffer
+ * @param[in] *path pointer to a path buffer
  * @return    status code
  *            - 0 success
  *            - 1 record failed
@@ -1587,7 +1587,7 @@ uint8_t vs1053b_basic_service(void)
 
 /**
  * @brief     basic example set callback period
- * @param[in] second is the set time
+ * @param[in] second set time
  * @return    status code
  *            - 0 success
  *            - 1 callback period failed
@@ -1609,7 +1609,7 @@ uint8_t vs1053b_basic_set_callback_period(uint32_t second)
 
 /**
  * @brief     basic example set vol
- * @param[in] vol is the set vol
+ * @param[in] vol set vol
  * @return    status code
  *            - 0 success
  *            - 1 set vol failed
@@ -1639,7 +1639,7 @@ uint8_t vs1053b_basic_set_vol(float vol)
 
 /**
  * @brief      basic example get decode time
- * @param[out] *decode_time points to a decode time buffer
+ * @param[out] *decode_time pointer to a decode time buffer
  * @return     status code
  *             - 0 success
  *             - 1 get decode time failed
@@ -1661,7 +1661,7 @@ uint8_t vs1053b_basic_get_decode_time(uint16_t *decode_time)
 
 /**
  * @brief      basic example get bytes rate
- * @param[out] *rate points to a rate buffer
+ * @param[out] *rate pointer to a rate buffer
  * @return     status code
  *             - 0 success
  *             - 1 get bytes rate failed
@@ -1683,8 +1683,8 @@ uint8_t vs1053b_basic_get_bytes_rate(uint16_t *rate)
 
 /**
  * @brief      basic example get sample rate
- * @param[out] *rate points to a rate buffer
- * @param[out] *channel points to a channel buffer
+ * @param[out] *rate pointer to a rate buffer
+ * @param[out] *channel pointer to a channel buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sample rate failed
@@ -1706,7 +1706,7 @@ uint8_t vs1053b_basic_get_sample_rate(uint16_t *rate, vs1053b_channel_t *channel
 
 /**
  * @brief      basic example get info
- * @param[out] *info points to an info buffer
+ * @param[out] *info pointer to an info buffer
  * @return     status code
  *             - 0 success
  *             - 1 get info failed
