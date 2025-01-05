@@ -50,8 +50,8 @@ extern "C"{
 
 /**
  * @brief     record test
- * @param[in] *path points to a path buffer
- * @param[in] second is the record time in second
+ * @param[in] *path pointer to a path buffer
+ * @param[in] second record time in second
  * @return    status code
  *            - 0 success
  *            - 1 test failed

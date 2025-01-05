@@ -2371,9 +2371,9 @@ Functions</h2></td></tr>
 <p>convert the register raw data to the clock frequency </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*hz</td><td>points to an hz buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*hz</td><td>pointer to an hz buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2424,9 +2424,9 @@ Functions</h2></td></tr>
 <p>convert the clock frequency to the register raw data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hz</td><td>is the set hz </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a register raw buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hz</td><td>set hz </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a register raw buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2461,7 +2461,7 @@ Functions</h2></td></tr>
 <p>deinit the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -2508,8 +2508,8 @@ Functions</h2></td></tr>
 <p>get ad clock </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*ad_clock</td><td>points to a ad clock buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*ad_clock</td><td>pointer to a ad clock buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2555,8 +2555,8 @@ Functions</h2></td></tr>
 <p>get allow sdi test status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2602,8 +2602,8 @@ Functions</h2></td></tr>
 <p>get allowed multiplier addition </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*addition</td><td>points to an allowed multiplier addition buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*addition</td><td>pointer to an allowed multiplier addition buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2649,8 +2649,8 @@ Functions</h2></td></tr>
 <p>get analog driver power down status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2696,8 +2696,8 @@ Functions</h2></td></tr>
 <p>get analog internal power down status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2743,8 +2743,8 @@ Functions</h2></td></tr>
 <p>get bass enhancement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*db</td><td>points to a db buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*db</td><td>pointer to a db buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2790,8 +2790,8 @@ Functions</h2></td></tr>
 <p>get byte rate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rate</td><td>points to a rate buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rate</td><td>pointer to a rate buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2837,8 +2837,8 @@ Functions</h2></td></tr>
 <p>get cancel decoding current file status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2884,8 +2884,8 @@ Functions</h2></td></tr>
 <p>get clock frequency </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*clk</td><td>points to a clock buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*clk</td><td>pointer to a clock buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2931,8 +2931,8 @@ Functions</h2></td></tr>
 <p>get clock multiplier </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*multiplier</td><td>points to a clock multiplier buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*multiplier</td><td>pointer to a clock multiplier buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2978,8 +2978,8 @@ Functions</h2></td></tr>
 <p>get clock range </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*range</td><td>points to a range buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*range</td><td>pointer to a range buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3025,8 +3025,8 @@ Functions</h2></td></tr>
 <p>get dclk edge </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*edge</td><td>points to a dclk edge buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*edge</td><td>pointer to a dclk edge buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3072,8 +3072,8 @@ Functions</h2></td></tr>
 <p>get decode time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*decode_time</td><td>points to a decode time buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*decode_time</td><td>pointer to a decode time buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3119,8 +3119,8 @@ Functions</h2></td></tr>
 <p>get the audio differential </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*diff</td><td>points to an audio differential buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*diff</td><td>pointer to an audio differential buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3166,8 +3166,8 @@ Functions</h2></td></tr>
 <p>get do not jump status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3213,8 +3213,8 @@ Functions</h2></td></tr>
 <p>get ear speaker high setting status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3260,8 +3260,8 @@ Functions</h2></td></tr>
 <p>get ear speaker low setting status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3307,8 +3307,8 @@ Functions</h2></td></tr>
 <p>get end fill byte </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*byte</td><td>points to a byte buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*byte</td><td>pointer to a byte buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3354,8 +3354,8 @@ Functions</h2></td></tr>
 <p>get gpio direction </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*mask</td><td>points to a gpio direction mask buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*mask</td><td>pointer to a gpio direction mask buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3401,8 +3401,8 @@ Functions</h2></td></tr>
 <p>get gpio input </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*data</td><td>points to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*data</td><td>pointer to a data buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3448,8 +3448,8 @@ Functions</h2></td></tr>
 <p>get gpio output </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*data</td><td>points to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*data</td><td>pointer to a data buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3501,9 +3501,9 @@ Functions</h2></td></tr>
 <p>get hdata </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*dat0</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*dat1</td><td>points to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*dat0</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*dat1</td><td>pointer to a data buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3549,8 +3549,8 @@ Functions</h2></td></tr>
 <p>get hdata0 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*dat0</td><td>points to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*dat0</td><td>pointer to a data buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3596,8 +3596,8 @@ Functions</h2></td></tr>
 <p>get hdata1 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*dat1</td><td>points to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*dat1</td><td>pointer to a data buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3643,8 +3643,8 @@ Functions</h2></td></tr>
 <p>get iis status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3690,8 +3690,8 @@ Functions</h2></td></tr>
 <p>get iis mclk status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3737,8 +3737,8 @@ Functions</h2></td></tr>
 <p>get iis rate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*iis_rate</td><td>points to an iis rate buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*iis_rate</td><td>pointer to an iis rate buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3784,8 +3784,8 @@ Functions</h2></td></tr>
 <p>get lower limit frequency in 1000 hz </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*step</td><td>points to a step buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*step</td><td>pointer to a step buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3831,8 +3831,8 @@ Functions</h2></td></tr>
 <p>get lower limit frequency in 10 hz </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*step</td><td>points to a step buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*step</td><td>pointer to a step buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3878,8 +3878,8 @@ Functions</h2></td></tr>
 <p>get mpeg layer i and ii status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3925,8 +3925,8 @@ Functions</h2></td></tr>
 <p>get native spi modes status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3972,8 +3972,8 @@ Functions</h2></td></tr>
 <p>get overload detection status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4019,8 +4019,8 @@ Functions</h2></td></tr>
 <p>get overload indicator status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4078,10 +4078,10 @@ Functions</h2></td></tr>
 <p>get patch info </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>is the patch info </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">**patch_addr</td><td>points to a patch address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*len</td><td>points to a length address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>patch info </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">**patch_addr</td><td>pointer to a patch address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*len</td><td>pointer to a length address </td></tr>
   </table>
   </dd>
 </dl>
@@ -4126,8 +4126,8 @@ Functions</h2></td></tr>
 <p>get pcm adpcm recording active status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4185,10 +4185,10 @@ Functions</h2></td></tr>
 <p>get period callback </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*second</td><td>points to a second buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*microsecond</td><td>points to a microsecond buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*second</td><td>pointer to a second buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*microsecond</td><td>pointer to a microsecond buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4233,8 +4233,8 @@ Functions</h2></td></tr>
 <p>get play speed </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*speed</td><td>points to a play speed buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*speed</td><td>pointer to a play speed buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4280,8 +4280,8 @@ Functions</h2></td></tr>
 <p>get record format </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*format</td><td>points to a record format buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*format</td><td>pointer to a record format buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4326,8 +4326,8 @@ Functions</h2></td></tr>
 <p>get reference voltage </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*voltage</td><td>points to a reference voltage buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*voltage</td><td>pointer to a reference voltage buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4379,9 +4379,9 @@ Functions</h2></td></tr>
 <p>get sample rate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rate</td><td>points to a sample rate buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*channel</td><td>points to a channel buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rate</td><td>pointer to a sample rate buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*channel</td><td>pointer to a channel buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4427,8 +4427,8 @@ Functions</h2></td></tr>
 <p>get sdi bit order </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*order</td><td>points to a bit order buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*order</td><td>pointer to a bit order buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4474,8 +4474,8 @@ Functions</h2></td></tr>
 <p>get selector </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*selector</td><td>points to a param buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*selector</td><td>pointer to a param buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4521,8 +4521,8 @@ Functions</h2></td></tr>
 <p>get share spi chip select status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4568,8 +4568,8 @@ Functions</h2></td></tr>
 <p>get soft reset status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4615,8 +4615,8 @@ Functions</h2></td></tr>
 <p>get start address </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*addr</td><td>points to an address buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*addr</td><td>pointer to an address buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4662,8 +4662,8 @@ Functions</h2></td></tr>
 <p>get stream mode status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4709,8 +4709,8 @@ Functions</h2></td></tr>
 <p>get swing </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*swing</td><td>points to a param buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*swing</td><td>pointer to a param buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4756,8 +4756,8 @@ Functions</h2></td></tr>
 <p>get treble control </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*db</td><td>points to a db buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*db</td><td>pointer to a db buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4803,8 +4803,8 @@ Functions</h2></td></tr>
 <p>get version </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*version</td><td>points to a version buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*version</td><td>pointer to a version buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4856,9 +4856,9 @@ Functions</h2></td></tr>
 <p>get vol </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*left</td><td>points to a left vol buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*right</td><td>points to a right vol buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*left</td><td>pointer to a left vol buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*right</td><td>pointer to a right vol buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4894,7 +4894,7 @@ Functions</h2></td></tr>
 <p>hard reset </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -4930,7 +4930,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to a vs1053b info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to a vs1053b info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -4964,7 +4964,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -5018,9 +5018,9 @@ Functions</h2></td></tr>
 <p>load patch </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*patch</td><td>points to a patch buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the length of length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*patch</td><td>pointer to a patch buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>length of length </td></tr>
   </table>
   </dd>
 </dl>
@@ -5073,9 +5073,9 @@ Functions</h2></td></tr>
 <p>convert the register raw data to the lower limit frequency in 1000 hz </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*hz</td><td>points to an hz buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*hz</td><td>pointer to an hz buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -5126,9 +5126,9 @@ Functions</h2></td></tr>
 <p>convert the lower limit frequency in 1000 hz to the register raw data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hz</td><td>is the set hz </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a register raw buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hz</td><td>set hz </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a register raw buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -5179,9 +5179,9 @@ Functions</h2></td></tr>
 <p>convert the register raw data to the lower limit frequency in 10 hz </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*hz</td><td>points to an hz buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*hz</td><td>pointer to an hz buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -5232,9 +5232,9 @@ Functions</h2></td></tr>
 <p>convert the lower limit frequency in 10 hz to the register raw data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hz</td><td>is the set hz </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a register raw buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hz</td><td>set hz </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a register raw buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -5291,10 +5291,10 @@ Functions</h2></td></tr>
 <p>parse info </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dat0</td><td>is the hdata0 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dat1</td><td>is the hdata1 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to a vs1053b audio info structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dat0</td><td>hdata0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dat1</td><td>hdata1 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to a vs1053b audio info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -5329,7 +5329,7 @@ Functions</h2></td></tr>
 <p>pause audio </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -5375,8 +5375,8 @@ Functions</h2></td></tr>
 <p>play audio </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*path</td><td>points to a path buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*path</td><td>pointer to a path buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -5413,7 +5413,7 @@ Functions</h2></td></tr>
 <p>audio process </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -5473,10 +5473,10 @@ Functions</h2></td></tr>
 <p>read application </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the application num </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>points to an output buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the buffer length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>application num </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>pointer to an output buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buffer length </td></tr>
   </table>
   </dd>
 </dl>
@@ -5528,9 +5528,9 @@ Functions</h2></td></tr>
 <p>read ram </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>points to an output buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the buffer length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>pointer to an output buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buffer length </td></tr>
   </table>
   </dd>
 </dl>
@@ -5582,9 +5582,9 @@ Functions</h2></td></tr>
 <p>record audio </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*path</td><td>points to a path buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sample_rate</td><td>is the set sample rate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*path</td><td>pointer to a path buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sample_rate</td><td>set sample rate </td></tr>
   </table>
   </dd>
 </dl>
@@ -5632,8 +5632,8 @@ Functions</h2></td></tr>
 <p>set ad clock </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ad_clock</td><td>is the ad clock </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ad_clock</td><td>ad clock </td></tr>
   </table>
   </dd>
 </dl>
@@ -5679,8 +5679,8 @@ Functions</h2></td></tr>
 <p>enable or disable allow sdi test </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -5726,8 +5726,8 @@ Functions</h2></td></tr>
 <p>set allowed multiplier addition </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addition</td><td>is the allowed multiplier addition </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addition</td><td>allowed multiplier addition </td></tr>
   </table>
   </dd>
 </dl>
@@ -5773,8 +5773,8 @@ Functions</h2></td></tr>
 <p>enable or disable analog driver power down </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -5820,8 +5820,8 @@ Functions</h2></td></tr>
 <p>enable or disable analog internal power down </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -5867,8 +5867,8 @@ Functions</h2></td></tr>
 <p>set bass enhancement </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">db</td><td>is the set db </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">db</td><td>set db </td></tr>
   </table>
   </dd>
 </dl>
@@ -5915,8 +5915,8 @@ Functions</h2></td></tr>
 <p>enable or disable cancel decoding current file </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -5962,8 +5962,8 @@ Functions</h2></td></tr>
 <p>set clock frequency </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">clk</td><td>is the clock frequency </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clk</td><td>clock frequency </td></tr>
   </table>
   </dd>
 </dl>
@@ -6010,8 +6010,8 @@ Functions</h2></td></tr>
 <p>set clock multiplier </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">multiplier</td><td>is the clock multiplier </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">multiplier</td><td>clock multiplier </td></tr>
   </table>
   </dd>
 </dl>
@@ -6057,8 +6057,8 @@ Functions</h2></td></tr>
 <p>set clock range </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>is the clock range </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>clock range </td></tr>
   </table>
   </dd>
 </dl>
@@ -6104,8 +6104,8 @@ Functions</h2></td></tr>
 <p>set dclk edge </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">edge</td><td>is the dclk edge </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">edge</td><td>dclk edge </td></tr>
   </table>
   </dd>
 </dl>
@@ -6151,8 +6151,8 @@ Functions</h2></td></tr>
 <p>set decode time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">decode_time</td><td>is the decode time </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decode_time</td><td>decode time </td></tr>
   </table>
   </dd>
 </dl>
@@ -6198,8 +6198,8 @@ Functions</h2></td></tr>
 <p>set the audio differential </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">diff</td><td>is the audio differential </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">diff</td><td>audio differential </td></tr>
   </table>
   </dd>
 </dl>
@@ -6245,8 +6245,8 @@ Functions</h2></td></tr>
 <p>enable or disable do not jump </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -6292,8 +6292,8 @@ Functions</h2></td></tr>
 <p>enable or disable ear speaker high setting </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -6339,8 +6339,8 @@ Functions</h2></td></tr>
 <p>enable or disable ear speaker low setting </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -6386,8 +6386,8 @@ Functions</h2></td></tr>
 <p>set gpio direction </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>is the set gpio direction mask </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>set gpio direction mask </td></tr>
   </table>
   </dd>
 </dl>
@@ -6433,8 +6433,8 @@ Functions</h2></td></tr>
 <p>set gpio output </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>is the set data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>set data </td></tr>
   </table>
   </dd>
 </dl>
@@ -6480,8 +6480,8 @@ Functions</h2></td></tr>
 <p>enable or disable iis </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -6527,8 +6527,8 @@ Functions</h2></td></tr>
 <p>enable or disable iis mclk </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -6574,8 +6574,8 @@ Functions</h2></td></tr>
 <p>set iis rate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iis_rate</td><td>is the set iis rate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iis_rate</td><td>set iis rate </td></tr>
   </table>
   </dd>
 </dl>
@@ -6621,8 +6621,8 @@ Functions</h2></td></tr>
 <p>set lower limit frequency in 1000 hz </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>is the set step </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>set step </td></tr>
   </table>
   </dd>
 </dl>
@@ -6669,8 +6669,8 @@ Functions</h2></td></tr>
 <p>set lower limit frequency in 10 hz </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>is the set step </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>set step </td></tr>
   </table>
   </dd>
 </dl>
@@ -6717,8 +6717,8 @@ Functions</h2></td></tr>
 <p>enable or disable mpeg layer i and ii </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -6764,8 +6764,8 @@ Functions</h2></td></tr>
 <p>enable or disable native spi modes </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -6811,8 +6811,8 @@ Functions</h2></td></tr>
 <p>enable or disable overload detection </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -6858,8 +6858,8 @@ Functions</h2></td></tr>
 <p>enable or disable overload indicator </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -6905,8 +6905,8 @@ Functions</h2></td></tr>
 <p>enable or disable pcm adpcm recording active </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -6964,10 +6964,10 @@ Functions</h2></td></tr>
 <p>set period callback </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">second</td><td>is the set second </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">microsecond</td><td>is the set microsecond </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">second</td><td>set second </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">microsecond</td><td>set microsecond </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -7012,8 +7012,8 @@ Functions</h2></td></tr>
 <p>set play speed </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">speed</td><td>is the play speed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">speed</td><td>play speed </td></tr>
   </table>
   </dd>
 </dl>
@@ -7059,8 +7059,8 @@ Functions</h2></td></tr>
 <p>set ram address </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the ram address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>ram address </td></tr>
   </table>
   </dd>
 </dl>
@@ -7106,8 +7106,8 @@ Functions</h2></td></tr>
 <p>set record format </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>is the set record format </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>set record format </td></tr>
   </table>
   </dd>
 </dl>
@@ -7152,8 +7152,8 @@ Functions</h2></td></tr>
 <p>set reference voltage </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">voltage</td><td>is the reference voltage </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">voltage</td><td>reference voltage </td></tr>
   </table>
   </dd>
 </dl>
@@ -7205,9 +7205,9 @@ Functions</h2></td></tr>
 <p>set sample rate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rate</td><td>is the sample rate </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>is the set channel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rate</td><td>sample rate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>set channel </td></tr>
   </table>
   </dd>
 </dl>
@@ -7253,8 +7253,8 @@ Functions</h2></td></tr>
 <p>set sdi bit order </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">order</td><td>is the bit order </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">order</td><td>bit order </td></tr>
   </table>
   </dd>
 </dl>
@@ -7300,8 +7300,8 @@ Functions</h2></td></tr>
 <p>set selector </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">selector</td><td>is the set param </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">selector</td><td>set param </td></tr>
   </table>
   </dd>
 </dl>
@@ -7347,8 +7347,8 @@ Functions</h2></td></tr>
 <p>enable or disable share spi chip select </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -7394,8 +7394,8 @@ Functions</h2></td></tr>
 <p>enable or disable soft reset </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -7441,8 +7441,8 @@ Functions</h2></td></tr>
 <p>set start address </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the start address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>start address </td></tr>
   </table>
   </dd>
 </dl>
@@ -7488,8 +7488,8 @@ Functions</h2></td></tr>
 <p>enable or disable stream mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -7535,8 +7535,8 @@ Functions</h2></td></tr>
 <p>set swing </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">swing</td><td>is the set param </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">swing</td><td>set param </td></tr>
   </table>
   </dd>
 </dl>
@@ -7583,8 +7583,8 @@ Functions</h2></td></tr>
 <p>set treble control </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">db</td><td>is the set db </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">db</td><td>set db </td></tr>
   </table>
   </dd>
 </dl>
@@ -7637,9 +7637,9 @@ Functions</h2></td></tr>
 <p>set vol </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>is the left vol </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>is the right vol </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>left vol </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>right vol </td></tr>
   </table>
   </dd>
 </dl>
@@ -7675,7 +7675,7 @@ Functions</h2></td></tr>
 <p>stop audio </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -7729,9 +7729,9 @@ Functions</h2></td></tr>
 <p>convert the register raw data to the swing </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*db</td><td>points to a db buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*db</td><td>pointer to a db buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -7782,9 +7782,9 @@ Functions</h2></td></tr>
 <p>convert the swing to the register raw data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">db</td><td>is the set db </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a register raw buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">db</td><td>set db </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a register raw buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -7835,9 +7835,9 @@ Functions</h2></td></tr>
 <p>convert the register raw data to the treble control </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*db</td><td>points to a db buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*db</td><td>pointer to a db buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -7888,9 +7888,9 @@ Functions</h2></td></tr>
 <p>convert the treble control to the register raw data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">db</td><td>is the set db </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a register raw buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">db</td><td>set db </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a register raw buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -7941,9 +7941,9 @@ Functions</h2></td></tr>
 <p>convert the register raw data to vol </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*db</td><td>points to a db buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*db</td><td>pointer to a db buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -7994,9 +7994,9 @@ Functions</h2></td></tr>
 <p>convert vol to the register raw data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">db</td><td>is the set db </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a register raw buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">db</td><td>set db </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a register raw buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -8053,10 +8053,10 @@ Functions</h2></td></tr>
 <p>write application </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the application num </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>points to an input buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the buffer length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>application num </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>pointer to an input buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buffer length </td></tr>
   </table>
   </dd>
 </dl>
@@ -8108,9 +8108,9 @@ Functions</h2></td></tr>
 <p>write ram </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a vs1053b handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>points to an input buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the buffer length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a vs1053b handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>pointer to an input buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buffer length </td></tr>
   </table>
   </dd>
 </dl>

@@ -50,7 +50,7 @@ extern "C"{
 
 /**
  * @brief     play test
- * @param[in] *path points to a path buffer
+ * @param[in] *path pointer to a path buffer
  * @return    status code
  *            - 0 success
  *            - 1 test failed

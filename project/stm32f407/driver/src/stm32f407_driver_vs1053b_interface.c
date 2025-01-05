@@ -57,7 +57,7 @@ static uint32_t gs_flag = 0;     /**< init 0 */
 
 /**
  * @brief     timer callback
- * @param[in] us is the timer cnt
+ * @param[in] us timer cnt
  * @note      none
  */
 static void gs_tim_irq(uint32_t us)
@@ -91,9 +91,9 @@ uint8_t vs1053b_interface_spi_cmd_deinit(void)
 
 /**
  * @brief      interface spi cmd bus read
- * @param[in]  reg is the register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the length of data buffer
+ * @param[in]  reg register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len length of data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -106,9 +106,9 @@ uint8_t vs1053b_interface_spi_cmd_read_address16(uint16_t reg, uint8_t *buf, uin
 
 /**
  * @brief     interface spi cmd bus write
- * @param[in] reg is the register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the length of data buffer
+ * @param[in] reg register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len length of data buffer
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -145,8 +145,8 @@ uint8_t vs1053b_interface_spi_dat_deinit(void)
 
 /**
  * @brief     interface spi dat bus write command
- * @param[in] *buf points to a data buffer
- * @param[in] len is the length of data buffer
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len length of data buffer
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -159,9 +159,9 @@ uint8_t vs1053b_interface_spi_dat_write_cmd(uint8_t *buf, uint16_t len)
 
 /**
  * @brief     interface audio init
- * @param[in] type is the open type, 0 is read and 1 is write.
- * @param[in] *name points to a name buffer
- * @param[in] *size points to a file size buffer
+ * @param[in] type open type, 0 is read and 1 is write.
+ * @param[in] *name pointer to a name buffer
+ * @param[in] *size pointer to a file size buffer
  * @return    status code
  *            - 0 success
  *            - 1 audio init failed
@@ -199,9 +199,9 @@ uint8_t vs1053b_interface_audio_init(uint8_t type, char *name, uint32_t *size)
 
 /**
  * @brief      interface audio read
- * @param[in]  addr is the mp3 file address
- * @param[in]  size is the read size
- * @param[out] *buffer points to a data buffer
+ * @param[in]  addr mp3 file address
+ * @param[in]  size read size
+ * @param[out] *buffer pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 audio read failed
@@ -228,9 +228,9 @@ uint8_t vs1053b_interface_audio_read(uint32_t addr, uint16_t size, uint8_t *buff
 
 /**
  * @brief     interface audio write
- * @param[in] addr is the mp3 file address
- * @param[in] size is the write size
- * @param[in] *buffer points to a data buffer
+ * @param[in] addr mp3 file address
+ * @param[in] size write size
+ * @param[in] *buffer pointer to a data buffer
  * @return    status code
  *            - 0 success
  *            - 1 audio write failed
@@ -282,8 +282,8 @@ uint8_t vs1053b_interface_audio_deinit(void)
 
 /**
  * @brief      interface timestamp read
- * @param[out] *sec points to a second buffer
- * @param[out] *us points to a microsecond buffer
+ * @param[out] *sec pointer to a second buffer
+ * @param[out] *us pointer to a microsecond buffer
  * @return     status code
  *             - 0 success
  *             - 1 timestamp read failed
@@ -339,7 +339,7 @@ uint8_t vs1053b_interface_reset_gpio_deinit(void)
 
 /**
  * @brief     interface reset gpio write
- * @param[in] data is the written data
+ * @param[in] data written data
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -376,7 +376,7 @@ uint8_t vs1053b_interface_dreq_gpio_deinit(void)
 
 /**
  * @brief      interface dreq gpio read
- * @param[out] *data points to a data buffer
+ * @param[out] *data pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -389,7 +389,7 @@ uint8_t vs1053b_interface_dreq_gpio_read(uint8_t *data)
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void vs1053b_interface_delay_ms(uint32_t ms)
@@ -399,7 +399,7 @@ void vs1053b_interface_delay_ms(uint32_t ms)
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void vs1053b_interface_debug_print(const char *const fmt, ...)
@@ -419,8 +419,8 @@ void vs1053b_interface_debug_print(const char *const fmt, ...)
 
 /**
  * @brief     interface receive callback
- * @param[in] type is the receive callback type
- * @param[in] cur_pos is the current position
+ * @param[in] type receive callback type
+ * @param[in] cur_pos current position
  * @note      none
  */
 void vs1053b_interface_receive_callback(uint8_t type, uint32_t cur_pos)

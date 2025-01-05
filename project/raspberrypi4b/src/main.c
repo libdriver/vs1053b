@@ -49,8 +49,8 @@ volatile uint8_t gs_mode = 0;      /**< audio mode */
 
 /**
  * @brief     interface receive callback
- * @param[in] type is the receive callback type
- * @param[in] cur_pos is the current position
+ * @param[in] type receive callback type
+ * @param[in] cur_pos current position
  * @note      none
  */
 static void a_callback(uint8_t type, uint32_t cur_pos)
@@ -151,8 +151,8 @@ static void a_callback(uint8_t type, uint32_t cur_pos)
 
 /**
  * @brief     vs1053b full function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *            - 0 success
  *            - 1 run failed
@@ -511,8 +511,8 @@ uint8_t vs1053b(uint8_t argc, char **argv)
 
 /**
  * @brief     main function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *             - 0 success
  * @note      none

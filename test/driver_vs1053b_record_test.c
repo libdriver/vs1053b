@@ -42,8 +42,8 @@ static volatile uint8_t gs_flag = 0;      /**< end of test */
 
 /**
  * @brief     interface receive callback
- * @param[in] type is the receive callback type
- * @param[in] cur_pos is the current position
+ * @param[in] type receive callback type
+ * @param[in] cur_pos current position
  * @note      none
  */
 static void a_callback(uint8_t type, uint32_t cur_pos)
@@ -102,8 +102,8 @@ static void a_callback(uint8_t type, uint32_t cur_pos)
 
 /**
  * @brief     record test
- * @param[in] *path points to a path buffer
- * @param[in] second is the record time in second
+ * @param[in] *path pointer to a path buffer
+ * @param[in] second record time in second
  * @return    status code
  *            - 0 success
  *            - 1 test failed
