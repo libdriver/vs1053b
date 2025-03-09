@@ -62,7 +62,7 @@ void HAL_MspDeInit(void)
 
 /**
  * @brief     uart hal init
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_MspInit(UART_HandleTypeDef *huart)
@@ -119,7 +119,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 
 /**
  * @brief     uart hal deinit
- * @param[in] *huart points to a uart handle
+ * @param[in] *huart pointer to a uart handle
  * @note      none
  */
 void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
@@ -150,7 +150,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
 
 /**
  * @brief     spi hal init
- * @param[in] *hspi points to a spi handle
+ * @param[in] *hspi pointer to a spi handle
  * @note      none
  */
 void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
@@ -181,7 +181,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
 
 /**
  * @brief     spi hal deinit
- * @param[in] *hspi points to a spi handle
+ * @param[in] *hspi pointer to a spi handle
  * @note      none
  */
 void HAL_SPI_MspDeInit(SPI_HandleTypeDef* hspi)
@@ -198,7 +198,7 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* hspi)
 
 /**
  * @brief     sd hal init
- * @param[in] *hsd points to a sd handle
+ * @param[in] *hsd pointer to a sd handle
  * @note      none
  */
 void HAL_SD_MspInit(SD_HandleTypeDef *hsd)
@@ -296,7 +296,7 @@ void HAL_SD_MspInit(SD_HandleTypeDef *hsd)
 
 /**
  * @brief     sd hal deinit
- * @param[in] *hsd points to a sd handle
+ * @param[in] *hsd pointer to a sd handle
  * @note      none
  */
 void HAL_SD_MspDeInit(SD_HandleTypeDef *hsd)
@@ -334,7 +334,7 @@ void HAL_SD_MspDeInit(SD_HandleTypeDef *hsd)
 
 /**
  * @brief     tim hal init
- * @param[in] *htim points to a tim handle
+ * @param[in] *htim pointer to a tim handle
  * @note      none
  */
 void HAL_TIM_Base_MspInit(TIM_HandleTypeDef *htim)
@@ -354,7 +354,7 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef *htim)
 
 /**
  * @brief     tim hal deinit
- * @param[in] *htim points to a tim handle
+ * @param[in] *htim pointer to a tim handle
  * @note      none
  */
 void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef *htim)
