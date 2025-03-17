@@ -1,3 +1,9 @@
+## 1.0.6 (2025-03-17)
+
+## Bug Fixes
+
+- fix record errors
+
 ## 1.0.5 (2025-03-10)
 
 ## Bug Fixes

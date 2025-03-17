@@ -246,8 +246,8 @@ var NAVTREEINDEX0 =
 "files.html":[2,0],
 "functions.html":[1,2,0],
 "functions_vars.html":[1,2,1],
-"globals.html":[2,1,0],
 "globals.html":[2,1,0,0],
+"globals.html":[2,1,0],
 "globals_d.html":[2,1,0,1],
 "globals_defs.html":[2,1,6]
 };

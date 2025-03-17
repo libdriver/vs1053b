@@ -35,6 +35,7 @@
  */
 
 #include "driver_vs1053b.h"
+
 #if VS1053B_OGG_VENC08K1Q00 != 0
     #include "driver_vs1053b_patch_ogg_venc08k1q00.h"
 #endif
@@ -6823,6 +6824,7 @@ uint8_t vs1053b_record(vs1053b_handle_t *handle, char *path, uint32_t sample_rat
 
             return 1;                                                  /* return error */
         }
+        handle->cur_pos = 0;                                           /* current position */
     }
     else                                                               /* wav */
     {
@@ -6855,10 +6857,10 @@ uint8_t vs1053b_record(vs1053b_handle_t *handle, char *path, uint32_t sample_rat
         {
             return 1;                                                  /* return error */
         }
+        handle->cur_pos = 44;                                          /* current position */
     }
     handle->timestamp_read(&sec, &us);                                 /* read timestamp */
     handle->timestamp = (((uint64_t)sec) * 1000000 + ((uint64_t)us));  /* set timestamp */
-    handle->cur_pos = 44;                                              /* current position */
     handle->buf_pos = 0;                                               /* buffer position */
     handle->status = VS1053B_STATUS_RECORD;                            /* active record */
 
