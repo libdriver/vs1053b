@@ -126,6 +126,8 @@ vs1053b: DREQ connected to GPIOA PIN8.
 ```
 
 ```shell
+vs1053b -t reg
+
 vs1053b: chip is VLSI VS1053B.
 vs1053b: manufacturer is VLSI.
 vs1053b: interface is SPI.

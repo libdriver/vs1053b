@@ -386,6 +386,16 @@ extern "C"{
 #endif
 
 /**
+ * @brief aictrl3 control definition
+ */
+#define VS1053B_AICTRL3_MODE_IMA ADPCM          (0 << 2)         /**< ima adpcm mode */
+#define VS1053B_AICTRL3_MODE_LINEAR_PCM         (1 << 2)         /**< linear pcm mode */
+#define VS1053B_AICTRL3_ADC_JOINT_STEREO        (0 << 0)         /**< adc joint stereo */
+#define VS1053B_AICTRL3_ADC_DUAL_CHANNEL        (1 << 0)         /**< adc dual channel */
+#define VS1053B_AICTRL3_ADC_LEFT_CHANNEL        (2 << 0)         /**< adc left channel */
+#define VS1053B_AICTRL3_ADC_RIGHT_CHANNEL       (3 << 0)         /**< adc right channel */
+
+/**
  * @brief vs1053b bool enumeration definition
  */
 typedef enum

@@ -100,7 +100,8 @@ extern "C"{
 #define VS1053B_BASIC_DEFAULT_RECORD_WAV_SAMPLE                                8000                                                 /**< 8000Hz */
 #define VS1053B_BASIC_DEFAULT_RECORD_WAV_TIMES                                 1024 * 5                                             /**< 5 times */
 #define VS1053B_BASIC_DEFAULT_RECORD_WAV_GAIN                                  0                                                    /**< agc */
-#define VS1053B_BASIC_DEFAULT_RECORD_WAV_CHANNEL                               6                                                    /**< left micro */
+#define VS1053B_BASIC_DEFAULT_RECORD_WAV_CHANNEL                               (VS1053B_AICTRL3_ADC_LEFT_CHANNEL | \
+                                                                                VS1053B_AICTRL3_MODE_LINEAR_PCM)                    /**< left micro */
 #define VS1053B_BASIC_DEFAULT_RECORD_WAV_DIFF                                  VS1053B_DIFF_NORMAL                                  /**< diff normal mode */
 #define VS1053B_BASIC_DEFAULT_RECORD_WAV_MPEG_LAYER_I_AND_II                   VS1053B_BOOL_FALSE                                   /**< disable mpeg i and ii */
 #define VS1053B_BASIC_DEFAULT_RECORD_WAV_CANCEL_DECODING_CURRENT_FILE          VS1053B_BOOL_FALSE                                   /**< disable cancel decoding */
@@ -127,7 +128,7 @@ extern "C"{
 #define VS1053B_BASIC_DEFAULT_RECORD_OGG_LOWER_LIMIT_FREQUENCY_IN_10_HZ        0                                                    /**< 0Hz */
 #define VS1053B_BASIC_DEFAULT_RECORD_OGG_VOL                                   -100.0f                                              /**< -100.0 db */
 #define VS1053B_BASIC_DEFAULT_RECORD_OGG_SAMPLE                                44100                                                /**< 44100Hz */
-#define VS1053B_BASIC_DEFAULT_RECORD_OGG_TIMES                                 1024                                                 /**< 5 times */
+#define VS1053B_BASIC_DEFAULT_RECORD_OGG_TIMES                                 1024 * 5                                             /**< 5 times */
 #define VS1053B_BASIC_DEFAULT_RECORD_OGG_GAIN                                  0                                                    /**< agc */
 #define VS1053B_BASIC_DEFAULT_RECORD_OGG_CONTROL                               0                                                    /**< stop */
 #define VS1053B_BASIC_DEFAULT_RECORD_OGG_DIFF                                  VS1053B_DIFF_NORMAL                                  /**< diff normal mode */

@@ -442,7 +442,7 @@ uint8_t vs1053b_record_test(char *path, uint32_t second)
         }
         
         /* left channel mic */
-        config = 6;
+        config = VS1053B_AICTRL3_ADC_LEFT_CHANNEL | VS1053B_AICTRL3_MODE_LINEAR_PCM;
         buf[0] = (config >> 8) & 0xFF;
         buf[1] = (config >> 0) & 0xFF;
         res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_3, buf, 2);
@@ -865,8 +865,8 @@ uint8_t vs1053b_record_test(char *path, uint32_t second)
             return 1;
         }
         
-        /* -20.0db */
-        res = vs1053b_vol_convert_to_register(&gs_handle, -20.0f, &reg);
+        /* -100.0db */
+        res = vs1053b_vol_convert_to_register(&gs_handle, -100.0f, &reg);
         if (res != 0)
         {
             vs1053b_interface_debug_print("vs1053b: vol convert to register failed.\n");
@@ -898,8 +898,8 @@ uint8_t vs1053b_record_test(char *path, uint32_t second)
             return 1;
         }
         
-        /* 1 times */
-        config = 1024;
+        /* 5 times */
+        config = 1024 * 5;
         buf[0] = (config >> 8) & 0xFF;
         buf[1] = (config >> 0) & 0xFF;
         res = vs1053b_write_application(&gs_handle, VS1053B_APPLICATION_1, buf, 2);
