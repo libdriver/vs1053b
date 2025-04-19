@@ -128,7 +128,7 @@ uint8_t vs1053b_interface_spi_cmd_write_address16(uint16_t reg, uint8_t *buf, ui
  */
 uint8_t vs1053b_interface_spi_dat_init(void)
 {
-    return spi_init(SPI2_DEVICE_NAME, &gs_spi2_fd, SPI_MODE_TYPE_3, 1000 * 1000 * 2);
+    return spi_init(SPI2_DEVICE_NAME, &gs_spi2_fd, SPI_MODE_TYPE_3, 1000 * 1000);
 }
 
 /**
