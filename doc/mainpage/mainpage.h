@@ -1,10 +1,10 @@
 /**
  * @mainpage  LibDriver VS1053B
- * @brief     LibDriver VS1053B is a full function driver of VS1053B and it can run in both MCU and Linux platform.
+ * @brief     LibDriver VS1053B is a full-featured driver of VS1053B and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
- * <h3>history</h3>
+ * <h3>History</h3>
  * <table>
  * <tr><th>Date        <th>Version  <th>Author      <th>Description
  * <tr><td>2023/06/30  <td>1.0      <td>Shifeng Li  <td>first upload

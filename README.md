@@ -10,7 +10,7 @@
 
 VS1053b is an Ogg Vorbis/MP3/AAC/WMA/FLAC/WAVMIDI audio decoder as well as an PCM/IMA ADPCM/Ogg Vorbis encoder on a single chip. It contains a high-performance, proprietary low-power DSP processor core VS_DSP4, data memory, 16 KiB instruction RAM and 0.5+ KiB data RAM for user applications running simultaneously with any builtin decoder, serial control and input data interfaces, up to 8 general purpose I/O pins, an UART, as well as a high-quality variablesample-rate stereo ADC (mic, line, line + mic or 2line) and stereo DAC, followed by an earphone amplifier and a common voltage buffer.VS1053b receives its input bitstream through a serial input bus, which it listens to as a system slave. The input stream is decoded and passed through a digital volume control to an 18-bit oversampling, multi-bit, sigmadelta DAC. The decoding is controlled via a serial control bus. In addition to the basic decoding, it is possible to add application specific features, like DSP effects, to the user RAM memory.
 
-LibDriver VS1053B is the full function driver of VS1053B launched by LibDriver. It provides functions of audio playing, audio recording, etc. LibDriver is MISRA compliant.
+LibDriver VS1053B is a full-featured driver of VS1053B launched by LibDriver. It provides functions of audio playing, audio recording, etc. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
