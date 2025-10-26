@@ -1,9 +1,21 @@
 var searchData=
 [
-  ['temperature_5fmax_186',['temperature_max',['../structvs1053b__info__s.html#a3366a5dce9b829e03c3d321c2b4df3f6',1,'vs1053b_info_s']]],
-  ['temperature_5fmax_187',['TEMPERATURE_MAX',['../driver__vs1053b_8c.html#a90c0b20d54005712fcc8cb01281360e9',1,'driver_vs1053b.c']]],
-  ['temperature_5fmin_188',['temperature_min',['../structvs1053b__info__s.html#a8f9dbe66ac0b66ebae0a36fcb4ba368e',1,'vs1053b_info_s']]],
-  ['temperature_5fmin_189',['TEMPERATURE_MIN',['../driver__vs1053b_8c.html#aab353db5bf4eb787f86a2080f609a551',1,'driver_vs1053b.c']]],
-  ['timestamp_190',['timestamp',['../structvs1053b__handle__s.html#a465bef81f6478756e5443025b1f2ddfa',1,'vs1053b_handle_s']]],
-  ['timestamp_5fread_191',['timestamp_read',['../structvs1053b__handle__s.html#a11452d300d926b97a3d10ff70dc5da35',1,'vs1053b_handle_s']]]
+  ['sample_5frate_0',['sample_rate',['../structvs1053b__wav__s.html#a2fba55d9442e7dba4623825cd737e520',1,'vs1053b_wav_s']]],
+  ['size_1',['size',['../structvs1053b__handle__s.html#ab2c6b258f02add8fdf4cfc7c371dd772',1,'vs1053b_handle_s']]],
+  ['spi_5fcmd_5fdeinit_2',['spi_cmd_deinit',['../structvs1053b__handle__s.html#a20f788153c40128cc7c79ee6f23ca85e',1,'vs1053b_handle_s']]],
+  ['spi_5fcmd_5finit_3',['spi_cmd_init',['../structvs1053b__handle__s.html#a32a107d915e8ee492387bd82e328d51f',1,'vs1053b_handle_s']]],
+  ['spi_5fcmd_5fread_5faddress16_4',['spi_cmd_read_address16',['../structvs1053b__handle__s.html#a496951a8abaf48e1f0d111d0dcfb7d54',1,'vs1053b_handle_s']]],
+  ['spi_5fcmd_5fwrite_5faddress16_5',['spi_cmd_write_address16',['../structvs1053b__handle__s.html#a12a527e2d913cb9bb11ee527fe9e1e03',1,'vs1053b_handle_s']]],
+  ['spi_5fdat_5fdeinit_6',['spi_dat_deinit',['../structvs1053b__handle__s.html#a113a74a7d0e10bcda59ad6da36093450',1,'vs1053b_handle_s']]],
+  ['spi_5fdat_5finit_7',['spi_dat_init',['../structvs1053b__handle__s.html#acc69f7e7adfeaebc548fcfb5d29c8ea4',1,'vs1053b_handle_s']]],
+  ['spi_5fdat_5fwrite_5fcmd_8',['spi_dat_write_cmd',['../structvs1053b__handle__s.html#a1a8d72431592b2b1ecce35d1c7dc65c4',1,'vs1053b_handle_s']]],
+  ['status_9',['status',['../structvs1053b__handle__s.html#ade818037fd6c985038ff29656089758d',1,'vs1053b_handle_s']]],
+  ['sub_5fchunk1_5fid_10',['sub_chunk1_id',['../structvs1053b__wav__s.html#ab74dc55ea36c802aa81dab1bc06b193c',1,'vs1053b_wav_s']]],
+  ['sub_5fchunk1_5fsize_11',['sub_chunk1_size',['../structvs1053b__wav__s.html#a0b106402e28370a1589ce919725e837e',1,'vs1053b_wav_s']]],
+  ['sub_5fchunk2_5fid_12',['sub_chunk2_id',['../structvs1053b__wav__s.html#a8d48ef83d694900c5f07615790e08479',1,'vs1053b_wav_s']]],
+  ['sub_5fchunk2_5fsize_13',['sub_chunk2_size',['../structvs1053b__wav__s.html#a34495093da4e64c79bb8f0ca0683e2db',1,'vs1053b_wav_s']]],
+  ['supply_5fvoltage_5fmax_14',['SUPPLY_VOLTAGE_MAX',['../driver__vs1053b_8c.html#a68eba8b601afe11f1b871d944976c035',1,'driver_vs1053b.c']]],
+  ['supply_5fvoltage_5fmax_5fv_15',['supply_voltage_max_v',['../structvs1053b__info__s.html#a3d2b12bcac7a85ea8646bff9debe8660',1,'vs1053b_info_s']]],
+  ['supply_5fvoltage_5fmin_16',['SUPPLY_VOLTAGE_MIN',['../driver__vs1053b_8c.html#aac8d8cbd899667d609787ef4cf37054d',1,'driver_vs1053b.c']]],
+  ['supply_5fvoltage_5fmin_5fv_17',['supply_voltage_min_v',['../structvs1053b__info__s.html#ad8bde6ddadaf43d951e62f3befb9d35a',1,'vs1053b_info_s']]]
 ];
