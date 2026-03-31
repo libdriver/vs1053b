@@ -263,9 +263,6 @@ uint8_t vs1053b_interface_audio_deinit(void)
  * @brief      interface timestamp read
  * @param[out] *sec pointer to a second buffer
  * @param[out] *us pointer to a microsecond buffer
- * @return     status code
- *             - 0 success
- *             - 1 timestamp read failed
  * @note       none
  */
 void vs1053b_interface_timestamp_read(uint32_t *sec, uint32_t *us)
