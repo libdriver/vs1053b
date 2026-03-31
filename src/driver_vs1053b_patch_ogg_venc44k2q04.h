@@ -53,7 +53,7 @@ extern "C"{
 /**
  * @brief vs1053b patch ogg venc44k2q04 plugin definition
  */
-const uint16_t gsc_vs1053b_patch_ogg_venc44k2q04_plugin[VS1053B_PATCH_OGG_VENC44K2Q04_PLUGIN_SIZE] =
+static const uint16_t gsc_vs1053b_patch_ogg_venc44k2q04_plugin[VS1053B_PATCH_OGG_VENC44K2Q04_PLUGIN_SIZE] =
 {   /* compressed plugin */
     0x0007, 0x0001, 0xc01a, 0x0006, 0x0001, 0x0002, 0x0007, 0x0001, /*    0 */
     0x1800, 0x0006, 0x8008, 0x0000, 0x0006, 0x0008, 0x0018, 0x0020, /*    8 */
