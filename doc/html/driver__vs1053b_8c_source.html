@@ -1958,7 +1958,7 @@ $(function(){initNavTree('driver__vs1053b_8c_source.html','',''); });
 <div class="line"><a id="l02282" name="l02282"></a><span class="lineno"> 2282</span>        <span class="keywordflow">return</span> 1;                                                     <span class="comment">/* return error */</span></div>
 <div class="line"><a id="l02283" name="l02283"></a><span class="lineno"> 2283</span>    }</div>
 <div class="line"><a id="l02284" name="l02284"></a><span class="lineno"> 2284</span>    prev = ((uint16_t)(buf[0]) &lt;&lt; 8) | buf[1];                        <span class="comment">/* combine the config */</span></div>
-<div class="line"><a id="l02285" name="l02285"></a><span class="lineno"> 2285</span>    *swing = (<a class="code hl_enumeration" href="group__vs1053b__basic__driver.html#ga3c243c161eac06139e3f9105262bb28c">vs1053b_bool_t</a>)((prev &gt;&gt; 12) &amp; 0x07);                   <span class="comment">/* get the swing */</span></div>
+<div class="line"><a id="l02285" name="l02285"></a><span class="lineno"> 2285</span>    *swing = (uint8_t)((prev &gt;&gt; 12) &amp; 0x07);                          <span class="comment">/* get the swing */</span></div>
 <div class="line"><a id="l02286" name="l02286"></a><span class="lineno"> 2286</span> </div>
 <div class="line"><a id="l02287" name="l02287"></a><span class="lineno"> 2287</span>    <span class="keywordflow">return</span> 0;                                                         <span class="comment">/* success return 0 */</span></div>
 <div class="line"><a id="l02288" name="l02288"></a><span class="lineno"> 2288</span>}</div>
@@ -2194,7 +2194,7 @@ $(function(){initNavTree('driver__vs1053b_8c_source.html','',''); });
 <div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span>        <span class="keywordflow">return</span> 1;                                                     <span class="comment">/* return error */</span></div>
 <div class="line"><a id="l02582" name="l02582"></a><span class="lineno"> 2582</span>    }</div>
 <div class="line"><a id="l02583" name="l02583"></a><span class="lineno"> 2583</span>    prev = ((uint16_t)(buf[0]) &lt;&lt; 8) | buf[1];                        <span class="comment">/* combine the config */</span></div>
-<div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span>    *version = (<a class="code hl_enumeration" href="group__vs1053b__basic__driver.html#ga3c243c161eac06139e3f9105262bb28c">vs1053b_bool_t</a>)((prev &gt;&gt; 4) &amp; 0x0F);                  <span class="comment">/* get the swing */</span></div>
+<div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span>    *version = (uint8_t)((prev &gt;&gt; 4) &amp; 0x0F);                         <span class="comment">/* get the swing */</span></div>
 <div class="line"><a id="l02585" name="l02585"></a><span class="lineno"> 2585</span> </div>
 <div class="line"><a id="l02586" name="l02586"></a><span class="lineno"> 2586</span>    <span class="keywordflow">return</span> 0;                                                         <span class="comment">/* success return 0 */</span></div>
 <div class="line"><a id="l02587" name="l02587"></a><span class="lineno"> 2587</span>}</div>
@@ -3167,9 +3167,9 @@ $(function(){initNavTree('driver__vs1053b_8c_source.html','',''); });
 <div class="line"><a id="l03802" name="l03802"></a><span class="lineno"> 3802</span>    {</div>
 <div class="line"><a id="l03803" name="l03803"></a><span class="lineno"> 3803</span>        <span class="keywordflow">return</span> 3;                                                     <span class="comment">/* return error */</span></div>
 <div class="line"><a id="l03804" name="l03804"></a><span class="lineno"> 3804</span>    }</div>
-<div class="line"><a id="l03805" name="l03805"></a><span class="lineno"> 3805</span>    <span class="keywordflow">if</span> (clk &gt; 0x3FF)                                                  <span class="comment">/* check clock */</span></div>
+<div class="line"><a id="l03805" name="l03805"></a><span class="lineno"> 3805</span>    <span class="keywordflow">if</span> (clk &gt; 0x7FF)                                                  <span class="comment">/* check clock */</span></div>
 <div class="line"><a id="l03806" name="l03806"></a><span class="lineno"> 3806</span>    {</div>
-<div class="line"><a id="l03807" name="l03807"></a><span class="lineno"> 3807</span>        handle-&gt;<a class="code hl_variable" href="structvs1053b__handle__s.html#a769d5b3a6c14790a0e126e8fe70b384b">debug_print</a>(<span class="stringliteral">&quot;vs1053b: clk &gt; 0x3FF.\n&quot;</span>);               <span class="comment">/* clk &gt; 0x3FF */</span></div>
+<div class="line"><a id="l03807" name="l03807"></a><span class="lineno"> 3807</span>        handle-&gt;<a class="code hl_variable" href="structvs1053b__handle__s.html#a769d5b3a6c14790a0e126e8fe70b384b">debug_print</a>(<span class="stringliteral">&quot;vs1053b: clk &gt; 0x7FF.\n&quot;</span>);               <span class="comment">/* clk &gt; 0x7FF */</span></div>
 <div class="line"><a id="l03808" name="l03808"></a><span class="lineno"> 3808</span> </div>
 <div class="line"><a id="l03809" name="l03809"></a><span class="lineno"> 3809</span>        <span class="keywordflow">return</span> 4;                                                     <span class="comment">/* return error */</span></div>
 <div class="line"><a id="l03810" name="l03810"></a><span class="lineno"> 3810</span>    }</div>
@@ -3188,7 +3188,7 @@ $(function(){initNavTree('driver__vs1053b_8c_source.html','',''); });
 <div class="line"><a id="l03823" name="l03823"></a><span class="lineno"> 3823</span>        <span class="keywordflow">return</span> 1;                                                     <span class="comment">/* return error */</span></div>
 <div class="line"><a id="l03824" name="l03824"></a><span class="lineno"> 3824</span>    }</div>
 <div class="line"><a id="l03825" name="l03825"></a><span class="lineno"> 3825</span>    prev = ((uint16_t)(buf[0]) &lt;&lt; 8) | buf[1];                        <span class="comment">/* combine the config */</span></div>
-<div class="line"><a id="l03826" name="l03826"></a><span class="lineno"> 3826</span>    prev &amp;= ~(0x3FF &lt;&lt; 0);                                            <span class="comment">/* clear the settings */</span></div>
+<div class="line"><a id="l03826" name="l03826"></a><span class="lineno"> 3826</span>    prev &amp;= ~(0x7FF &lt;&lt; 0);                                            <span class="comment">/* clear the settings */</span></div>
 <div class="line"><a id="l03827" name="l03827"></a><span class="lineno"> 3827</span>    prev |= clk &lt;&lt; 0;                                                 <span class="comment">/* set the config */</span></div>
 <div class="line"><a id="l03828" name="l03828"></a><span class="lineno"> 3828</span>    buf[0] = (prev &gt;&gt; 8) &amp; 0xFF;                                      <span class="comment">/* get msb */</span></div>
 <div class="line"><a id="l03829" name="l03829"></a><span class="lineno"> 3829</span>    buf[1] = (prev &gt;&gt; 0) &amp; 0xFF;                                      <span class="comment">/* get lsb */</span></div>

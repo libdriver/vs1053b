@@ -1983,7 +1983,7 @@ uint8_t vs1053b_get_allowed_multiplier_addition(vs1053b_handle_t *handle, vs1053
  *            - 1 set clock frequency failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
- *            - 4 clk > 0x3FF
+ *            - 4 clk > 0x7FF
  * @note      none
  */
 uint8_t vs1053b_set_clock_frequency(vs1053b_handle_t *handle, uint16_t clk);
