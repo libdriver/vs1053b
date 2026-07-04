@@ -2282,7 +2282,7 @@ uint8_t vs1053b_get_swing(vs1053b_handle_t *handle, uint8_t *swing)
         return 1;                                                     /* return error */
     }
     prev = ((uint16_t)(buf[0]) << 8) | buf[1];                        /* combine the config */
-    *swing = (vs1053b_bool_t)((prev >> 12) & 0x07);                   /* get the swing */
+    *swing = (uint8_t)((prev >> 12) & 0x07);                          /* get the swing */
 
     return 0;                                                         /* success return 0 */
 }
@@ -2581,7 +2581,7 @@ uint8_t vs1053b_get_version(vs1053b_handle_t *handle, uint8_t *version)
         return 1;                                                     /* return error */
     }
     prev = ((uint16_t)(buf[0]) << 8) | buf[1];                        /* combine the config */
-    *version = (vs1053b_bool_t)((prev >> 4) & 0x0F);                  /* get the swing */
+    *version = (uint8_t)((prev >> 4) & 0x0F);                         /* get the swing */
 
     return 0;                                                         /* success return 0 */
 }
@@ -3785,7 +3785,7 @@ uint8_t vs1053b_get_allowed_multiplier_addition(vs1053b_handle_t *handle, vs1053
  *            - 1 set clock frequency failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
- *            - 4 clk > 0x3FF
+ *            - 4 clk > 0x7FF
  * @note      none
  */
 uint8_t vs1053b_set_clock_frequency(vs1053b_handle_t *handle, uint16_t clk)
@@ -3802,9 +3802,9 @@ uint8_t vs1053b_set_clock_frequency(vs1053b_handle_t *handle, uint16_t clk)
     {
         return 3;                                                     /* return error */
     }
-    if (clk > 0x3FF)                                                  /* check clock */
+    if (clk > 0x7FF)                                                  /* check clock */
     {
-        handle->debug_print("vs1053b: clk > 0x3FF.\n");               /* clk > 0x3FF */
+        handle->debug_print("vs1053b: clk > 0x7FF.\n");               /* clk > 0x7FF */
 
         return 4;                                                     /* return error */
     }
@@ -3823,7 +3823,7 @@ uint8_t vs1053b_set_clock_frequency(vs1053b_handle_t *handle, uint16_t clk)
         return 1;                                                     /* return error */
     }
     prev = ((uint16_t)(buf[0]) << 8) | buf[1];                        /* combine the config */
-    prev &= ~(0x3FF << 0);                                            /* clear the settings */
+    prev &= ~(0x7FF << 0);                                            /* clear the settings */
     prev |= clk << 0;                                                 /* set the config */
     buf[0] = (prev >> 8) & 0xFF;                                      /* get msb */
     buf[1] = (prev >> 0) & 0xFF;                                      /* get lsb */
