@@ -26,7 +26,7 @@ var driver__vs1053b_8h =
     [ "VS1053B_AICTRL3_ADC_JOINT_STEREO", "group__vs1053b__basic__driver.html#gaa6969cec055467409e9e74aebe3e84a9", null ],
     [ "VS1053B_AICTRL3_ADC_LEFT_CHANNEL", "group__vs1053b__basic__driver.html#gad4bc396cde235c85be1aff3eee7d07d0", null ],
     [ "VS1053B_AICTRL3_ADC_RIGHT_CHANNEL", "group__vs1053b__basic__driver.html#gaa7df81d42fb49d8bdb1791d038118462", null ],
-    [ "VS1053B_AICTRL3_MODE_IMA", "group__vs1053b__basic__driver.html#ga5601ad98978c793d8e7dd52256b749e4", null ],
+    [ "VS1053B_AICTRL3_MODE_IMA_ADPCM", "group__vs1053b__basic__driver.html#ga194ed3cc2817ead44961425d73ba10ac", null ],
     [ "VS1053B_AICTRL3_MODE_LINEAR_PCM", "group__vs1053b__basic__driver.html#ga0aa7304751228ae9852a089de05c74d5", null ],
     [ "VS1053B_BUFFER_SIZE", "group__vs1053b__basic__driver.html#ga80e4859c3f889bb55ef42f7ea0d3b460", null ],
     [ "VS1053B_OGG_VENC08K1Q00", "group__vs1053b__basic__driver.html#ga6f0dff1127529af5d27c2c42088d4c76", null ],
