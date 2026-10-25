@@ -15,7 +15,7 @@ var searchData=
   ['vs1053b_5faictrl3_5fadc_5fjoint_5fstereo_12',['VS1053B_AICTRL3_ADC_JOINT_STEREO',['../group__vs1053b__basic__driver.html#gaa6969cec055467409e9e74aebe3e84a9',1,'driver_vs1053b.h']]],
   ['vs1053b_5faictrl3_5fadc_5fleft_5fchannel_13',['VS1053B_AICTRL3_ADC_LEFT_CHANNEL',['../group__vs1053b__basic__driver.html#gad4bc396cde235c85be1aff3eee7d07d0',1,'driver_vs1053b.h']]],
   ['vs1053b_5faictrl3_5fadc_5fright_5fchannel_14',['VS1053B_AICTRL3_ADC_RIGHT_CHANNEL',['../group__vs1053b__basic__driver.html#gaa7df81d42fb49d8bdb1791d038118462',1,'driver_vs1053b.h']]],
-  ['vs1053b_5faictrl3_5fmode_5fima_15',['VS1053B_AICTRL3_MODE_IMA',['../group__vs1053b__basic__driver.html#ga5601ad98978c793d8e7dd52256b749e4',1,'driver_vs1053b.h']]],
+  ['vs1053b_5faictrl3_5fmode_5fima_5fadpcm_15',['VS1053B_AICTRL3_MODE_IMA_ADPCM',['../group__vs1053b__basic__driver.html#ga194ed3cc2817ead44961425d73ba10ac',1,'driver_vs1053b.h']]],
   ['vs1053b_5faictrl3_5fmode_5flinear_5fpcm_16',['VS1053B_AICTRL3_MODE_LINEAR_PCM',['../group__vs1053b__basic__driver.html#ga0aa7304751228ae9852a089de05c74d5',1,'driver_vs1053b.h']]],
   ['vs1053b_5fallowed_5fmultiplier_5faddition_5f1p0_5fxtali_17',['VS1053B_ALLOWED_MULTIPLIER_ADDITION_1P0_XTALI',['../group__vs1053b__basic__driver.html#gga387381b6c19b426e5fbbe0032d09bd31a7914f5ea07f18f3171d7b398c1edd33f',1,'driver_vs1053b.h']]],
   ['vs1053b_5fallowed_5fmultiplier_5faddition_5f1p5_5fxtali_18',['VS1053B_ALLOWED_MULTIPLIER_ADDITION_1P5_XTALI',['../group__vs1053b__basic__driver.html#gga387381b6c19b426e5fbbe0032d09bd31adbfeee1a81ebf0e2886c7b1c1632f9a1',1,'driver_vs1053b.h']]],

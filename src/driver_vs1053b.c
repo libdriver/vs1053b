@@ -171,6 +171,7 @@
 #if VS1053B_OGG_VENC44K2Q05 != 0
     #include "driver_vs1053b_patch_ogg_venc44k2q05.h"
 #endif
+
 #include "driver_vs1053b_patch_flac.h"
 #include "driver_vs1053b_patch_wav.h"
 #include <math.h>
@@ -342,8 +343,8 @@ static uint8_t a_check_busy_pin(vs1053b_handle_t *handle)
 static uint8_t a_vs1053b_stop(vs1053b_handle_t *handle)
 {
     uint8_t res;
-    uint8_t dat0;
-    uint8_t dat1;
+    uint16_t dat0;
+    uint16_t dat1;
     uint8_t buf[2];
     uint8_t buf_init[32];
     uint16_t i;
@@ -2309,7 +2310,7 @@ uint8_t vs1053b_swing_convert_to_register(vs1053b_handle_t *handle, float db, ui
         return 3;                       /* return error */
     }
 
-    *reg = (uint8_t)(db / 2.0f);        /* convert real data to register data */
+    *reg = (uint8_t)(db / 0.5f);        /* convert real data to register data */
 
     return 0;                           /* success return 0 */
 }
@@ -2336,7 +2337,7 @@ uint8_t vs1053b_swing_convert_to_data(vs1053b_handle_t *handle, uint8_t reg, flo
         return 3;                     /* return error */
     }
 
-    *db = (float)(reg) / 0.5f;        /* convert raw data to real data */
+    *db = (float)(reg) * 0.5f;        /* convert raw data to real data */
 
     return 0;                         /* success return 0 */
 }
@@ -3878,7 +3879,7 @@ uint8_t vs1053b_get_clock_frequency(vs1053b_handle_t *handle, uint16_t *clk)
         return 1;                                                        /* return error */
     }
     prev = ((uint16_t)(buf[0]) << 8) | buf[1];                           /* combine the config */
-    *clk = ((prev >> 0) & 0x3FF);                                        /* get the freq */
+    *clk = ((prev >> 0) & 0x7FF);                                        /* get the freq */
 
     return 0;                                                            /* success return 0 */
 }
@@ -6643,7 +6644,7 @@ uint8_t vs1053b_pause(vs1053b_handle_t *handle)
     {
         return 3;                                                /* return error */
     }
-    if (handle->status != 0)                                     /* check played */
+    if (handle->status == 0)                                     /* check played */
     {
         handle->debug_print("vs1053b: audio working.\n");        /* audio working */
 

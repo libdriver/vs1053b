@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__vs1053b__basic__driver.html#ga1f0fdd7b26e682cde2693bd9a683b92e":[0,0,1,168],
 "group__vs1053b__basic__driver.html#ga1fb214785e6c452927b907ad484c71f8":[0,0,1,189],
 "group__vs1053b__basic__driver.html#ga1ff46bd7d40bf1f42691989c1cc9e967":[0,0,1,188],
 "group__vs1053b__basic__driver.html#ga200ddc24bace3be8e839b45e6b5fedd5":[0,0,1,136],
@@ -52,7 +53,6 @@ var NAVTREEINDEX1 =
 "group__vs1053b__basic__driver.html#ga4f4389daf9a7be50e456c4f2153d4edb":[0,0,1,170],
 "group__vs1053b__basic__driver.html#ga4f7c6f0b12dc0019cd865387e5ab1870":[0,0,1,122],
 "group__vs1053b__basic__driver.html#ga55c662d6809ca657dc82a14d3f041b6f":[0,0,1,133],
-"group__vs1053b__basic__driver.html#ga5601ad98978c793d8e7dd52256b749e4":[0,0,1,8],
 "group__vs1053b__basic__driver.html#ga56adf196c6d50c1c99177bec0603ef67":[0,0,1,152],
 "group__vs1053b__basic__driver.html#ga598f792b837d0849d90dd7b2c054117f":[0,0,1,72],
 "group__vs1053b__basic__driver.html#ga5c14add2510657e5085726f3c0a5f69a":[0,0,1,184],
